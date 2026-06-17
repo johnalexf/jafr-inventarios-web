@@ -6,6 +6,13 @@ El objetivo principal de esta interfaz es modernizar procesos arcaicos basados e
 
 > **Nota del Proyecto:** Este repositorio representa **únicamente el alcance del Frontend** (Prototipo navegable en HTML/CSS/JS). No cuenta con conexión a base de datos ni backend, ya que su propósito es plasmar el diseño visual y la estructura de componentes basados en los prototipos de Figma.
 
+## 🎨 Prototipos y Diseño Visual
+
+El desarrollo de esta interfaz está basado estrictamente en el trabajo previo de UI/UX realizado en Figma. Puedes consultar los recursos originales aquí:
+
+* **[Prototipo Interactivo (Mockups)](https://www.figma.com/proto/pYN1H69conYot0Ek1fP7XL/JAFR-administra-tu-negocio?node-id=51-335&p=f&viewport=1731%2C119%2C0.11&t=3TXp9BuPNb25fEXU-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=51%3A335&page-id=41%3A272):** Vista de presentación para navegar por las interfaces simulando el flujo de un usuario real.
+* **[Diseño Fuente (Figma)](https://www.figma.com/design/pYN1H69conYot0Ek1fP7XL/JAFR-administra-tu-negocio?node-id=41-272&t=bR8nQuVdBdTNx1QI-1):** Lienzo de trabajo con la organización técnica de componentes y roles.
+
 ## 🚀 Módulos de la Interfaz
 
 La maquetación incluye las pantallas y modales para las siguientes funciones del sistema:
