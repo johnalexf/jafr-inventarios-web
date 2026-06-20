@@ -1,0 +1,7 @@
+# Normalmente Git en Windows puede convertir los finales de línea LF (\n)
+# a CRLF (\r\n), lo que altera el contenido de los archivos y puede invalidar
+# verificaciones de integridad (integrity/SHA-384) en librerías de terceros.
+#
+# Por ello se evita que Git modifique los finales de línea de los archivos
+# originales ubicados en la carpeta vendor.
+vendor/** -text
