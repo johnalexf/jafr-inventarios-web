@@ -20,7 +20,7 @@
     /* Colores neutros */
     --bs-dark: #000000;
     --bs-light: #FFFFFF;
-    --bs-secondary-rgb: 255, 255, 255;
+    --bs-light-rgb: 255, 255, 255;
 
     /* Colores neutros propios adicionales */
     
@@ -38,6 +38,26 @@
     --bg-app: var(--color-surface);
 }
 
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    
+    /* Colores para cuando el mouse pasa por encima (Hover) */
+    --bs-btn-hover-bg: #0b1a40; /* Un azul un poco más oscuro que primary */
+    --bs-btn-hover-border-color: #0b1a40;
+    
+}
+
+.btn-secondary {
+    --bs-btn-bg: var(--bs-secondary);
+    --bs-btn-border-color: var(--bs-secondary);
+    
+    /* Colores para cuando el mouse pasa por encima (Hover) */
+    --bs-btn-hover-bg: #15848b; /* Un azul un poco más oscuro que primary */
+    --bs-btn-hover-border-color: #15848b;
+    
+}
+
 /* =====================================================
    Configuración global del documento
    ===================================================== */
@@ -52,6 +72,13 @@ body.pagina-autenticacion{
     background-color: var(--bg-auth);
 }
 
+.bg-surface{
+    background-color: var(--color-surface);
+}
+
+.bg-surface-50{
+    background-color: var(--color-surface-50);
+}
 
 /* =====================================================
    Títulos
@@ -75,6 +102,9 @@ iconify-icon {
     color: var(--bs-primary);
 }
 
+/* =====================================================
+   Logo
+   ===================================================== */
 .logo{
     width: 150px;
     height: auto;

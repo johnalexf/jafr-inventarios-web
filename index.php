@@ -43,7 +43,53 @@
             </div>
         </nav>
     </header>
+    
+    <main class="container">
+        
+        <!--autenticacion o registro  -->
+        <div class="row align-items-start">
 
+            <!--Seccion de autenticacion  -->
+            <section class="col-12 col-md-6 p-5">
+                <div class="my-auto p-5 bg-surface rounded shadow-sm">
+                    <h2 class="text-primary fs-4 text-center">
+                        Iniciar sesión
+                    </h2>
+                    <div class="mt-4 mx-5 px-5">
+                        <form>
+                            
+                            <div class="mb-4">
+                                <label for="emailLogin" class="form-label">Correo:</label>
+                                <input type="email" class="form-control" id="emailLogin" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="passwordLogin" class="form-label">Contraseña:</label>
+                                <input type="password" class="form-control" id="passwordLogin" required>
+                            </div>
+
+                            <div class="mb-4 text-center">
+                                <a class="btn text-primary text-decoration-none" href="">Recuperar contraseña</a>
+                            </div>
+
+                            <div class="d-flex justify-content-center">
+                                 <button type="submit" class="btn btn-secondary btn-lg">Ingresar</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Seccion para el registro de un usuario -->
+            <section class="col-12 col-md-6 ">
+                Formulario de registro
+            </section>
+            
+        </div>
+        
+    </main>
+    
     <!-- Bootstrap JS -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
