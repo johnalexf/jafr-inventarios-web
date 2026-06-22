@@ -27,7 +27,22 @@
     <link href="./assets/css/global.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="bg-white">
+    
+    <header class="p-1">
+        <nav class="navbar bg-white rounded-1">
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                
+                <a class="navbar-brand d-none d-md-block" href="#">
+                    <img src="assets/img/logo.png" alt="Logo" class="logo">
+                </a>
+                
+                <h1 class="mb-0 text-primary fw-bold fs-3 text-center px-3 py-2">
+                    Bienvenido a JAFR administra tu negocio
+                </h1>
+            </div>
+        </nav>
+    </header>
 
     <!-- Bootstrap JS -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

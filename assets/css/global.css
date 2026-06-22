@@ -8,7 +8,9 @@
 
     /* Colores de marca */
     --bs-primary: #112355;
+    --bs-primary-rgb: 17, 35, 85;
     --bs-secondary: #1EA6B1;
+    --bs-secondary-rgb: 30, 166, 177;
 
     /* Estados del sistema */
     --bs-success: #4CAF50;
@@ -18,7 +20,7 @@
     /* Colores neutros */
     --bs-dark: #000000;
     --bs-light: #FFFFFF;
-
+    --bs-secondary-rgb: 255, 255, 255;
 
     /* Colores neutros propios adicionales */
     
@@ -71,5 +73,10 @@ h6 {
 
 iconify-icon {
     color: var(--bs-primary);
+}
+
+.logo{
+    width: 150px;
+    height: auto;
 }
 
