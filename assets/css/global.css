@@ -1,0 +1,75 @@
+/* =====================================================
+   Variables globales
+   ===================================================== */
+
+:root {
+
+    /* Colores Bootstrap personalizados */
+
+    /* Colores de marca */
+    --bs-primary: #112355;
+    --bs-secondary: #1EA6B1;
+
+    /* Estados del sistema */
+    --bs-success: #4CAF50;
+    --bs-danger: #FF0000;
+    --bs-warning: #FCC21B;
+
+    /* Colores neutros */
+    --bs-dark: #000000;
+    --bs-light: #FFFFFF;
+
+
+    /* Colores neutros propios adicionales */
+    
+    --color-surface: #CDCDCD;
+    --color-surface-50: #D9D9D9;
+
+
+    /* Tipografías */
+
+    --font-title: "Montserrat", sans-serif;
+    --font-text: "Roboto", sans-serif;
+
+    /*  Fondos  */
+    --bg-auth: var(--bs-light);
+    --bg-app: var(--color-surface);
+}
+
+/* =====================================================
+   Configuración global del documento
+   ===================================================== */
+
+body {
+    font-family: var(--font-text);
+    background-color: var(--bg-app);
+    color: var(--bs-dark);
+}
+
+body.pagina-autenticacion{
+    background-color: var(--bg-auth);
+}
+
+
+/* =====================================================
+   Títulos
+   ===================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-title);
+}
+
+
+/* =====================================================
+   Iconos
+   ===================================================== */
+
+iconify-icon {
+    color: var(--bs-primary);
+}
+

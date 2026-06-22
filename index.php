@@ -18,7 +18,10 @@
         <!-- Carga las familias tipográficas Montserrat y Roboto -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Fin Google Fonts -->
-     
+
+    <!-- Estilos propios -->
+    <link href="./assets/css/global.css" rel="stylesheet">
+
 </head>
 <body>
 
