@@ -111,3 +111,30 @@ h6 {
     height: auto;
 }
 
+
+/* =====================================================
+   Utilidades Responsivas Propias
+   ===================================================== */
+
+/* Ancho: 100% en móviles, 75% desde sm en adelante */
+.w-sm-75 {
+    width: 100% !important;
+}
+
+@media (min-width: 576px) {
+    .w-sm-75 {
+        width: 75% !important;
+    }
+}
+
+/* Ocultar desbordamiento y scroll solo en pantallas lg o mayores */
+@media (min-width: 992px) {
+    .overflow-lg-hidden {
+        overflow: hidden !important;
+    }
+
+    .overflow-lg-scroll{
+        overflow-y: auto;
+    }
+}
+

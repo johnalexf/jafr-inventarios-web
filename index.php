@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="./assets/css/formularios.css">
 
 </head>
-<body class="bg-white">
+<body class="vh-100 bg-white overflow-lg-hidden">
     
     <header class="p-1">
         <nav class="navbar bg-white rounded-1">
@@ -45,18 +45,18 @@
         </nav>
     </header>
     
-    <main class="container-sm px-sm-0 pb-5">
+    <main class="container-sm px-sm-0 pb-5 h-100">
         
         <!--autenticacion o registro  -->
-        <div class="row align-items-start">
-
+        <div class="px-1 px-sm-2 px-md-5 pb-5 d-flex flex-column flex-lg-row justify-content-center align-items-center ">
+ 
             <!--Seccion de autenticacion  -->
-            <section class="col-12 col-lg-6 p-5">
-                <div class="my-auto p-5 bg-surface rounded shadow-sm">
-                    <h2 class="text-center text-primary fs-4 fw-bold">
+            <section class="w-sm-75">
+                <div class="my-auto py-4 bg-surface rounded shadow-sm">
+                    <h2 class="text-center text-primary fs-4 fw-bold mt-4">
                         Iniciar sesión
                     </h2>
-                    <div class="mt-4 mx-5 px-5">
+                    <div class="mt-4 mx-5 ">
                         <form>
                             
                             <div class="mb-4">
@@ -74,8 +74,9 @@
                             </div>
 
                             <div class="d-flex justify-content-center">
-                                 <button type="submit" class="btn btn-secondary btn-lg">Ingresar</button>
+                                 <button type="submit" class="btn btn-secondary fw-bold px-5 shadow">Ingresar</button>
                             </div>
+
 
                         </form>
                     </div>
@@ -84,11 +85,11 @@
             
 
             <!-- Seccion para el formulario de registro de un usuario -->
-            <section class="col-12 col-lg-6">
+            <section class="w-100 overflow-lg-scroll" style="max-height: 90vh;">
 
 
                 <!-- Contenedor principal del formulario Registrarse con su titulo -->
-                <div class="my-auto py-4 bg-surface-50 rounded">
+                <div class="py-4 bg-surface-50 rounded shadow-sm">
 
                     <h2 class="mt-3 mb-4 text-center text-primary fs-4 fw-bold">
                         Registrarse
@@ -225,7 +226,7 @@
                         <!-- Fin Seccion datos de la empresa -->
 
                         <div class="d-flex justify-content-center py-3">
-                            <button type="submit" class="btn btn-secondary fw-bold px-5 shadow-sm">Registrarme</button>
+                            <button type="submit" class="btn btn-secondary fw-bold px-5 shadow">Registrarme</button>
                         </div>
 
                     </form>
