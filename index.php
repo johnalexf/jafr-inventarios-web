@@ -45,7 +45,7 @@
         </nav>
     </header>
     
-    <main class="container">
+    <main class="container-sm px-sm-0 pb-5">
         
         <!--autenticacion o registro  -->
         <div class="row align-items-start">
@@ -53,7 +53,7 @@
             <!--Seccion de autenticacion  -->
             <section class="col-12 col-lg-6 p-5">
                 <div class="my-auto p-5 bg-surface rounded shadow-sm">
-                    <h2 class="text-primary fs-4 text-center">
+                    <h2 class="text-center text-primary fs-4 fw-bold">
                         Iniciar sesión
                     </h2>
                     <div class="mt-4 mx-5 px-5">
@@ -84,14 +84,13 @@
             
 
             <!-- Seccion para el formulario de registro de un usuario -->
-
             <section class="col-12 col-lg-6">
 
 
                 <!-- Contenedor principal del formulario Registrarse con su titulo -->
                 <div class="my-auto py-4 bg-surface-50 rounded">
 
-                    <h2 class="text-primary fs-4 text-center mt-3 mb-4">
+                    <h2 class="mt-3 mb-4 text-center text-primary fs-4 fw-bold">
                         Registrarse
                     </h2>
 
@@ -99,18 +98,16 @@
                     <form class="mx-1 px-3 px-xl-5">
                         
                         <!-- Selector de tipo de usuario -->
-
-                        <div class="mx-5 mb-4 px-4">
+                        <div class="mb-3">
                             <label for="rolRegistro" class="visually-hidden">Tipo de usuario</label>
-                            <select class="form-select border-black" id="rolRegistro" aria-label="Rol del usuario dentro del sistema">
-                                <option selected>Tipo de usuario</option>
+                            <select class="form-select border-black jafr-max-w-sm mx-auto" id="rolRegistro" aria-label="Rol del usuario dentro del sistema">
+                                <option selected>Tipo de usuario...</option>
                                 <option value="admin">Administrador</option>
                                 <option value="vendedor">Vendedor</option>
                             </select>
                         </div>
                         
                         <!-- Seccion del formulario para diligenciar nombre completo -->
-
                         <fieldset class="mb-3">
                             <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-3">
                                 Nombre Completo
@@ -144,12 +141,10 @@
                                 </div>
                             </div>
                         </fieldset>
-
                         <!-- Fin Seccion del formulario para diligenciar nombre completo -->
 
                         
                         <!-- Seccion del formulario para diligenciar datos de contacto -->
-
                         <fieldset class="mb-3">
                             <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-3">
                                 Datos de contacto
@@ -169,12 +164,10 @@
                                 </div>
                             </div>
                         </fieldset>
-
                         <!-- Fin Seccion del formulario para diligenciar datos de contacto -->
 
 
                         <!-- Seccion del formulario para diligenciar Credenciales de acceso -->
-
                         <fieldset class="mb-3">
                             <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-3">
                                 Credenciales de Acceso
@@ -204,17 +197,19 @@
                             <div class="jafr-form-group">
                                 <label for="codigoAcceso" class="jafr-form-label">Código de acceso:</label>
                                 <div class="jafr-form-input-container position-relative">
-                                    <input type="text" id="codigoAcceso" class="form-control form-control-sm border border-black pe-4">   
-                                    <iconify-icon icon="mdi:help-circle" class="position-absolute top-50 translate-middle-y text-dark fs-5" style="right: 3.5rem; cursor: pointer;" id="iconoAyuda"></iconify-icon>                                     
+                                    <input type="text" id="codigoAcceso" class="form-control form-control-sm border border-black">   
+                                    <iconify-icon 
+                                        icon="fluent:chat-help-24-filled" 
+                                        class="position-absolute top-0 end-0 fs-2 pe-2 jafr-icon" 
+                                        id="iconoAyuda">
+                                    </iconify-icon>                                     
                                 </div>
                             </div>
                         </fieldset>
-
                         <!-- Fin Seccion del formulario para diligenciar Credenciales de acceso -->
 
 
                         <!-- Seccion datos de la empresa -->
-
                         <fieldset class="mb-4">
                             <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-3">
                                 Datos de la empresa
@@ -227,11 +222,10 @@
                                 </div>
                             </div>
                         </fieldset>
-
                         <!-- Fin Seccion datos de la empresa -->
 
-                        <div class="d-flex justify-content-center pb-3">
-                            <button type="submit" class="btn btn-secondary fw-bold px-4">Registrarme</button>
+                        <div class="d-flex justify-content-center py-3">
+                            <button type="submit" class="btn btn-secondary fw-bold px-5 shadow-sm">Registrarme</button>
                         </div>
 
                     </form>

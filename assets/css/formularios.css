@@ -5,7 +5,7 @@
 .jafr-form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .jafr-form-label {
@@ -35,4 +35,13 @@
         flex: 3; /* Ocupa 3 de 5 columnas */
         padding-right: 0.5rem; /* Espacio extra a la derecha */
     }
+}
+
+/* =====================================================
+   Utilidades de Tamaño para Formularios
+   ===================================================== */
+
+.jafr-max-w-sm {
+    max-width: 250px;
+    width: 100%; /* Mantiene la adaptabilidad en celulares estrechos */
 }
