@@ -1,0 +1,38 @@
+/* =====================================================
+   Componentes Personalizados: Formularios JAFR
+   ===================================================== */
+
+.jafr-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.jafr-form-label {
+    text-align: left;
+    margin-bottom: 0.25rem;
+}
+
+.jafr-form-input-container {
+    width: 100%;
+}
+
+/* Breakpoint para pantallas grandes (lg: 992px) */
+@media (min-width: 576px) {
+    .jafr-form-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .jafr-form-label {
+        flex: 2; /* Ocupa 2 de 5 columnas */
+        text-align: right;
+        padding-right: 1rem;
+        margin-bottom: 0;
+    }
+
+    .jafr-form-input-container {
+        flex: 3; /* Ocupa 3 de 5 columnas */
+        padding-right: 0.5rem; /* Espacio extra a la derecha */
+    }
+}

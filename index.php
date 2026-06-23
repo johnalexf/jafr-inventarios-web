@@ -25,6 +25,7 @@
 
     <!-- Estilos propios -->
     <link href="./assets/css/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/formularios.css">
 
 </head>
 <body class="bg-white">
@@ -50,7 +51,7 @@
         <div class="row align-items-start">
 
             <!--Seccion de autenticacion  -->
-            <section class="col-12 col-md-6 p-5">
+            <section class="col-12 col-lg-6 p-5">
                 <div class="my-auto p-5 bg-surface rounded shadow-sm">
                     <h2 class="text-primary fs-4 text-center">
                         Iniciar sesión
@@ -81,10 +82,166 @@
                 </div>
             </section>
             
-            <!-- Seccion para el registro de un usuario -->
-            <section class="col-12 col-md-6 ">
-                Formulario de registro
+
+            <!-- Seccion para el formulario de registro de un usuario -->
+
+            <section class="col-12 col-lg-6">
+
+
+                <!-- Contenedor principal del formulario Registrarse con su titulo -->
+                <div class="my-auto py-4 bg-surface-50 rounded">
+
+                    <h2 class="text-primary fs-4 text-center mt-3 mb-4">
+                        Registrarse
+                    </h2>
+
+                    <!-- Formulario registro de un usuario -->
+                    <form class="mx-1 px-3 px-xl-5">
+                        
+                        <!-- Selector de tipo de usuario -->
+
+                        <div class="mx-5 mb-4 px-4">
+                            <label for="rolRegistro" class="visually-hidden">Tipo de usuario</label>
+                            <select class="form-select border-black" id="rolRegistro" aria-label="Rol del usuario dentro del sistema">
+                                <option selected>Tipo de usuario</option>
+                                <option value="admin">Administrador</option>
+                                <option value="vendedor">Vendedor</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Seccion del formulario para diligenciar nombre completo -->
+
+                        <fieldset class="mb-3">
+                            <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-3">
+                                Nombre Completo
+                            </legend>
+
+                            <div class="jafr-form-group">
+                                <label for="primerNombre" class="jafr-form-label">Primer Nombre:</label>
+                                <div class="jafr-form-input-container">
+                                    <input type="text" id="primerNombre" class="form-control form-control-sm border border-black">                                        
+                                </div>
+                            </div>
+                            
+                            <div class="jafr-form-group">
+                                <label for="segundoNombre" class="jafr-form-label">Segundo Nombre:</label>
+                                <div class="jafr-form-input-container">
+                                    <input type="text" id="segundoNombre" class="form-control form-control-sm border border-black">                                        
+                                </div>
+                            </div>
+
+                            <div class="jafr-form-group">
+                                <label for="primerApellido" class="jafr-form-label">Primer apellido:</label>
+                                <div class="jafr-form-input-container">
+                                    <input type="text" id="primerApellido" class="form-control form-control-sm border border-black">                                        
+                                </div>
+                            </div>
+
+                            <div class="jafr-form-group">
+                                <label for="segundoApellido" class="jafr-form-label">Segundo apellido:</label>
+                                <div class="jafr-form-input-container">
+                                    <input type="text" id="segundoApellido" class="form-control form-control-sm border border-black">                                        
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Fin Seccion del formulario para diligenciar nombre completo -->
+
+                        
+                        <!-- Seccion del formulario para diligenciar datos de contacto -->
+
+                        <fieldset class="mb-3">
+                            <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-3">
+                                Datos de contacto
+                            </legend>
+
+                            <div class="jafr-form-group">
+                                <label for="telefono" class="jafr-form-label">Teléfono:</label>
+                                <div class="jafr-form-input-container">
+                                    <input type="tel" id="telefono" class="form-control form-control-sm border border-black">                                        
+                                </div>
+                            </div>
+
+                            <div class="jafr-form-group">
+                                <label for="correoRegistro" class="jafr-form-label">Correo:</label>
+                                <div class="jafr-form-input-container">
+                                    <input type="email" id="correoRegistro" class="form-control form-control-sm border border-black">                                        
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Fin Seccion del formulario para diligenciar datos de contacto -->
+
+
+                        <!-- Seccion del formulario para diligenciar Credenciales de acceso -->
+
+                        <fieldset class="mb-3">
+                            <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-3">
+                                Credenciales de Acceso
+                            </legend>
+
+                            <div class="jafr-form-group">
+                                <label for="alias" class="jafr-form-label">Alias:</label>
+                                <div class="jafr-form-input-container">
+                                    <input type="text" id="alias" class="form-control form-control-sm border border-black">                                        
+                                </div>
+                            </div>
+
+                            <div class="jafr-form-group">
+                                <label for="passwordRegistro" class="jafr-form-label">Contraseña:</label>
+                                <div class="jafr-form-input-container">
+                                    <input type="password" id="passwordRegistro" class="form-control form-control-sm border border-black">                                        
+                                </div>
+                            </div>
+
+                            <div class="jafr-form-group">
+                                <label for="confirmarPassword" class="jafr-form-label">Confirmar Contraseña:</label>
+                                <div class="jafr-form-input-container">
+                                    <input type="password" id="confirmarPassword" class="form-control form-control-sm border border-black">                                        
+                                </div>
+                            </div>
+
+                            <div class="jafr-form-group">
+                                <label for="codigoAcceso" class="jafr-form-label">Código de acceso:</label>
+                                <div class="jafr-form-input-container position-relative">
+                                    <input type="text" id="codigoAcceso" class="form-control form-control-sm border border-black pe-4">   
+                                    <iconify-icon icon="mdi:help-circle" class="position-absolute top-50 translate-middle-y text-dark fs-5" style="right: 3.5rem; cursor: pointer;" id="iconoAyuda"></iconify-icon>                                     
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Fin Seccion del formulario para diligenciar Credenciales de acceso -->
+
+
+                        <!-- Seccion datos de la empresa -->
+
+                        <fieldset class="mb-4">
+                            <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-3">
+                                Datos de la empresa
+                            </legend>
+
+                            <div class="jafr-form-group">
+                                <label for="nombreComercial" class="jafr-form-label">Nombre comercial:</label>
+                                <div class="jafr-form-input-container">
+                                    <input type="text" id="nombreComercial" class="form-control form-control-sm border border-black">                                        
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Fin Seccion datos de la empresa -->
+
+                        <div class="d-flex justify-content-center pb-3">
+                            <button type="submit" class="btn btn-secondary fw-bold px-4">Registrarme</button>
+                        </div>
+
+                    </form>
+                    <!-- Fin Formulario registro de un usuario -->
+
+                </div>
+                <!-- Fin Contenedor principal del formulario Registrarse con su titulo -->
+
             </section>
+            <!-- Fin Seccion para el formulario de registro de un usuario -->
             
         </div>
         
