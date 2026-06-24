@@ -35,7 +35,7 @@
         <nav class="navbar bg-white rounded-1">
             <div class="container-fluid d-flex justify-content-center align-items-center">
                 
-                <a class="navbar-brand d-none d-md-block" href="#">
+                <a class="navbar-brand" href="index.php">
                     <img src="assets/img/logo.png" alt="Logo" class="logo">
                 </a>
                 
