@@ -26,6 +26,7 @@
     <!-- Estilos propios -->
     <link href="./assets/css/global.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/formularios.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
 
 </head>
 <body class="vh-100 bg-white overflow-lg-hidden">
@@ -52,7 +53,20 @@
  
             <!--Seccion de autenticacion  -->
             <section class="w-sm-75">
-                <div class="my-auto py-4 bg-surface rounded shadow-sm">
+
+                <!-- Conteneder de boton a la espera de mostrar formulario iniciar sesion -->
+                <div id="divPanelLogin" class="altura-lg-fija-panel-login rounded d-flex flex-column justify-content-center align-items-center bg-surface-50 mb-4 mb-lg-0 shadow-sm d-none animacion-fade-in">
+                    
+                    <h3 class="fs-5 text-muted mb-3">¿Ya tienes una cuenta?</h3> 
+                    
+                    <div class="">
+                        <button id="btnLogearse" type="submit" class="btn btn-secondary fw-bold px-5 shadow">Inicia Sesión</button>
+                    </div>
+                </div>
+
+
+
+                <div id="divFormularioLogin" class="my-auto py-4 bg-surface rounded shadow-sm animacion-fade-in">
                     <h2 class="text-center text-primary fs-4 fw-bold mt-4">
                         Iniciar sesión
                     </h2>
@@ -73,7 +87,7 @@
                                 <a class="btn text-primary text-decoration-none" href="">Recuperar contraseña</a>
                             </div>
 
-                            <div class="d-flex justify-content-center">
+                            <div class="mb-4 d-flex justify-content-center">
                                  <button type="submit" class="btn btn-secondary fw-bold px-5 shadow">Ingresar</button>
                             </div>
 
@@ -85,11 +99,20 @@
             
 
             <!-- Seccion para el formulario de registro de un usuario -->
-            <section class="w-100 overflow-lg-scroll" style="max-height: 90vh;">
+            <section class="w-100 overflow-lg-scroll altura-lg-section-registro">
 
+                <!-- Conteneder de boton a la espera de mostrar formulario registrarse -->
+                <div id="divPanelRegistro" class="altura-lg-fija-panel-registro rounded d-flex flex-column justify-content-center align-items-center bg-surface-50 mt-4 mt-lg-0 shadow-sm animacion-fade-in">
+                    
+                    <h3 class="fs-5 text-muted mb-3">¿No tienes una cuenta?</h3> 
+                    
+                    <div class="">
+                        <button id="btnRegistrate" type="button" class="btn btn-secondary fw-bold px-5 shadow">Registrate</button>
+                    </div>
+                </div>
 
                 <!-- Contenedor principal del formulario Registrarse con su titulo -->
-                <div class="py-4 bg-surface-50 rounded shadow-sm">
+                <div id="divFormularioRegistro" class="py-4 bg-surface rounded shadow-sm d-none animacion-fade-in">
 
                     <h2 class="mt-3 mb-4 text-center text-primary fs-4 fw-bold">
                         Registrarse
@@ -250,5 +273,8 @@
 
     <!-- Registro de un usuario -->
      <script src="assets/js/indexRegistroUsuario.js"></script>
+
+     <!-- JAvascript principal -->
+      <script src="assets/js/index.js"></script>
 </body>
 </html>

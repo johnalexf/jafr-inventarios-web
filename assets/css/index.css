@@ -1,0 +1,54 @@
+/* =====================================================
+   Personalizar contenedores de los formularios
+   ===================================================== */
+
+/* Para móviles y tablets: usamos padding natural en lugar de altura fija */
+.altura-lg-fija-panel-registro, 
+.altura-lg-fija-panel-login {
+    padding: 2.5rem 1rem; 
+}
+
+@media (min-width: 992px) {
+    .altura-lg-section-registro {
+        max-height: 90vh;
+        height: 90vh;
+        display: grid;
+        align-items: center;
+    }
+
+    .altura-lg-fija-panel-registro {
+        padding: 0; 
+        height: 90vh;
+    }
+
+    @media (min-height: 784px){
+        .altura-lg-fija-panel-registro {
+            height: 784px;
+        }
+    }
+
+    @media (min-height: 420px){
+        .altura-lg-fija-panel-login{
+            height: 420px;
+        }
+    }
+}
+
+/* =====================================================
+   Animaciones de Interfaz
+   ===================================================== */
+
+.animacion-fade-in {
+    animation: entrarSuave 1s ease-out forwards;
+}
+
+@keyframes entrarSuave {
+    0% {
+        opacity: 0;
+        transform: translateY(15px); /* Inicia un poco más abajo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Sube a su posición original */
+    }
+}
