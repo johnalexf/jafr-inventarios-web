@@ -27,10 +27,10 @@
     <link href="../assets/css/global.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="vh-100 d-flex flex-column">
 
     <header class="p-1">
-        <nav class="navbar bg-white rounded-1">
+        <nav class="navbar bg-white rounded-1 shadow-sm">
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 
                 <a class="navbar-brand m-0" href="inicio.php">
@@ -64,6 +64,16 @@
         </nav>
     </header>
 
+    <main class="flex-grow-1 overflow-y-auto p-3 p-md-4">
+
+    </main>
+    
+
+    <footer class="p-1">
+        <div class="container-fluid bg-white border-top py-2 text-center text-muted rounded-1">
+            <small>&copy; 2026 JAFR - Administra tu negocio. Prototipo de interfaz.</small>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
