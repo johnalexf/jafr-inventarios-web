@@ -29,10 +29,51 @@
 </head>
 <body>
 
-    <div class="container my-5 text-center">
-        <h1>Nueva Página</h1>
-        <p>Estructura base lista.</p>
-    </div>
+        <header class="p-1">
+        <nav class="navbar bg-white rounded-1 shadow-sm">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                
+                <a class="navbar-brand m-0" href="inicio.php">
+                    <img src="../assets/img/logo.png" alt="Logo" class="logo">
+                </a>
+                
+                <h1 class="d-flex align-items-center text-primary pe-5 pe-md-0 mb-0 fw-bold fs-3">
+                    <span class=" d-none d-lg-block ">
+                        Nombre de la empresa /
+                    </span>
+                    <iconify-icon 
+                        icon="mdi:home" 
+                        class="px-1 fs-2" >
+                    </iconify-icon>
+                    <span>Inicio</span>    
+                </h1>
+
+                <div class="px-2 px-md-3 py-1 py-md-2 border rounded-4 bg-surface d-flex align-items-center ">
+
+                    <iconify-icon 
+                        icon="mdi:account-badge" 
+                        class="fs-1 d-md-none">
+                    </iconify-icon>
+
+                    <p class="mb-0 fw-semibold fs-6 d-none d-md-block" >
+                        Administrador
+                    </p>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow-1 overflow-y-auto p-3 p-md-4">
+
+    </main>
+    
+
+    <footer class="p-1">
+        <div class="container-fluid bg-white border-top py-2 text-center text-muted rounded-1">
+            <small>&copy; 2026 JAFR - Administra tu negocio. Prototipo de interfaz.</small>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
