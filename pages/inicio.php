@@ -37,16 +37,16 @@
                     <img src="../assets/img/logo.png" alt="Logo" class="logo">
                 </a>
                 
-                <div class="d-flex align-items-center text-primary pe-5 pe-md-0">
-                    <h1 class="mb-0 fw-bold fs-3 d-none d-lg-block ">
+                <h1 class="d-flex align-items-center text-primary pe-5 pe-md-0 mb-0 fw-bold fs-3">
+                    <span class=" d-none d-lg-block ">
                         Nombre de la empresa /
-                    </h1>
+                    </span>
                     <iconify-icon 
                         icon="mdi:home" 
                         class="px-1 fs-2" >
                     </iconify-icon>
-                    <h1 class="mb-0 fw-bold fs-3">Inicio</h1>    
-                </div>
+                    <span>Inicio</span>    
+                </h1>
 
                 <div class="px-2 px-md-3 py-1 py-md-2 border rounded-4 bg-surface d-flex align-items-center ">
 
