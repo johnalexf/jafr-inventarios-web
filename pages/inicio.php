@@ -71,7 +71,7 @@
 
     <footer class="p-1">
         <div class="container-fluid bg-white border-top py-2 text-center text-muted rounded-1">
-            <small>&copy; 2026 JAFR - Administra tu negocio. Prototipo de interfaz.</small>
+            <small>&copy; 2026 JAFR - Administra tu negocio. <span class="d-block d-sm-inline">Prototipo de interfaz.</span></small>
         </div>
     </footer>
 
