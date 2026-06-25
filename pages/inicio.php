@@ -71,7 +71,7 @@
     <main class="flex-grow-1 overflow-y-auto d-flex flex-column">
 
         <!-- CONTENEDOR PRINCIPAL - centra el contenido y pone márgenes laterales.  -->
-        <div class="container-lg d-flex justify-content-center py-4 my-auto px-0">
+        <section class="container-lg d-flex justify-content-center py-4 my-auto px-0" aria-label="Panel de control">
             
             <!-- Fila Bootstrap que contiene las dos tarjetas principales (Perfil y Menu)-->
             <div class="row w-100 justify-content-center gy-4 gx-md-5" style="max-width: 850px;">
@@ -80,9 +80,9 @@
                 <div class="col-12 col-md-6" style="max-width: 400px;">
 
                     <!-- Tarjeta de perfil -->
-                    <div class="bg-white rounded-4 shadow-sm px-4 px-sm-5 py-4 d-flex flex-column">
+                    <section class="bg-white rounded-4 shadow-sm px-4 px-sm-5 py-4 d-flex flex-column" aria-labelledby="titulo-perfil">
                         
-                        <h2 class="text-center text-primary fw-bold mb-4 fs-3">Perfil</h2>
+                        <h2 class="text-center text-primary fw-bold mb-4 fs-3" id="titulo-perfil">Perfil</h2>
 
                         <!-- Informacion del usuario -->
                         <div class="mb-4 fs-6 text-dark">
@@ -128,7 +128,7 @@
                             <a href="#" class="text-primary fw-bold text-decoration-none">Editar Usuario</a>
                         </div>
 
-                    </div>
+                    </section>
                 </div>
 
                 <!-- Espacio para la tarjeta del menú -->
@@ -136,13 +136,13 @@
                 <div class="col-12 col-md-6 d-none d-md-block" style="max-width: 400px;">
 
                     <!-- Tarjeta del menú -->
-                    <div class="bg-white rounded-4 shadow-sm py-4 h-100">
+                    <nav class="bg-white rounded-4 shadow-sm py-4 h-100" aria-label="Menú principal de módulos">
                         
                         <h2 class="text-center text-primary fw-bold mb-4 fs-3">Menú</h2>
 
                         <div class="d-flex flex-column gap-4 mx-auto" style="max-width: 154px;">
                             
-                            <a href="inicio.html" class="d-flex align-items-center text-secondary text-decoration-none fw-bold fs-5">
+                            <a href="inicio.php" class="d-flex align-items-center text-secondary text-decoration-none fw-bold fs-5">
                                 <iconify-icon icon="mdi:home" class="fs-3 me-3"></iconify-icon> Inicio
                             </a>
                             
@@ -180,12 +180,12 @@
 
                         </div>
 
-                    </div>
+                    </nav>
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
     </main>
     
@@ -210,7 +210,7 @@
         <div class="offcanvas-body overflow-y-auto">
             <div class="d-flex flex-column gap-4 px-3 mt-3">
                 
-                <a href="inicio.html" class="d-flex align-items-center text-info text-decoration-none fw-bold fs-5">
+                <a href="inicio.php" class="d-flex align-items-center text-info text-decoration-none fw-bold fs-5">
                     <iconify-icon icon="mdi:home" class="fs-3 me-3"></iconify-icon> Inicio
                 </a>
                 
