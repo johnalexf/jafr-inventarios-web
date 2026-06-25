@@ -71,16 +71,16 @@
                         Iniciar sesión
                     </h2>
                     <div class="mt-4 mx-5 ">
-                        <form>
+                        <form action="pages/inicio.php" method="POST">
                             
                             <div class="mb-4">
                                 <label for="emailLogin" class="form-label">Correo:</label>
-                                <input type="email" class="form-control" id="emailLogin" required>
+                                <input type="email" class="form-control" id="emailLogin">
                             </div>
 
                             <div class="mb-2">
                                 <label for="passwordLogin" class="form-label">Contraseña:</label>
-                                <input type="password" class="form-control" id="passwordLogin" required>
+                                <input type="password" class="form-control" id="passwordLogin">
                             </div>
 
                             <div class="mb-4 text-center">
