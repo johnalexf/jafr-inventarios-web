@@ -43,4 +43,12 @@ document.addEventListener('DOMContentLoaded', function(){
         divFormularioLogin.classList.add('d-none');
     }
 
+
+    // Instanciamos el modal usando el motor de JavaScript de Bootstrap
+    const modalBienvenidaElement = document.getElementById('modalBienvenida');
+    const modalBienvenida = new bootstrap.Modal(modalBienvenidaElement);
+    
+    // Le ordenamos que se muestre inmediatamente al cargar la página
+    modalBienvenida.show();
+
 });

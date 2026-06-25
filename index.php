@@ -47,7 +47,7 @@
     </header>
     
     <main class="container-sm px-sm-0 pb-5 h-100">
-        
+
         <!--autenticacion o registro  -->
         <div class="px-1 px-sm-2 px-md-5 pb-5 d-flex flex-column flex-lg-row justify-content-center align-items-center ">
  
@@ -262,9 +262,34 @@
             <!-- Fin Seccion para el formulario de registro de un usuario -->
             
         </div>
-        
+
     </main>
     
+    <!-- Modal explicacion de funcionamiento-->
+    <div class="modal fade" id="modalBienvenida" tabindex="-1" aria-labelledby="modalInformacion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalInformacion">¡Bienvenido al prototipo de JAFR!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Esta página web es un prototipo interactivo en construcción. Actualmente no almacena ni procesa información real.
+                </p>
+                <p>
+                    Te invitamos a explorar el diseño libremente. Puedes simular el inicio de sesión haciendo clic directamente en el botón <strong>Ingresar</strong>, sin necesidad de escribir credenciales.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendido</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    
+
     <!-- Bootstrap JS -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
