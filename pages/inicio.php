@@ -50,9 +50,13 @@
 
                 <div class="px-2 px-md-3 py-1 py-md-2 border rounded-4 bg-surface d-flex align-items-center ">
 
+                <!-- Icono de menu lateral para pantallas menores a lg -->
+                 <!-- Por medio de offcanvas de boostrap podemos mostrar un menu lateral -->
                     <iconify-icon 
-                        icon="mdi:account-badge" 
-                        class="fs-1 d-md-none">
+                        icon="mdi:menu" 
+                        class="fs-1 d-md-none jafr-icon"
+                        data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral"
+                        >
                     </iconify-icon>
 
                     <p class="mb-0 fw-semibold fs-6 d-none d-md-block" >
@@ -128,7 +132,8 @@
                 </div>
 
                 <!-- Espacio para la tarjeta del menú -->
-                <div class="col-12 col-md-6" style="max-width: 400px;">
+                 <!-- Esta tarjeta desaparece en pantallas menores a lg y se puede acceder a un menu desplegable con las mismas caracteristicas por medio de un boton en el header -->
+                <div class="col-12 col-md-6 d-none d-md-block" style="max-width: 400px;">
 
                     <!-- Tarjeta del menú -->
                     <div class="bg-white rounded-4 shadow-sm py-4 h-100">
@@ -190,6 +195,60 @@
             <small>&copy; 2026 JAFR - Administra tu negocio. <span class="d-block d-sm-inline">Prototipo de interfaz.</span></small>
         </div>
     </footer>
+
+    <!-- Contenedor principal del menu lateral -->
+    <nav class="offcanvas offcanvas-end rounded-4" tabindex="-1" id="menuLateral" aria-labelledby="etiquetaMenuLateral" style = "max-height: 620px; width:270px">
+    
+        <div class="offcanvas-header border-bottom">
+            <div class="d-flex align-items-center text-primary">
+                <iconify-icon icon="mdi:account-badge" class="fs-1 me-2"></iconify-icon>
+                <h3 class="offcanvas-title fs-5 fw-bold" id="etiquetaMenuLateral">Menu - Administrador</h3>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        
+        <div class="offcanvas-body overflow-y-auto">
+            <div class="d-flex flex-column gap-4 px-3 mt-3">
+                
+                <a href="inicio.html" class="d-flex align-items-center text-info text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="mdi:home" class="fs-3 me-3"></iconify-icon> Inicio
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="mdi:users" class="fs-3 me-3"></iconify-icon> Usuarios
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="mdi:bread" class="fs-3 me-3"></iconify-icon> Productos
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="clarity:building-line" class="fs-3 me-3"></iconify-icon> Proveedores
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="bxs:store" class="fs-3 me-3"></iconify-icon> Clientes
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="fa7-solid:bag-shopping" class="fs-3 me-3"></iconify-icon> Compras
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="bi:cash-coin" class="fs-3 me-3"></iconify-icon> Ventas
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="mingcute:cube-fill" class="fs-3 me-3"></iconify-icon> Inventario
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="mdi:file-chart" class="fs-3 me-3"></iconify-icon> Reporte
+                </a>
+
+            </div>
+        </div>
+    </nav>
 
     <!-- Bootstrap JS -->
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
