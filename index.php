@@ -35,13 +35,18 @@
         <nav class="navbar bg-white rounded-1">
             <div class="container-fluid d-flex justify-content-center align-items-center">
                 
-                <a class="navbar-brand" href="index.php">
-                    <img src="assets/img/logo.png" alt="Logo" class="logo">
-                </a>
-                
                 <h1 class="mb-0 text-primary fw-bold fs-3 text-center px-3 py-2">
-                    Bienvenido a JAFR administra tu negocio
+                    <span>
+                        Bienvenido a
+                    </span>
+                    <a class="navbar-brand m-0 p-0" href="index.php">
+                        <img src="assets/img/logo.png" alt="JAFR" class="logo">
+                    </a>
+                    <span>
+                        administra tu negocio
+                    </span>
                 </h1>
+
             </div>
         </nav>
     </header>
