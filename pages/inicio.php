@@ -30,7 +30,7 @@
 <body class="vh-100 d-flex flex-column">
 
     <header class="p-1">
-        <nav class="navbar bg-white rounded-1 shadow-sm">
+        <div class="navbar bg-white rounded-1 shadow-sm">
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 
                 <a class="navbar-brand m-0" href="inicio.php">
@@ -65,7 +65,7 @@
                 </div>
                 
             </div>
-        </nav>
+        </div>
     </header>
 
     <main class="flex-grow-1 overflow-y-auto d-flex flex-column">
