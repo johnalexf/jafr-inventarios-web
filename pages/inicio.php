@@ -29,6 +29,42 @@
 </head>
 <body>
 
+    <header class="p-1">
+        <nav class="navbar bg-white rounded-1">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                
+                <a class="navbar-brand m-0" href="inicio.php">
+                    <img src="../assets/img/logo.png" alt="Logo" class="logo">
+                </a>
+                
+                <div class="d-flex align-items-center text-primary pe-5 pe-md-0">
+                    <h1 class="mb-0 fw-bold fs-3 d-none d-lg-block ">
+                        Nombre de la empresa /
+                    </h1>
+                    <iconify-icon 
+                        icon="mdi:home" 
+                        class="px-1 fs-2" >
+                    </iconify-icon>
+                    <h1 class="mb-0 fw-bold fs-3">Inicio</h1>    
+                </div>
+
+                <div class="px-2 px-md-3 py-1 py-md-2 border rounded-4 bg-surface d-flex align-items-center ">
+
+                    <iconify-icon 
+                        icon="mdi:account-badge" 
+                        class="fs-1 d-md-none">
+                    </iconify-icon>
+
+                    <p class="mb-0 fw-semibold fs-6 d-none d-md-block" >
+                        Administrador
+                    </p>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+
+
     <!-- Bootstrap JS -->
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
