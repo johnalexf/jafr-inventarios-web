@@ -159,35 +159,35 @@
                                 <iconify-icon icon="mdi:home" class="fs-3 me-3"></iconify-icon> Inicio
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                            <a href="usuarios.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="mdi:users" class="fs-3 me-3"></iconify-icon> Usuarios
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                            <a href="productos.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="mdi:bread" class="fs-3 me-3"></iconify-icon> Productos
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                            <a href="proveedores.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="clarity:building-line" class="fs-3 me-3"></iconify-icon> Proveedores
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                            <a href="clientes.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="bxs:store" class="fs-3 me-3"></iconify-icon> Clientes
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                            <a href="compras.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="fa7-solid:bag-shopping" class="fs-3 me-3"></iconify-icon> Compras
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                            <a href="ventas.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="bi:cash-coin" class="fs-3 me-3"></iconify-icon> Ventas
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                            <a href="inventario" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="mingcute:cube-fill" class="fs-3 me-3"></iconify-icon> Inventario
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                            <a href="reporte" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="mdi:file-chart" class="fs-3 me-3"></iconify-icon> Reporte
                             </a>
 
@@ -227,35 +227,35 @@
                     <iconify-icon icon="mdi:home" class="fs-3 me-3"></iconify-icon> Inicio
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="usuarios.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mdi:users" class="fs-3 me-3"></iconify-icon> Usuarios
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="productos.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mdi:bread" class="fs-3 me-3"></iconify-icon> Productos
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="proveedores.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="clarity:building-line" class="fs-3 me-3"></iconify-icon> Proveedores
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="clientes.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="bxs:store" class="fs-3 me-3"></iconify-icon> Clientes
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="compras.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="fa7-solid:bag-shopping" class="fs-3 me-3"></iconify-icon> Compras
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="ventas.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="bi:cash-coin" class="fs-3 me-3"></iconify-icon> Ventas
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="inventario" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mingcute:cube-fill" class="fs-3 me-3"></iconify-icon> Inventario
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="reporte" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mdi:file-chart" class="fs-3 me-3"></iconify-icon> Reporte
                 </a>
 
