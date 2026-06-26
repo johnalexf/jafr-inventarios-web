@@ -17,11 +17,13 @@
     width: 100%;
 }
 
-/* Breakpoint para pantallas grandes (lg: 992px) */
+/* Breakpoint para pantallas pequeñas (sm: 576px) */
 @media (min-width: 576px) {
     .jafr-form-group {
         flex-direction: row;
         align-items: center;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
     }
 
     .jafr-form-label {

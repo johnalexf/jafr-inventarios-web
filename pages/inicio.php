@@ -25,6 +25,7 @@
 
     <!-- Estilos propios -->
     <link href="../assets/css/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/formularios.css">
 
 </head>
 <body class="vh-100 d-flex flex-column">
@@ -265,10 +266,10 @@
 
     <!-- Modal Editar usuario-->
     <div class="modal fade" id="modalEditarUsuario" tabindex="-1" aria-labelledby="modalTitulo-EditarUsuario" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-dialog modal-dialog-centered">
 
-            <!-- Contenido del modal -->
-            <div class="modal-content">
+            <!-- Contenido del modal que va mostrar un formulario -->
+            <form class="modal-content" id="formularioEditarUsuario">
 
                 <!-- Titulo del modal y boton cerrar modal -->
                 <div class="modal-header position-relative">
@@ -287,15 +288,88 @@
                     </button>
                 </div>
 
-                <!-- Cuerpo del modal -->
-                <div class="modal-body">
-                    
+                <!-- Cuerpo del modal contenido de los input del formulario-->
+                <div class="modal-body px-4">
+                
+                    <!-- Seccion del formulario para editar nombre completo -->
+                    <fieldset class="mb-3 px-2">
+                        <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
+                            Cuenta
+                        </legend>
+
+                        <div class="jafr-form-group">
+                            <label for="alias" class="jafr-form-label">Alias:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="alias" name="alias" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Seccion del formulario para editar nombre completo -->
+                    <fieldset class="mb-3 px-2">
+                        <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
+                            Nombre Completo
+                        </legend>
+
+                        <div class="jafr-form-group">
+                            <label for="primerNombre" class="jafr-form-label">Primer Nombre:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="primerNombre" name="primerNombre" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+                        
+                        <div class="jafr-form-group">
+                            <label for="segundoNombre" class="jafr-form-label">Segundo Nombre:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="segundoNombre" name="segundoNombre" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+                        <div class="jafr-form-group">
+                            <label for="primerApellido" class="jafr-form-label">Primer apellido:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="primerApellido" name="primerApellido" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+                        <div class="jafr-form-group">
+                            <label for="segundoApellido" class="jafr-form-label">Segundo apellido:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="segundoApellido" name="segundoApellido" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Fin Seccion del formulario para editar nombre completo -->
+
+
+                    <!-- Seccion del formulario para editar datos de contacto -->
+                    <fieldset class="px-2">
+                        <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
+                            Datos de contacto
+                        </legend>
+
+                        <div class="jafr-form-group">
+                            <label for="telefono" class="jafr-form-label">Teléfono:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="tel" id="telefono" name="telefono" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+                        <div class="jafr-form-group">
+                            <label for="correo" class="jafr-form-label">Correo:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="email" id="correo" name="correo" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Fin Seccion del formulario para editar datos de contacto -->
+
                 </div>
 
                 <!-- Footer del modal contiene los botones de acción -->
                 <div class="modal-footer flex-column justify-content-center">
                     <button 
-                        type="button" 
+                        type="submit" 
                         class="btn btn-primary fw-bold px-5 shadow" 
                         data-bs-dismiss="modal">
                             Actualizar
@@ -303,6 +377,7 @@
                     <!-- Contenedor acciones de editar otra informacion o (deshabilitar o eliminar)modificar el estado de un objeto -->
                     <div class="w-100 d-flex justify-content-start"> 
                         <button
+                            type="button"
                             class="btn btn-link link-secondary py-0 fw-bold"
                         >
                             Editar contraseña
@@ -310,7 +385,7 @@
                     </div>
                 </div>
 
-            </div>
+            </form>
 
         </div>
     </div>
