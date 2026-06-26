@@ -43,8 +43,8 @@
     --bs-btn-border-color: var(--bs-primary);
     
     /* Colores para cuando el mouse pasa por encima (Hover) */
-    --bs-btn-hover-bg: #0b1a40; /* Un azul un poco más oscuro que primary */
-    --bs-btn-hover-border-color: #0b1a40;
+    --bs-btn-hover-bg: #0a0b33; /* Un azul un poco más oscuro que primary */
+    --bs-btn-hover-border-color: #0a0b33;
     
 }
 

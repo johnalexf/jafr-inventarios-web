@@ -27,17 +27,24 @@
     <link href="../assets/css/global.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="vh-100 d-flex flex-column">
 
-        <header class="p-1">
-        <nav class="navbar bg-white rounded-1 shadow-sm">
+    <!-- Barra superior con logo, título y menú desplegable con offcanvas -->
+    <header class="p-1">
+
+        <!-- Contenedor principal con diseño navbar aun que no es directamente el nav tiene el boton que lleva al navbar  -->
+        <div class="navbar bg-white rounded-1 shadow-sm">
+
+            <!-- Contenedor secundario por defecto configuracion de boostrap -->
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 
-                <a class="navbar-brand m-0" href="inicio.php">
+                <!-- Logotipo de la pagina (Enlace al home) -->
+                <a class="navbar-brand m-0 p-0" href="inicio.php">
                     <img src="../assets/img/logo.png" alt="Logo" class="logo">
                 </a>
                 
-                <h1 class="d-flex align-items-center text-primary pe-5 pe-md-0 mb-0 fw-bold fs-3">
+                <!-- Titulo con nombre de la empresa y seccion en donde se encuentra el usuario (el nombre de la empresa se oculta en pantallas pequeñas para mejorar la visualizacion)-->
+                <h1 class="d-flex align-items-center text-primary pe-4 pe-md-0 mb-0 fw-bold fs-3">
                     <span class=" d-none d-lg-block ">
                         Nombre de la empresa /
                     </span>
@@ -48,20 +55,41 @@
                     <span>Inicio</span>    
                 </h1>
 
-                <div class="px-2 px-md-3 py-1 py-md-2 border rounded-4 bg-surface d-flex align-items-center ">
+                <!-- Contenedor del rol y del boton de menu de navegacion -->
+                <div class="d-flex gap-3">
+                    
+                    <!-- Contenedor del rol del usuario -->
+                    <div class="px-3 border rounded-4 bg-surface d-none d-md-flex align-items-center">
+                        <p class="mb-0 fw-semibold fs-6">
+                            Administrador
+                        </p>
+                    </div>
+                    
+                    <!-- boton del menu -->
+                    <button 
+                        class="btn btn-primary rounded-4 d-flex align-items-center gap-2"
+                        type="button"
+                        data-bs-toggle="offcanvas" 
+                        data-bs-target="#menuLateral" 
+                        aria-controls="menuLateral"
+                    >
 
-                    <iconify-icon 
-                        icon="mdi:account-badge" 
-                        class="fs-1 d-md-none">
-                    </iconify-icon>
+                        <span class="mb-0 fw-semibold fs-6 d-none d-md-block" >
+                            Menú
+                        </span>
+                        <!-- Icono de menu lateral para pantallas menores a lg -->
+                        <!-- Por medio de offcanvas de boostrap podemos mostrar un menu lateral -->
+                        <iconify-icon 
+                            icon="mdi:menu" 
+                            class="fs-2"
+                            >
+                        </iconify-icon>
 
-                    <p class="mb-0 fw-semibold fs-6 d-none d-md-block" >
-                        Administrador
-                    </p>
+                    </button>
                 </div>
-                
+
             </div>
-        </nav>
+        </div>
     </header>
 
     <main class="flex-grow-1 overflow-y-auto p-3 p-md-4">
@@ -74,6 +102,67 @@
             <small>&copy; 2026 JAFR - Administra tu negocio. <span class="d-block d-sm-inline">Prototipo de interfaz.</span></small>
         </div>
     </footer>
+
+
+    <!-- Contenedor principal del menu lateral se activa con el boton en el header-->
+    <nav class="offcanvas offcanvas-end rounded-4" tabindex="-1" id="menuLateral" aria-labelledby="etiquetaMenuLateral" style = "max-height: 620px; width:270px">
+    
+        <!-- Encabezado del menu lateral -->
+        <div class="offcanvas-header border-bottom">
+
+            <!-- Identificacion del rol en el menú -->
+            <div class="d-flex align-items-center text-primary">
+                <iconify-icon icon="mdi:account-badge" class="fs-1 me-2"></iconify-icon>
+                <h3 class="offcanvas-title fs-5 fw-bold" id="etiquetaMenuLateral">Menu  Administrador</h3>
+            </div>
+
+            <!-- Boton para cerrar el menu lateral -->
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        
+        <!-- Cuerpo del menu lateral (lista de enlaces a los modulos) -->
+        <div class="offcanvas-body overflow-y-auto">
+            <div class="d-flex flex-column gap-4 px-3 mt-3">
+                
+                <a href="inicio.php" class="d-flex align-items-center text-info text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="mdi:home" class="fs-3 me-3"></iconify-icon> Inicio
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="mdi:users" class="fs-3 me-3"></iconify-icon> Usuarios
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="mdi:bread" class="fs-3 me-3"></iconify-icon> Productos
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="clarity:building-line" class="fs-3 me-3"></iconify-icon> Proveedores
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="bxs:store" class="fs-3 me-3"></iconify-icon> Clientes
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="fa7-solid:bag-shopping" class="fs-3 me-3"></iconify-icon> Compras
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="bi:cash-coin" class="fs-3 me-3"></iconify-icon> Ventas
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="mingcute:cube-fill" class="fs-3 me-3"></iconify-icon> Inventario
+                </a>
+                
+                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                    <iconify-icon icon="mdi:file-chart" class="fs-3 me-3"></iconify-icon> Reporte
+                </a>
+
+            </div>
+        </div>
+    </nav>
 
     <!-- Bootstrap JS -->
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
