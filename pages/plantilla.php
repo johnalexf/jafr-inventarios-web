@@ -25,6 +25,7 @@
 
     <!-- Estilos propios -->
     <link href="../assets/css/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/formularios.css">
 
 </head>
 <body class="vh-100 d-flex flex-column">
@@ -94,6 +95,16 @@
 
     <main class="flex-grow-1 overflow-y-auto p-3 p-md-4">
 
+        <!-- boton para activar el modal de ejemplo -->
+        <button 
+            type="button" 
+            class="btn btn-link p-0 link-primary fw-bold" 
+            data-bs-toggle="modal" 
+            data-bs-target="#modalEditarUsuario"
+        >
+            Activar modal
+        </button>
+
     </main>
     
 
@@ -128,41 +139,169 @@
                     <iconify-icon icon="mdi:home" class="fs-3 me-3"></iconify-icon> Inicio
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="usuarios.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mdi:users" class="fs-3 me-3"></iconify-icon> Usuarios
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="productos.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mdi:bread" class="fs-3 me-3"></iconify-icon> Productos
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="proveedores.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="clarity:building-line" class="fs-3 me-3"></iconify-icon> Proveedores
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="clientes.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="bxs:store" class="fs-3 me-3"></iconify-icon> Clientes
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="compras.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="fa7-solid:bag-shopping" class="fs-3 me-3"></iconify-icon> Compras
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="ventas.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="bi:cash-coin" class="fs-3 me-3"></iconify-icon> Ventas
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="inventario.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mingcute:cube-fill" class="fs-3 me-3"></iconify-icon> Inventario
                 </a>
                 
-                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="reporte.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mdi:file-chart" class="fs-3 me-3"></iconify-icon> Reporte
                 </a>
 
             </div>
         </div>
     </nav>
+
+     <!-- Modal de Ejemplo con formulario -->
+    <div class="modal fade" id="modalEditarUsuario" tabindex="-1" 
+        aria-labelledby="modalTitulo-EditarUsuario" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Contenido del modal que va mostrar un formulario -->
+            <form class="modal-content" id="formularioEditarUsuario">
+
+                <!-- Titulo del modal y boton cerrar modal -->
+                <div class="modal-header position-relative">
+                    <h3 class="modal-title fs-5 fw-bold mx-auto" id="modalTitulo-EditarUsuario">
+                        Editar Usuario
+                    </h3>
+                    <button 
+                        type="button" 
+                        class="btn btn-link link-dark d-flex position-absolute end-0 top-0 p-2 opacity-75" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close">
+                            <iconify-icon
+                                icon="carbon:close-filled"
+                                class="my-auto fs-3">
+                            </iconify-icon>
+                    </button>
+                </div>
+
+                <!-- Cuerpo del modal contenido de los input del formulario-->
+                <div class="modal-body px-4">
+                
+                    <!-- Seccion del formulario para editar nombre completo -->
+                    <fieldset class="mb-3 px-2">
+                        <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
+                            Cuenta
+                        </legend>
+
+                        <div class="jafr-form-group">
+                            <label for="alias" class="jafr-form-label">Alias:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="alias" name="alias" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Seccion del formulario para editar nombre completo -->
+                    <fieldset class="mb-3 px-2">
+                        <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
+                            Nombre Completo
+                        </legend>
+
+                        <div class="jafr-form-group">
+                            <label for="primerNombre" class="jafr-form-label">Primer Nombre:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="primerNombre" name="primerNombre" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+                        
+                        <div class="jafr-form-group">
+                            <label for="segundoNombre" class="jafr-form-label">Segundo Nombre:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="segundoNombre" name="segundoNombre" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+                        <div class="jafr-form-group">
+                            <label for="primerApellido" class="jafr-form-label">Primer apellido:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="primerApellido" name="primerApellido" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+                        <div class="jafr-form-group">
+                            <label for="segundoApellido" class="jafr-form-label">Segundo apellido:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="segundoApellido" name="segundoApellido" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Fin Seccion del formulario para editar nombre completo -->
+
+
+                    <!-- Seccion del formulario para editar datos de contacto -->
+                    <fieldset class="px-2">
+                        <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
+                            Datos de contacto
+                        </legend>
+
+                        <div class="jafr-form-group">
+                            <label for="telefono" class="jafr-form-label">Teléfono:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="tel" id="telefono" name="telefono" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+                        <div class="jafr-form-group">
+                            <label for="correo" class="jafr-form-label">Correo:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="email" id="correo" name="correo" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Fin Seccion del formulario para editar datos de contacto -->
+
+                </div>
+
+                <!-- Footer del modal contiene los botones de acción -->
+                <div class="modal-footer flex-column justify-content-center">
+                    <button 
+                        type="submit" 
+                        class="btn btn-primary fw-bold px-5 shadow" 
+                        data-bs-dismiss="modal">
+                            Actualizar
+                    </button>
+                    <!-- Contenedor acciones de editar otra informacion o (deshabilitar o eliminar)modificar el estado de un objeto -->
+                    <div class="w-100 d-flex justify-content-start"> 
+                        <button
+                            type="button"
+                            class="btn btn-link link-secondary py-0 fw-bold"
+                        >
+                            Editar contraseña
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
 
     <!-- Bootstrap JS -->
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
