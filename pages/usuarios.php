@@ -26,6 +26,7 @@
     <!-- Estilos propios -->
     <link href="../assets/css/global.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/formularios.css">
+    <link rel="stylesheet" href="../assets/css/tablasYListas.css">
 
 </head>
 <body class="vh-100 d-flex flex-column">
@@ -91,11 +92,102 @@
 
             </div>
         </div>
+
     </header>
 
     <main class="flex-grow-1 overflow-y-auto p-3 p-md-4">
 
-        
+        <!-- Contenedor del buscador -->
+        <div class="container">
+
+        </div>
+
+
+        <!-- Contenedor principal de la tabla con la lista de usuarios -->
+         <div class="table-responsive d-none d-md-block">
+
+            <table class="table">
+                <caption class="visually-hidden">Lista de usuarios</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Alias</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Rol</th>
+                        <th scope="col">Editar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">001</th>
+                        <td>johnalexfr</td>
+                        <td>John Alexander Forero Rubio</td>
+                        <td>Usuario1@gmail.com</td>
+                        <td>3105953212</td>
+                        <td>Vendedor</td>
+                        <td>
+                            <button
+                                class="btn btn-link link-primary m-auto p-0 d-flex"
+                                title="editar usuario"
+                            >
+                                <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="desactivado">
+                        <th scope="row">001</th>
+                        <td>johnalexfr</td>
+                        <td>John Alexander Forero Rubio</td>
+                        <td>Usuario1@gmail.com</td>
+                        <td>3105953212</td>
+                        <td>Vendedor</td>
+                        <td>
+                            <button
+                                class="btn btn-link link-primary m-auto p-0 d-flex"
+                                title="editar usuario"
+                            >
+                                <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">001</th>
+                        <td>johnalexfr</td>
+                        <td>John Alexander Forero Rubio</td>
+                        <td>Usuario1@gmail.com</td>
+                        <td>3105953212</td>
+                        <td>Vendedor</td>
+                        <td>
+                            <button
+                                class="btn btn-link link-primary m-auto p-0 d-flex"
+                                title="editar usuario"
+                            >
+                                <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">001</th>
+                        <td>johnalexfr</td>
+                        <td>John Alexander Forero Rubio</td>
+                        <td>Usuario1@gmail.com</td>
+                        <td>3105953212</td>
+                        <td>Administrador</td>
+                        <td>
+                            <button
+                                class="btn btn-link link-primary m-auto p-0 d-flex"
+                                title="editar usuario"
+                            >
+                                <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
 
         <!-- boton para activar el modal de ejemplo -->
         <button 

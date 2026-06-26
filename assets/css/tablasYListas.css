@@ -1,0 +1,25 @@
+/* =====================================================
+   Componentes de Visualización: Tablas y Listas
+   ===================================================== */
+
+/* Configuración básica de celdas para asegurar alineación uniforme */
+.table th,
+.table td {
+    text-align: center;
+    padding: 1rem 0.4rem;
+}
+
+/* Espaciado entre filas para simular el efecto de tarjetas separadas */
+.table tr {
+    border-color: var(--color-surface);
+    border-width: 0.7rem;
+}
+
+/* Estilo específico para filas de registros inactivos (lógica de estado) */
+.table tr.desactivado > td,
+.table tr.desactivado > th {
+    background-color: var(--color-surface-50);
+}
+        
+    
+        
