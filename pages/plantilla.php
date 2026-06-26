@@ -124,39 +124,39 @@
         <div class="offcanvas-body overflow-y-auto">
             <div class="d-flex flex-column gap-4 px-3 mt-3">
                 
-                <a href="inicio.php" class="d-flex align-items-center text-info text-decoration-none fw-bold fs-5">
+                <a href="inicio.php" class="d-flex align-items-center link-secondary fw-bold fs-5">
                     <iconify-icon icon="mdi:home" class="fs-3 me-3"></iconify-icon> Inicio
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mdi:users" class="fs-3 me-3"></iconify-icon> Usuarios
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mdi:bread" class="fs-3 me-3"></iconify-icon> Productos
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="clarity:building-line" class="fs-3 me-3"></iconify-icon> Proveedores
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="bxs:store" class="fs-3 me-3"></iconify-icon> Clientes
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="fa7-solid:bag-shopping" class="fs-3 me-3"></iconify-icon> Compras
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="bi:cash-coin" class="fs-3 me-3"></iconify-icon> Ventas
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mingcute:cube-fill" class="fs-3 me-3"></iconify-icon> Inventario
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mdi:file-chart" class="fs-3 me-3"></iconify-icon> Reporte
                 </a>
 

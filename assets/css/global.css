@@ -58,6 +58,10 @@
     
 }
 
+.btn-link{
+    text-decoration: none;
+}
+
 /* =====================================================
    Configuración global del documento
    ===================================================== */
@@ -93,15 +97,22 @@ h6 {
     font-family: var(--font-title);
 }
 
-
 /* =====================================================
-   Iconos
+   Links
    ===================================================== */
-
-.jafr-icon {
-    color: var(--bs-primary);
-    cursor: pointer;
+a {
+    text-decoration: none;
 }
+
+/* Personalizacion a los estilos de link de boostrap */
+a.link-primary:hover,
+a.link-secondary:hover,
+button.btn-link:hover{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
 
 /* =====================================================
    Logo

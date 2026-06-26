@@ -48,21 +48,24 @@
                     <span>Inicio</span>    
                 </h1>
 
-                <div class="px-2 px-md-3 py-1 py-md-2 border rounded-4 bg-surface d-flex align-items-center ">
-
-                <!-- Icono de menu lateral para pantallas menores a lg -->
-                 <!-- Por medio de offcanvas de boostrap podemos mostrar un menu lateral -->
-                    <iconify-icon 
-                        icon="mdi:menu" 
-                        class="fs-1 d-md-none jafr-icon"
-                        data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral"
-                        >
-                    </iconify-icon>
-
-                    <p class="mb-0 fw-semibold fs-6 d-none d-md-block" >
+                <div class="px-3 py-2 border rounded-4 bg-surface d-flex align-items-center d-none d-md-block ">
+                    <p class="mb-0 fw-semibold fs-6" >
                         Administrador
                     </p>
                 </div>
+
+                <!-- Icono de menu lateral para pantallas menores a lg -->
+                 <!-- Por medio de offcanvas de boostrap podemos mostrar un menu lateral -->
+                    <button
+                        class="btn btn-primary rounded-4 d-flex d-md-none" type="button" title="Menu"
+                        data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral"
+                    >
+                        <iconify-icon 
+                            icon="mdi:menu" 
+                            class="fs-2 my-auto"
+                            >
+                        </iconify-icon>
+                    </button>
                 
             </div>
         </div>
@@ -112,20 +115,22 @@
                         <div class="mb-4 text-center">
                             <p class="fw-bold mb-2 text-dark">Código de acceso:</p>
                             <div class="d-flex align-items-center justify-content-center gap-1">
-                                <div class="input-group border border-dark rounded" style="max-width: 250px;">
+                                <div class="input-group border border-dark rounded" style="max-width: 270px;">
                                     <input type="text" class="form-control border-0 text-center fw-semibold text-secondary" value="XASDfsaE#324323cxSD" readonly>
-                                    <button class="btn btn-white border-0 text-primary d-flex align-items-center m-0 p-0 pe-1" type="button" title="Copiar código">
-                                        <iconify-icon icon="pixel:copy-solid" class="fs-4"></iconify-icon>
+                                    <button class="btn btn-link p-0 border-0 link-primary d-flex pe-1" title="Copiar código">
+                                        <iconify-icon icon="pixel:copy-solid" class="fs-3 my-auto"></iconify-icon>
                                     </button>
                                 </div>
-                                <iconify-icon icon="fluent:chat-help-24-filled" class="fs-2 text-primary" style="cursor: pointer;"></iconify-icon>
+                                <button class="btn btn-link p-0 link-primary d-flex" type="button" title="Ayuda">
+                                    <iconify-icon icon="fluent:chat-help-24-filled" class="fs-2 my-auto"></iconify-icon>
+                                </button>
                             </div>
                         </div>
 
                         <!-- Acciones a ejecutar sobre el perfil del usuario -->
                         <div class="d-flex justify-content-between pt-3">
-                            <a href="../index.php" class="text-primary fw-bold text-decoration-none">Cerrar Sesión</a>
-                            <a href="#" class="text-primary fw-bold text-decoration-none">Editar Usuario</a>
+                            <a href="../index.php" class="link-primary fw-bold ">Cerrar Sesión</a>
+                            <button class="btn btn-link p-0 link-primary fw-bold" type="button">Editar Usuario</button>
                         </div>
 
                     </section>
@@ -142,39 +147,39 @@
 
                         <div class="d-flex flex-column gap-4 mx-auto" style="max-width: 154px;">
                             
-                            <a href="inicio.php" class="d-flex align-items-center text-secondary text-decoration-none fw-bold fs-5">
+                            <a href="inicio.php" class="d-flex align-items-center link-secondary fw-bold fs-5">
                                 <iconify-icon icon="mdi:home" class="fs-3 me-3"></iconify-icon> Inicio
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="mdi:users" class="fs-3 me-3"></iconify-icon> Usuarios
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="mdi:bread" class="fs-3 me-3"></iconify-icon> Productos
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="clarity:building-line" class="fs-3 me-3"></iconify-icon> Proveedores
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="bxs:store" class="fs-3 me-3"></iconify-icon> Clientes
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="fa7-solid:bag-shopping" class="fs-3 me-3"></iconify-icon> Compras
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="bi:cash-coin" class="fs-3 me-3"></iconify-icon> Ventas
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="mingcute:cube-fill" class="fs-3 me-3"></iconify-icon> Inventario
                             </a>
                             
-                            <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                            <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                                 <iconify-icon icon="mdi:file-chart" class="fs-3 me-3"></iconify-icon> Reporte
                             </a>
 
@@ -202,7 +207,7 @@
         <div class="offcanvas-header border-bottom">
             <div class="d-flex align-items-center text-primary">
                 <iconify-icon icon="mdi:account-badge" class="fs-1 me-2"></iconify-icon>
-                <h3 class="offcanvas-title fs-5 fw-bold" id="etiquetaMenuLateral">Menu - Administrador</h3>
+                <h3 class="offcanvas-title fs-5 fw-bold" id="etiquetaMenuLateral">Menu Administrador</h3>
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -210,39 +215,39 @@
         <div class="offcanvas-body overflow-y-auto">
             <div class="d-flex flex-column gap-4 px-3 mt-3">
                 
-                <a href="inicio.php" class="d-flex align-items-center text-info text-decoration-none fw-bold fs-5">
+                <a href="inicio.php" class="d-flex align-items-center link-secondary fw-bold fs-5">
                     <iconify-icon icon="mdi:home" class="fs-3 me-3"></iconify-icon> Inicio
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mdi:users" class="fs-3 me-3"></iconify-icon> Usuarios
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mdi:bread" class="fs-3 me-3"></iconify-icon> Productos
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="clarity:building-line" class="fs-3 me-3"></iconify-icon> Proveedores
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="bxs:store" class="fs-3 me-3"></iconify-icon> Clientes
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="fa7-solid:bag-shopping" class="fs-3 me-3"></iconify-icon> Compras
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="bi:cash-coin" class="fs-3 me-3"></iconify-icon> Ventas
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mingcute:cube-fill" class="fs-3 me-3"></iconify-icon> Inventario
                 </a>
                 
-                <a href="#" class="d-flex align-items-center text-primary text-decoration-none fw-bold fs-5">
+                <a href="#" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="mdi:file-chart" class="fs-3 me-3"></iconify-icon> Reporte
                 </a>
 

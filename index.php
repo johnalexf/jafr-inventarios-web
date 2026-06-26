@@ -89,7 +89,7 @@
                             </div>
 
                             <div class="mb-4 text-center">
-                                <a class="btn text-primary text-decoration-none" href="">Recuperar contraseña</a>
+                                <button class="btn btn-link p-0 link-primary" type="button">Recuperar contraseña</button>
                             </div>
 
                             <div class="mb-4 d-flex justify-content-center">
@@ -226,12 +226,14 @@
                             <div class="jafr-form-group">
                                 <label for="codigoAcceso" class="jafr-form-label">Código de acceso:</label>
                                 <div class="jafr-form-input-container position-relative">
-                                    <input type="text" id="codigoAcceso" name="codigoAcceso" class="form-control form-control-sm border border-black">   
-                                    <iconify-icon 
-                                        icon="fluent:chat-help-24-filled" 
-                                        class="position-absolute top-0 end-0 fs-2 pe-2 jafr-icon" 
-                                        id="iconoAyuda">
-                                    </iconify-icon>                                     
+                                    <input type="text" id="codigoAcceso" name="codigoAcceso" class="form-control form-control-sm border border-black"> 
+                                    <button class="btn btn-link p-0 link-primary d-flex" type="button" title="Ayuda">
+                                        <iconify-icon 
+                                            icon="fluent:chat-help-24-filled" 
+                                            class="my-auto position-absolute top-0 end-0 fs-2 pe-2" 
+                                            id="iconoAyuda">
+                                        </iconify-icon>  
+                                    </button>                                       
                                 </div>
                             </div>
                         </fieldset>
