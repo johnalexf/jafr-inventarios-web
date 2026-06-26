@@ -85,7 +85,7 @@
                     <!-- Tarjeta de perfil -->
                     <section class="bg-white rounded-4 shadow-sm px-4 px-sm-5 py-4 d-flex flex-column" aria-labelledby="titulo-perfil">
                         
-                        <h2 class="text-center text-primary fw-bold mb-4 fs-3" id="titulo-perfil">Perfil</h2>
+                        <h2 class="text-center text-primary fw-bold mb-4 fs-4" id="titulo-perfil">Perfil</h2>
 
                         <!-- Informacion del usuario -->
                         <div class="mb-4 fs-6 text-dark">
@@ -130,7 +130,14 @@
                         <!-- Acciones a ejecutar sobre el perfil del usuario -->
                         <div class="d-flex justify-content-between pt-3">
                             <a href="../index.php" class="link-primary fw-bold ">Cerrar Sesión</a>
-                            <button class="btn btn-link p-0 link-primary fw-bold" type="button">Editar Usuario</button>
+                            <button 
+                                type="button" 
+                                class="btn btn-link p-0 link-primary fw-bold" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalEditarUsuario"
+                            >
+                                Editar Usuario
+                            </button>
                         </div>
 
                     </section>
@@ -143,7 +150,7 @@
                     <!-- Tarjeta del menú -->
                     <nav class="bg-white rounded-4 shadow-sm py-4 h-100" aria-label="Menú principal de módulos">
                         
-                        <h2 class="text-center text-primary fw-bold mb-4 fs-3">Menú</h2>
+                        <h2 class="text-center text-primary fw-bold mb-4 fs-4">Menú</h2>
 
                         <div class="d-flex flex-column gap-4 mx-auto" style="max-width: 154px;">
                             
@@ -254,6 +261,59 @@
             </div>
         </div>
     </nav>
+
+
+    <!-- Modal Editar usuario-->
+    <div class="modal fade" id="modalEditarUsuario" tabindex="-1" aria-labelledby="modalTitulo-EditarUsuario" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+
+            <!-- Contenido del modal -->
+            <div class="modal-content">
+
+                <!-- Titulo del modal y boton cerrar modal -->
+                <div class="modal-header position-relative">
+                    <h3 class="modal-title fs-5 fw-bold mx-auto" id="modalTitulo-EditarUsuario">
+                        Editar Usuario
+                    </h3>
+                    <button 
+                        type="button" 
+                        class="btn btn-link link-dark d-flex position-absolute end-0 top-0 p-2 opacity-75" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close">
+                            <iconify-icon
+                                icon="carbon:close-filled"
+                                class="my-auto fs-3">
+                            </iconify-icon>
+                    </button>
+                </div>
+
+                <!-- Cuerpo del modal -->
+                <div class="modal-body">
+                    
+                </div>
+
+                <!-- Footer del modal contiene los botones de acción -->
+                <div class="modal-footer flex-column justify-content-center">
+                    <button 
+                        type="button" 
+                        class="btn btn-primary fw-bold px-5 shadow" 
+                        data-bs-dismiss="modal">
+                            Actualizar
+                    </button>
+                    <!-- Contenedor acciones de editar otra informacion o (deshabilitar o eliminar)modificar el estado de un objeto -->
+                    <div class="w-100 d-flex justify-content-start"> 
+                        <button
+                            class="btn btn-link link-secondary py-0 fw-bold"
+                        >
+                            Editar contraseña
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
