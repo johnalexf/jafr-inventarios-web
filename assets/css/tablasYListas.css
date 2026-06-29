@@ -15,11 +15,61 @@
     border-width: 0.7rem;
 }
 
-/* Estilo específico para filas de registros inactivos (lógica de estado) */
-.table tr.desactivado > td,
-.table tr.desactivado > th {
-    background-color: var(--color-surface-50);
+
+
+/* 
+==================================================================
+   Componente: Grid de Tarjetas (Reemplazo responsive de tabla)
+==================================================================
+*/
+
+.jafr-grid-cards {
+    display: grid;
+    /* auto-fit: ajusta las columnas automáticamente
+       minmax(280px, 1fr): cada tarjeta mide mínimo 280px, 
+       y si sobra espacio, se estira para llenar la fila */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem; /* Espaciado entre tarjetas */
+    width: 100%;
+    padding-bottom: 1rem;
 }
-        
-    
-        
+
+.jafr-card{
+    max-width: 270px;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    border: solid 2px white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.jafr-card > p{
+    margin-bottom: 0.25rem;
+}
+
+.jafr-card-btn-edit{
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+}
+
+
+
+/* 
+==================================================================
+   Clases de Estado (Reutilizables)
+==================================================================
+*/
+
+/* Estilo específico para filas o cards de registros inactivos (lógica de estado) */
+.table tr.item-desactivado > td,
+.table tr.item-desactivado > th,
+.jafr-card.item-desactivado{
+    background-color: var(--color-surface-50);
+    /* En lugar de opacidad general, atenuamos solo el texto.
+       Este gris es similar al text-muted de Bootstrap */
+    color: #6c757d;
+}
+

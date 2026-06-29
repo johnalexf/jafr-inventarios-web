@@ -95,7 +95,7 @@
 
     </header>
 
-    <main class="flex-grow-1 overflow-y-auto p-3 p-md-4">
+    <main class="flex-grow-1 overflow-y-auto p-2 p-sm-4">
 
         <!-- Contenedor del buscador -->
         <div class="container">
@@ -103,9 +103,14 @@
         </div>
 
 
-        <!-- Contenedor principal de la tabla con la lista de usuarios -->
-         <div class="table-responsive d-none d-md-block">
+        <!--
+        Inicio Contenedor principal de la tabla de usuarios esta visual sera despues de pantallas de medida md
+        para pantallas menores se manejan card que estan despues de esta seccion
+        -->
+        <div class="table-responsive d-none d-md-block">
 
+            <!-- Inicio de la tabla de usuarios -->
+            <!-- Los estilos personalizados de la tabla estan en tablasyListas.css para evitar extender el codigo HTML -->
             <table class="table">
                 <caption class="visually-hidden">Lista de usuarios</caption>
                 <thead>
@@ -136,7 +141,7 @@
                             </button>
                         </td>
                     </tr>
-                    <tr class="desactivado">
+                    <tr class="item-desactivado">
                         <th scope="row">001</th>
                         <td>johnalexfr</td>
                         <td>John Alexander Forero Rubio</td>
@@ -186,9 +191,63 @@
                     </tr>
                 </tbody>
             </table>
+            <!-- Fin de la tabla de usuarios -->
 
         </div>
+        <!--
+        Fin Contenedor principal de la tabla de usuarios esta visual sera despues de pantallas de medida md
+        para pantallas menores se manejan card que estan despues de esta seccion
+        -->
 
+
+        <!-- Inicio contenedor de la lista de usuarios esta visual sera antes de pantallas de medida md-->
+        <!-- Los estilos personalizados de la lista estan en tablasyListas.css para evitar extender el codigo HTML -->
+        <div class="d-md-none jafr-grid-cards">
+
+            <!-- Card personalizada para el item 1 -->
+            <div class="jafr-card">
+                <h3 class="fs-5 fw-bold text-primary">
+                    001 - johnalexfr
+                </h3>
+                <hr>
+                <p>John Alexander Forero Rubio</p>
+                <p>Usuario1@gmail.com</p>
+                <p>3105953212</p>
+                <p>Vendedor</p>
+                <div class="jafr-card-btn-edit">
+                    <button
+                        class="btn btn-link link-primary m-auto p-0 d-flex"
+                        title="editar usuario"
+                    >
+                        <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card personalizada para el item 2 -->
+            <div class="jafr-card item-desactivado">
+                <h3 class="fs-5 fw-bold text-primary">
+                    001 - johnalexfr2
+                </h3>
+                <hr>
+                <p>John Alexander Forero Rubio</p>
+                <p>Usuario1@gmail.com</p>
+                <p>3105953212</p>
+                <p>Vendedor</p>
+                <div class="jafr-card-btn-edit">
+                    <button
+                        class="btn btn-link link-primary m-auto p-0 d-flex"
+                        title="editar usuario"
+                    >
+                        <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Fin contenedor de la lista de usuarios esta visual sera antes de pantallas de medida md-->
+
+        
         <!-- boton para activar el modal de ejemplo -->
         <button 
             type="button" 
