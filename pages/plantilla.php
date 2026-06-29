@@ -39,7 +39,7 @@
             <!--Inicio Contenedor secundario por defecto configuracion de boostrap -->
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 
-                <!-- Logotipo de la pagina (Enlace a inicip.php) -->
+                <!-- Logotipo de la pagina (Enlace a inicio.php) -->
                 <a class="navbar-brand m-0 p-0 ajuste-contenedor-logo-pantallas-muy-pequenas" href="inicio.php">
                     <img src="../assets/img/logo.png" alt="Logo" class="logo">
                 </a>
@@ -99,6 +99,7 @@
     </header>
     <!--Fin del header Barra superior con logo, título y menú desplegable con offcanvas -->
 
+
     <!--Inicio del main esta estructurado para que ocupe todo el espacio disponible ademas permite hacer scroll manteniendo el espacio del header y del footer fijo en la pantalla -->
     <main class="flex-grow-1 overflow-y-auto p-3 p-md-4">
 
@@ -114,6 +115,7 @@
 
     </main>
     <!-- Fin del main  -->
+
 
     <!-- Inicio del footer -->
     <footer class="p-1">
@@ -198,8 +200,9 @@
         <!-- Fin del Cuerpo del menu lateral (lista de enlaces a los modulos) -->
 
     </nav>
+    <!-- Fin del nav Contenedor principal del menu lateral se activa con el boton en el header-->
 
-
+    
     <!-- Inicio contenedor Modal de Ejemplo con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->
     <div class="modal fade" id="modalEditarUsuario" tabindex="-1" 
         aria-labelledby="modalTitulo-EditarUsuario" aria-hidden="true">
