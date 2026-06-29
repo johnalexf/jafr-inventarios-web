@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./assets/css/index.css">
 
 </head>
-<body class="vh-100 bg-white overflow-lg-hidden">
+<body class="container-xxl px-0 vh-100 bg-white overflow-lg-hidden">
     
     <!-- Inicio del header: Barra superior con logoy título-->
     <header class="p-1">

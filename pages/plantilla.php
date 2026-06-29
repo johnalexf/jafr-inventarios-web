@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="../assets/css/formularios.css">
 
 </head>
-<body class="vh-100 d-flex flex-column">
+<body class="container-xxl px-0 vh-100 d-flex flex-column">
 
     <!--Inicio del header: Barra superior con logo, título y menú desplegable con offcanvas -->
     <header class="p-1">
