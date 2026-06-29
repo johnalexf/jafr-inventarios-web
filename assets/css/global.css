@@ -132,6 +132,12 @@ button.btn-link:hover{
     width: 100% !important;
 }
 
+@media(max-width: 380px){
+    .ajuste-contenedor-logo-pantallas-muy-pequenas{
+        display: none;
+    }
+}
+
 @media (min-width: 576px) {
     .w-sm-75 {
         width: 75% !important;

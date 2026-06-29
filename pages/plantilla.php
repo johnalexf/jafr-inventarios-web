@@ -40,7 +40,7 @@
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 
                 <!-- Logotipo de la pagina (Enlace a inicip.php) -->
-                <a class="navbar-brand m-0 p-0" href="inicio.php">
+                <a class="navbar-brand m-0 p-0 ajuste-contenedor-logo-pantallas-muy-pequenas" href="inicio.php">
                     <img src="../assets/img/logo.png" alt="Logo" class="logo">
                 </a>
                 
