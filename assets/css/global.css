@@ -159,3 +159,17 @@ button.btn-link:hover{
     }
 }
 
+
+/* =====================================================
+   Modificando comportamiento de offcanvas-end
+   ===================================================== */
+/* Como se ha aplicado .container-xxl al body para que en pantallas muy grandes no se expanda el contenido
+    se dio la necesidad de correr el navbar que se esta utilizando con offcanvas para que mantenga dentro 
+    de la proporcion de la distribucion del body 
+*/
+
+@media (min-width: 1320px) {
+    .offcanvas.offcanvas-end {
+        right: calc((100vw - 1320px) / 2);
+    }
+}
