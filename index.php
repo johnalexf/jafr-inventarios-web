@@ -31,8 +31,13 @@
 </head>
 <body class="vh-100 bg-white overflow-lg-hidden">
     
+    <!-- Inicio del header: Barra superior con logoy título-->
     <header class="p-1">
-        <nav class="navbar bg-white rounded-1">
+
+        <!--Inicio Contenedor principal con diseño navbar aun que no es de navegacion se usa la estructura por defecto de boostrap  -->
+        <div class="navbar bg-white rounded-1">
+
+            <!--Inicio Contenedor secundario por defecto configuracion de boostrap -->
             <div class="container-fluid d-flex justify-content-center align-items-center">
                 
                 <h1 class="mb-0 text-primary fw-bold fs-3 text-center px-3 py-2">
@@ -48,18 +53,25 @@
                 </h1>
 
             </div>
-        </nav>
+            <!--Fin Contenedor secundario por defecto configuracion de boostrap -->
+
+        </div>
+        <!--Fin Contenedor principal con diseño navbar aun que no es de navegacion se usa la estructura por defecto de boostrap  -->
+
     </header>
-    
+    <!-- Fin del header-->
+
+
+    <!-- Inicio del main esta estructurado para que ocupe todo el espacio disponible ademas permite hacer scroll manteniendo el espacio del header fijo en la pantalla -->
     <main class="container-sm px-sm-0 pb-5 h-100">
 
-        <!--autenticacion o registro  -->
+        <!-- Inicio contenedero de autenticacion o registro  -->
         <div class="px-1 px-sm-2 px-md-5 pb-5 d-flex flex-column flex-lg-row justify-content-center align-items-center ">
  
-            <!--Seccion de autenticacion  -->
+            <!-- Inicio Seccion de autenticacion  -->
             <section class="w-sm-75">
 
-                <!-- Conteneder de boton a la espera de mostrar formulario iniciar sesion -->
+                <!-- Inicio Conteneder de boton a la espera de mostrar formulario iniciar sesion -->
                 <div id="divPanelLogin" class="altura-lg-fija-panel-login rounded d-flex flex-column justify-content-center align-items-center bg-surface-50 mb-4 mb-lg-0 shadow-sm d-none animacion-fade-in">
                     
                     <h3 class="fs-5 text-muted mb-3">¿Ya tienes una cuenta?</h3> 
@@ -67,14 +79,18 @@
                     <div class="">
                         <button id="btnLogearse" type="submit" class="btn btn-secondary fw-bold px-5 shadow">Inicia Sesión</button>
                     </div>
+
                 </div>
+                <!-- Fin Conteneder de boton a la espera de mostrar formulario iniciar sesion -->
 
-
-
+                <!-- Inicio contenedor principal del titulo y el formulario iniciar sesion  -->
                 <div id="divFormularioLogin" class="my-auto py-4 bg-surface rounded shadow-sm animacion-fade-in">
+
                     <h2 class="text-center text-primary fs-4 fw-bold mt-4">
                         Iniciar sesión
                     </h2>
+
+                    <!-- Inicio contenedor del formulario  -->
                     <div class="mt-4 mx-5 ">
                         <form action="pages/inicio.php" method="POST">
                             
@@ -99,14 +115,18 @@
 
                         </form>
                     </div>
+                    <!-- Fin contenedor del formulario  -->
+                    
                 </div>
+                <!-- Fin contenedor principal del titulo y el formulario iniciar sesion  -->
+
             </section>
-            
+            <!-- Fin Seccion de autenticacion  -->
 
             <!-- Seccion para el formulario de registro de un usuario -->
             <section class="w-100 overflow-lg-scroll altura-lg-section-registro">
 
-                <!-- Conteneder de boton a la espera de mostrar formulario registrarse -->
+                <!-- Inicio Conteneder de boton a la espera de mostrar formulario registrarse -->
                 <div id="divPanelRegistro" class="altura-lg-fija-panel-registro rounded d-flex flex-column justify-content-center align-items-center bg-surface-50 mt-4 mt-lg-0 shadow-sm animacion-fade-in">
                     
                     <h3 class="fs-5 text-muted mb-3">¿No tienes una cuenta?</h3> 
@@ -114,9 +134,11 @@
                     <div class="">
                         <button id="btnRegistrate" type="button" class="btn btn-secondary fw-bold px-5 shadow">Registrate</button>
                     </div>
-                </div>
 
-                <!-- Contenedor principal del formulario Registrarse con su titulo -->
+                </div>
+                <!-- Fin Conteneder de boton a la espera de mostrar formulario registrarse -->
+
+                <!-- Inicio Contenedor principal del formulario Registrarse con su titulo -->
                 <div id="divFormularioRegistro" class="py-4 bg-surface rounded shadow-sm d-none animacion-fade-in">
 
                     <h2 class="mt-3 mb-4 text-center text-primary fs-4 fw-bold">
@@ -269,31 +291,55 @@
             <!-- Fin Seccion para el formulario de registro de un usuario -->
             
         </div>
+        <!-- Fin contenedero de autenticacion o registro  -->
 
     </main>
-    
-    <!-- Modal explicacion de funcionamiento-->
+    <!-- Fin del main -->
+
+
+    <!-- 
+    =====================================================================
+        Apartir de este este punto los contenedores son secciones 
+        que se van a sobreponer sobre toda la pagina, por ello
+        es que se encuentra aparte de la secciones principales
+    =====================================================================
+    -->
+
+    <!-- Inicio conteneder principal del Modal con explicacion de funcionamiento de la pagina, interaccion basica sin manejo de informacion con una base de datos: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->
     <div class="modal fade" id="modalBienvenida" tabindex="-1" aria-labelledby="modalInformacion" aria-hidden="true">
+        
+        <!-- Inicio contenedor secundario del modal para poder centrarlo-->
         <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Inicio contenedor del contenido visual para el usuario -->
             <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="modalInformacion">¡Bienvenido al prototipo de JAFR!</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalInformacion">¡Bienvenido al prototipo de JAFR!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        Esta página web es un prototipo interactivo en construcción. Actualmente no almacena ni procesa información real.
+                    </p>
+                    <p>
+                        Te invitamos a explorar el diseño libremente. Puedes simular el inicio de sesión haciendo clic directamente en el botón <strong>Ingresar</strong>, sin necesidad de escribir credenciales.
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendido</button>
+                </div>
+
             </div>
-            <div class="modal-body">
-                <p>
-                    Esta página web es un prototipo interactivo en construcción. Actualmente no almacena ni procesa información real.
-                </p>
-                <p>
-                    Te invitamos a explorar el diseño libremente. Puedes simular el inicio de sesión haciendo clic directamente en el botón <strong>Ingresar</strong>, sin necesidad de escribir credenciales.
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendido</button>
-            </div>
-            </div>
+            <!-- Fin contenedor del contenido visual para el usuario -->
+
         </div>
+        <!-- Fin contenedor secundario del modal para poder centrarlo-->
+        
     </div>
+    <!-- Fin conteneder del Modal con explicacion de funcionamiento de la pagina, interaccion basica sin manejo de informacion con una base de datos-->
 
     
 
@@ -306,7 +352,7 @@
     <!-- Registro de un usuario -->
      <script src="assets/js/indexRegistroUsuario.js"></script>
 
-     <!-- JAvascript principal -->
+     <!-- Javascript principal -->
       <script src="assets/js/index.js"></script>
 </body>
 </html>

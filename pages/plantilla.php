@@ -30,16 +30,16 @@
 </head>
 <body class="vh-100 d-flex flex-column">
 
-    <!-- Barra superior con logo, título y menú desplegable con offcanvas -->
+    <!--Inicio del header: Barra superior con logo, título y menú desplegable con offcanvas -->
     <header class="p-1">
 
-        <!-- Contenedor principal con diseño navbar aun que no es directamente el nav tiene el boton que lleva al navbar  -->
+        <!--Inicio Contenedor principal con diseño navbar aun que no es directamente el nav tiene el boton que lleva al navbar  -->
         <div class="navbar bg-white rounded-1 shadow-sm">
 
-            <!-- Contenedor secundario por defecto configuracion de boostrap -->
+            <!--Inicio Contenedor secundario por defecto configuracion de boostrap -->
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 
-                <!-- Logotipo de la pagina (Enlace al home) -->
+                <!-- Logotipo de la pagina (Enlace a inicip.php) -->
                 <a class="navbar-brand m-0 p-0" href="inicio.php">
                     <img src="../assets/img/logo.png" alt="Logo" class="logo">
                 </a>
@@ -56,7 +56,7 @@
                     <span>Inicio</span>    
                 </h1>
 
-                <!-- Contenedor del rol y del boton de menu de navegacion -->
+                <!--Inicio Contenedor del rol y del boton de menu de navegacion -->
                 <div class="d-flex gap-3">
                     
                     <!-- Contenedor del rol del usuario -->
@@ -88,11 +88,18 @@
 
                     </button>
                 </div>
+                <!--Fin Contenedor del rol y del boton de menu de navegacion -->
 
             </div>
-        </div>
-    </header>
+            <!--Fin Contenedor secundario por defecto configuracion de boostrap -->
 
+        </div>
+        <!--Fin Contenedor principal con diseño navbar aun que no es directamente el nav tiene el boton que lleva al navbar  -->   
+
+    </header>
+    <!--Fin del header Barra superior con logo, título y menú desplegable con offcanvas -->
+
+    <!--Inicio del main esta estructurado para que ocupe todo el espacio disponible ademas permite hacer scroll manteniendo el espacio del header y del footer fijo en la pantalla -->
     <main class="flex-grow-1 overflow-y-auto p-3 p-md-4">
 
         <!-- boton para activar el modal de ejemplo -->
@@ -106,19 +113,29 @@
         </button>
 
     </main>
-    
+    <!-- Fin del main  -->
 
+    <!-- Inicio del footer -->
     <footer class="p-1">
         <div class="container-fluid bg-white border-top py-2 text-center text-muted rounded-1">
             <small>&copy; 2026 JAFR - Administra tu negocio. <span class="d-block d-sm-inline">Prototipo de interfaz.</span></small>
         </div>
     </footer>
+    <!-- Fin del footer -->
 
 
-    <!-- Contenedor principal del menu lateral se activa con el boton en el header-->
+    <!-- 
+    =====================================================================
+        Apartir de este este punto los contenedores son secciones 
+        que se van a sobreponer sobre toda la pagina, por ello
+        es que se encuentra aparte de la secciones principales
+    =====================================================================
+    -->
+
+    <!-- Inicio del nav Contenedor principal del menu lateral se activa con el boton en el header-->
     <nav class="offcanvas offcanvas-end rounded-4" tabindex="-1" id="menuLateral" aria-labelledby="etiquetaMenuLateral" style = "max-height: 620px; width:270px">
     
-        <!-- Encabezado del menu lateral -->
+        <!--Contenedor Encabezado del menu lateral -->
         <div class="offcanvas-header border-bottom">
 
             <!-- Identificacion del rol en el menú -->
@@ -129,10 +146,13 @@
 
             <!-- Boton para cerrar el menu lateral -->
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
         </div>
         
-        <!-- Cuerpo del menu lateral (lista de enlaces a los modulos) -->
+        <!-- Inicio del Cuerpo del menu lateral (lista de enlaces a los modulos): este contenedor permite que sea scrolleable el menu si el alto de la pantalla es muy pequeño-->
         <div class="offcanvas-body overflow-y-auto">
+
+            <!-- Inicio contenedor secundario de los links a los diferentes modulos -->
             <div class="d-flex flex-column gap-4 px-3 mt-3">
                 
                 <a href="inicio.php" class="d-flex align-items-center link-secondary fw-bold fs-5">
@@ -172,12 +192,19 @@
                 </a>
 
             </div>
+            <!-- Fin contenedor secundario de los links a los diferentes modulos -->
+            
         </div>
+        <!-- Fin del Cuerpo del menu lateral (lista de enlaces a los modulos) -->
+
     </nav>
 
-     <!-- Modal de Ejemplo con formulario -->
+
+    <!-- Inicio contenedor Modal de Ejemplo con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->
     <div class="modal fade" id="modalEditarUsuario" tabindex="-1" 
         aria-labelledby="modalTitulo-EditarUsuario" aria-hidden="true">
+
+        <!-- Inicio contenedor del contenido del modal -->
         <div class="modal-dialog modal-dialog-centered">
 
             <!-- Contenido del modal que va mostrar un formulario -->
@@ -185,9 +212,11 @@
 
                 <!-- Titulo del modal y boton cerrar modal -->
                 <div class="modal-header position-relative">
+
                     <h3 class="modal-title fs-5 fw-bold mx-auto" id="modalTitulo-EditarUsuario">
                         Editar Usuario
                     </h3>
+
                     <button 
                         type="button" 
                         class="btn btn-link link-dark d-flex position-absolute end-0 top-0 p-2 opacity-75" 
@@ -198,6 +227,7 @@
                                 class="my-auto fs-3">
                             </iconify-icon>
                     </button>
+
                 </div>
 
                 <!-- Cuerpo del modal contenido de los input del formulario-->
@@ -280,12 +310,14 @@
 
                 <!-- Footer del modal contiene los botones de acción -->
                 <div class="modal-footer flex-column justify-content-center">
+
                     <button 
                         type="submit" 
                         class="btn btn-primary fw-bold px-5 shadow" 
                         data-bs-dismiss="modal">
                             Actualizar
                     </button>
+
                     <!-- Contenedor acciones de editar otra informacion o (deshabilitar o eliminar)modificar el estado de un objeto -->
                     <div class="w-100 d-flex justify-content-start"> 
                         <button
@@ -295,12 +327,16 @@
                             Editar contraseña
                         </button>
                     </div>
+
                 </div>
 
             </form>
 
         </div>
+        <!-- Fin contenedor del contenido del modal -->
+
     </div>
+    <!-- Fin contenedor Modal de Ejemplo con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->
 
 
     <!-- Bootstrap JS -->
@@ -308,5 +344,6 @@
 
     <!-- Iconify -->
     <script src="../vendor/iconify/js/iconify-icon.min.js"></script>
+    
 </body>
 </html>
