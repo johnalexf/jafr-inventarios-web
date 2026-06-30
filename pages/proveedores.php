@@ -107,7 +107,7 @@
         <!-- Inicio del Contenedor del buscador y del boton agregar nuevo item -->
         <section class="container-fluid mb-4" aria-labelledby="titulo-buscador">
 
-            <h2 id="titulo-buscador" class="visually-hidden">Búsqueda y acciones de usuarios</h2>
+            <h2 id="titulo-buscador" class="visually-hidden">Búsqueda y acciones de proveedores</h2>
 
             <!-- Contenedor secundario del buscador y del boton -->
             <div class="d-flex gap-3">
@@ -120,8 +120,8 @@
                     <input 
                         type="text" 
                         class="form-control border-start-0 ps-0 text-secondary fw-semibold fs-6" 
-                        placeholder="Buscar por nombre, alias o correo..." 
-                        aria-label="Buscar usuarios"
+                        placeholder="Buscar por nombre comercial, contacto o correo..." 
+                        aria-label="Buscar proveedores"
                     >
                 </div>
 
@@ -138,11 +138,11 @@
                         <iconify-icon 
                             icon="mingcute:add-fill" 
                             class="m-auto fs-3" 
-                            title=" Agregar nuevo usuario "
+                            title=" Agregar nuevo proveedor "
                             >
                         </iconify-icon>  
                     </span>
-                    <span class="d-none d-sm-inline"> Agregar Nuevo Usuario </span>
+                    <span class="d-none d-sm-inline"> Agregar Nuevo Proveedor </span>
 
                 </button>
 
@@ -154,7 +154,7 @@
 
 
         <!--
-        Inicio Contenedor principal de la tabla de usuarios esta visual sera despues de pantallas de medida md
+        Inicio Contenedor principal de la tabla de proveedores esta visual sera despues de pantallas de medida md
         para pantallas menores se manejan card que estan despues de esta seccion
         -->
         <div class="table-responsive d-none d-md-block" aria-labelledby="titulo-tabla">
@@ -164,13 +164,13 @@
                 Ademas se utiliza la clase de bootstrap visually-hidden para que visualmente no se vea
                 Pero para el tema de accesibilidad si sera tenido en cuenta
             -->
-            <h2 id="titulo-tabla" class="visually-hidden">Listado de usuarios en formato tabla</h2>
+            <h2 id="titulo-tabla" class="visually-hidden">Listado de proveedores en formato tabla</h2>
 
-            <!-- Inicio de la tabla de usuarios -->
+            <!-- Inicio de la tabla de proveedores -->
             <!-- Los estilos personalizados de la tabla estan en tablasyListas.css para evitar extender el codigo HTML -->
             <table class="table table-hover">
 
-                <caption class="visually-hidden">Lista de usuarios</caption>
+                <caption class="visually-hidden">Lista de proveedores</caption>
 
                 <!-- Titulos de las columnas de la tabla -->
                 <thead>
@@ -232,16 +232,16 @@
                 </tbody>
 
             </table>
-            <!-- Fin de la tabla de usuarios -->
+            <!-- Fin de la tabla de proveedores -->
 
         </div>
         <!--
-        Fin Contenedor principal de la tabla de usuarios esta visual sera despues de pantallas de medida md
+        Fin Contenedor principal de la tabla de proveedores esta visual sera despues de pantallas de medida md
         para pantallas menores se manejan card que estan despues de esta seccion
         -->
 
 
-        <!-- Inicio contenedor de la lista de usuarios esta visual sera antes de pantallas de medida md-->
+        <!-- Inicio contenedor de la lista de proveedores esta visual sera antes de pantallas de medida md-->
         <!-- Los estilos personalizados de la lista estan en tablasyListas.css para evitar extender el codigo HTML -->
         <section class="d-md-none jafr-grid-cards" aria-labelledby="titulo-tarjetas">
 
@@ -250,7 +250,7 @@
                 Ademas se utiliza la clase de bootstrap visually-hidden para que visualmente no se vea
                 Pero para el tema de accesibilidad si sera tenido en cuenta
             -->
-            <h2 id="titulo-tarjetas" class="visually-hidden">Listado de usuarios en formato tarjeta</h2>
+            <h2 id="titulo-tarjetas" class="visually-hidden">Listado de proveedores en formato tarjeta</h2>
 
             <!-- Card personalizada para el item 1 -->
             <div class="jafr-card">
@@ -297,7 +297,7 @@
             </div>
 
         </section>
-        <!-- Fin contenedor de la lista de usuarios esta visual sera antes de pantallas de medida md-->
+        <!-- Fin contenedor de la lista de proveedores esta visual sera antes de pantallas de medida md-->
             
 
     </main>
