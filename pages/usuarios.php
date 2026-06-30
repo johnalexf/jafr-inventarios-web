@@ -159,7 +159,7 @@
         Inicio Contenedor principal de la tabla de usuarios esta visual sera despues de pantallas de medida md
         para pantallas menores se manejan card que estan despues de esta seccion
         -->
-        <div class="table-responsive d-none d-md-block" aria-labelledby="titulo-tabla">
+        <section class="table-responsive d-none d-md-block" aria-labelledby="titulo-tabla">
 
             <!--
                 El titulo por medio del atributo aria en section se asocia para accesibilidad
@@ -275,7 +275,7 @@
             </table>
             <!-- Fin de la tabla de usuarios -->
 
-        </div>
+        </section>
         <!--
         Fin Contenedor principal de la tabla de usuarios esta visual sera despues de pantallas de medida md
         para pantallas menores se manejan card que estan despues de esta seccion
