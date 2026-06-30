@@ -323,20 +323,38 @@
             -->
             <h2 id="titulo-tarjetas" class="visually-hidden">Listado de usuarios en formato tarjeta</h2>
 
+
             <!-- Card personalizada para el item 1 -->
             <div class="jafr-card">
                 <h3 class="fs-5 fw-bold text-primary">
-                    001 - johnalexfr
+                    001 - Mogolle*12
                 </h3>
                 <hr>
-                <p>John Alexander Forero Rubio</p>
-                <p>Usuario1@gmail.com</p>
-                <p>3105953212</p>
-                <p>Vendedor</p>
+                <div class="jafr-card-lista">
+                    <div class="jafr-card-item">
+                        <p>Proveedor:</p>
+                        <p>Albania</p> 
+                        <p>Tipo:</p>
+                        <p>Pan</p>
+                    </div>
+                    <div class="jafr-card-item">
+                        <p>Compra:</p>
+                        <p>$10.000</p>
+                        <p>Venta:</p>
+                        <p>$12.000</p>
+                    </div>
+                    <div class="jafr-card-item">
+                        <p>Stock:</p>
+                        <p>30 <small>und</small></p>
+                        <p>Stock min:</p>
+                        <p>60 <small>und</small></p>
+                    </div>
+                </div>
+
                 <div class="jafr-card-btn-edit">
                     <button
                         class="btn btn-link link-primary m-auto p-0 d-flex"
-                        title="editar usuario"
+                        title="editar producto"
                         data-bs-toggle="modal" 
                         data-bs-target="#modalEditarItem"
                     >
@@ -345,20 +363,38 @@
                 </div>
             </div>
 
+
             <!-- Card personalizada para el item 2 -->
             <div class="jafr-card item-desactivado">
                 <h3 class="fs-5 fw-bold text-primary">
-                    001 - johnalexfr2
+                    001 - Mogolle*12
                 </h3>
                 <hr>
-                <p>John Alexander Forero Rubio</p>
-                <p>Usuario1@gmail.com</p>
-                <p>3105953212</p>
-                <p>Vendedor</p>
+                <div class="jafr-card-lista">
+                    <div class="jafr-card-item">
+                        <p>Proveedor:</p>
+                        <p>Albania</p> 
+                        <p>Tipo:</p>
+                        <p>Pan</p>
+                    </div>
+                    <div class="jafr-card-item">
+                        <p>Compra:</p>
+                        <p>$10.000</p>
+                        <p>Venta:</p>
+                        <p>$12.000</p>
+                    </div>
+                    <div class="jafr-card-item">
+                        <p>Stock:</p>
+                        <p>30 <small>und</small></p>
+                        <p>Stock min:</p>
+                        <p>60 <small>und</small></p>
+                    </div>
+                </div>
+
                 <div class="jafr-card-btn-edit">
                     <button
                         class="btn btn-link link-primary m-auto p-0 d-flex"
-                        title="editar usuario"
+                        title="editar producto"
                         data-bs-toggle="modal" 
                         data-bs-target="#modalEditarItem"
                     >
@@ -366,6 +402,126 @@
                     </button>
                 </div>
             </div>
+
+
+            <!-- Card personalizada para el item 3 -->
+            <div class="jafr-card">
+                <h3 class="fs-5 fw-bold text-primary">
+                    001 - Mogolle*12
+                </h3>
+                <hr>
+                <div class="jafr-card-lista">
+                    <div class="jafr-card-item">
+                        <p>Proveedor:</p>
+                        <p>Albania</p> 
+                        <p>Tipo:</p>
+                        <p>Pan</p>
+                    </div>
+                    <div class="jafr-card-item">
+                        <p>Compra:</p>
+                        <p>$10.000</p>
+                        <p>Venta:</p>
+                        <p>$12.000</p>
+                    </div>
+                    <div class="jafr-card-item">
+                        <p>Stock:</p>
+                        <p>30 <small>und</small></p>
+                        <p>Stock min:</p>
+                        <p>60 <small>und</small></p>
+                    </div>
+                </div>
+
+                <div class="jafr-card-btn-edit">
+                    <button
+                        class="btn btn-link link-primary m-auto p-0 d-flex"
+                        title="editar producto"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalEditarItem"
+                    >
+                        <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Card personalizada para el item 4 -->
+            <div class="jafr-card">
+                <h3 class="fs-5 fw-bold text-primary">
+                    001 - Mogolle*12
+                </h3>
+                <hr>
+                <div class="jafr-card-lista">
+                    <div class="jafr-card-item">
+                        <p>Proveedor:</p>
+                        <p>Albania</p> 
+                        <p>Tipo:</p>
+                        <p>Pan</p>
+                    </div>
+                    <div class="jafr-card-item">
+                        <p>Compra:</p>
+                        <p>$10.000</p>
+                        <p>Venta:</p>
+                        <p>$12.000</p>
+                    </div>
+                    <div class="jafr-card-item">
+                        <p>Stock:</p>
+                        <p>30 <small>und</small></p>
+                        <p>Stock min:</p>
+                        <p>60 <small>und</small></p>
+                    </div>
+                </div>
+
+                <div class="jafr-card-btn-edit">
+                    <button
+                        class="btn btn-link link-primary m-auto p-0 d-flex"
+                        title="editar producto"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalEditarItem"
+                    >
+                        <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card personalizada para el item 5 -->
+            <div class="jafr-card">
+                <h3 class="fs-5 fw-bold text-primary">
+                    001 - Mogolle*12
+                </h3>
+                <hr>
+                <div class="jafr-card-lista">
+                    <div class="jafr-card-item">
+                        <p>Proveedor:</p>
+                        <p>Albania</p> 
+                        <p>Tipo:</p>
+                        <p>Pan</p>
+                    </div>
+                    <div class="jafr-card-item">
+                        <p>Compra:</p>
+                        <p>$10.000</p>
+                        <p>Venta:</p>
+                        <p>$12.000</p>
+                    </div>
+                    <div class="jafr-card-item">
+                        <p>Stock:</p>
+                        <p>30 <small>und</small></p>
+                        <p>Stock min:</p>
+                        <p>60 <small>und</small></p>
+                    </div>
+                </div>
+
+                <div class="jafr-card-btn-edit">
+                    <button
+                        class="btn btn-link link-primary m-auto p-0 d-flex"
+                        title="editar producto"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalEditarItem"
+                    >
+                        <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+
 
         </section>
         <!-- Fin contenedor de la lista de usuarios esta visual sera antes de pantallas de medida md-->

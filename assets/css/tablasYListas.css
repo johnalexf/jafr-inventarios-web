@@ -35,7 +35,7 @@
 }
 
 .jafr-card{
-    max-width: 270px;
+    min-width: 270px;
     margin: auto;
     padding: 1rem;
     border-radius: 1rem;
@@ -55,6 +55,23 @@
     right: 0.2rem;
 }
 
+
+/* Clases para personalizar la card si se necesita ingresar una lista descriptiva de datos */
+.jafr-card-item{
+    display: grid;
+    grid-template-columns: auto 100px;
+    gap: .1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.jafr-card-item p{
+    margin-bottom: 0rem;
+    font-weight: 600;
+}
+
+.jafr-card-item p:nth-child(odd){
+    color: var(--bs-secondary);
+}
 
 
 /* 
