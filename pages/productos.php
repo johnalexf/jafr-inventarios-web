@@ -107,7 +107,7 @@
         <!-- Inicio del Contenedor del buscador y del boton agregar nuevo item -->
         <section class="container-fluid mb-4" aria-labelledby="titulo-buscador">
 
-            <h2 id="titulo-buscador" class="visually-hidden">Búsqueda y acciones de usuarios</h2>
+            <h2 id="titulo-buscador" class="visually-hidden">Búsqueda y acciones de productos</h2>
 
             <!-- Contenedor secundario del buscador y del boton -->
             <div class="d-flex gap-3">
@@ -166,7 +166,7 @@
             -->
             <h2 id="titulo-tabla" class="visually-hidden">Listado de productos en formato tabla</h2>
 
-            <!-- Inicio de la tabla de usuarios -->
+            <!-- Inicio de la tabla de productos -->
             <!-- Los estilos personalizados de la tabla estan en tablasyListas.css para evitar extender el codigo HTML -->
             <table class="table table-hover">
 
@@ -303,16 +303,16 @@
                 </tbody>
 
             </table>
-            <!-- Fin de la tabla de usuarios -->
+            <!-- Fin de la tabla de productos -->
 
         </div>
         <!--
-        Fin Contenedor principal de la tabla de usuarios esta visual sera despues de pantallas de medida md
+        Fin Contenedor principal de la tabla de productos esta visual sera despues de pantallas de medida md
         para pantallas menores se manejan card que estan despues de esta seccion
         -->
 
 
-        <!-- Inicio contenedor de la lista de usuarios esta visual sera antes de pantallas de medida md-->
+        <!-- Inicio contenedor de la lista de productos esta visual sera antes de pantallas de medida md-->
         <!-- Los estilos personalizados de la lista estan en tablasyListas.css para evitar extender el codigo HTML -->
         <section class="d-lg-none jafr-grid-cards" aria-labelledby="titulo-tarjetas">
 
@@ -321,7 +321,7 @@
                 Ademas se utiliza la clase de bootstrap visually-hidden para que visualmente no se vea
                 Pero para el tema de accesibilidad si sera tenido en cuenta
             -->
-            <h2 id="titulo-tarjetas" class="visually-hidden">Listado de usuarios en formato tarjeta</h2>
+            <h2 id="titulo-tarjetas" class="visually-hidden">Listado de productos en formato tarjeta</h2>
 
 
             <!-- Card personalizada para el item 1 -->
@@ -524,7 +524,7 @@
 
 
         </section>
-        <!-- Fin contenedor de la lista de usuarios esta visual sera antes de pantallas de medida md-->
+        <!-- Fin contenedor de la lista de productos esta visual sera antes de pantallas de medida md-->
             
 
     </main>
