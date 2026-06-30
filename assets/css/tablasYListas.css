@@ -15,7 +15,10 @@
     border-width: 0.7rem;
 }
 
-
+/* Personalizar el color del hover de una fila de una tabla-hover */
+.table-hover tbody tr:hover > * {
+    --bs-table-bg-state: rgba(var(--bs-secondary-rgb), 0.12);
+}
 
 /* 
 ==================================================================
@@ -87,7 +90,7 @@
     background-color: var(--color-surface-50);
     /* En lugar de opacidad general, atenuamos solo el texto.
        Este gris es similar al text-muted de Bootstrap */
-    color: #6c757d;
+    color: rgba(0, 0, 0, 0.65) ;
 }
 
 

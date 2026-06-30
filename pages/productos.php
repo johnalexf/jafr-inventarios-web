@@ -168,7 +168,7 @@
 
             <!-- Inicio de la tabla de usuarios -->
             <!-- Los estilos personalizados de la tabla estan en tablasyListas.css para evitar extender el codigo HTML -->
-            <table class="table">
+            <table class="table table-hover">
 
                 <caption class="visually-hidden">Lista de productos</caption>
 
