@@ -106,13 +106,52 @@
     <!--Inicio del main esta estructurado para que ocupe todo el espacio disponible ademas permite hacer scroll manteniendo el espacio del header y del footer fijo en la pantalla -->
     <main class="flex-grow-1 overflow-y-auto p-2 p-sm-4">
 
-        <!-- Inicio del Contenedor del buscador -->
-        <section class="container mb-4" aria-labelledby="titulo-buscador">
+        <!-- Inicio del Contenedor del buscador y del boton agregar nuevo item -->
+        <section class="container-fluid mb-4" aria-labelledby="titulo-buscador">
 
             <h2 id="titulo-buscador" class="visually-hidden">Búsqueda y acciones de usuarios</h2>
 
+            <!-- Contenedor secundario del buscador y del boton -->
+            <div class="d-flex gap-3">
+
+                <!-- Contenedor del buscador -->
+                <div class="input-group">
+                    <span class="input-group-text bg-white text-secondary">
+                        <iconify-icon icon="mdi:magnify" class="fs-5"></iconify-icon>
+                    </span>
+                    <input 
+                        type="text" 
+                        class="form-control border-start-0 ps-0 text-secondary fw-semibold fs-6" 
+                        placeholder="Buscar por nombre, alias o correo..." 
+                        aria-label="Buscar usuarios"
+                    >
+                </div>
+
+                <!-- boton para activar el modal de crear nuevo item -->
+                <button 
+                    type="button" 
+                    class="btn btn-primary px-6 fw-bold w-btn-agregar-nuevo 
+                           d-flex justify-content-around align-items-center"  
+                    data-bs-toggle="modal" 
+                    data-bs-target="#modalAgregarNuevo"
+                    >
+
+                    <span class="d-flex d-sm-none">
+                        <iconify-icon 
+                            icon="mingcute:add-fill" 
+                            class="m-auto fs-3" 
+                            title=" Agregar nuevo usuario "
+                            >
+                        </iconify-icon>  
+                    </span>
+                    <span class="d-none d-sm-inline"> Agregar Nuevo Usuario </span>
+
+                </button>
+
+            </div>
+            
         </section>
-        <!-- Fin del Contenedor del buscador -->
+        <!-- Fin del Contenedor del buscador y del boton agregar nuevo item -->
 
 
 
@@ -288,17 +327,6 @@
 
         </section>
         <!-- Fin contenedor de la lista de usuarios esta visual sera antes de pantallas de medida md-->
-
-
-        <!-- boton para activar el modal de ejemplo -->
-        <button 
-            type="button" 
-            class="btn btn-link p-0 link-primary fw-bold" 
-            data-bs-toggle="modal" 
-            data-bs-target="#modalEditarUsuario"
-        >
-            Activar modal
-        </button>
         
 
     </main>
@@ -391,7 +419,7 @@
     <!-- Fin del nav Contenedor principal del menu lateral se activa con el boton en el header-->
 
 
-    <!-- Inicio contenedor Modal de Ejemplo con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->
+    <!-- Inicio contenedor Modal de Agregar nuevo con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->
     <div class="modal fade" id="modalEditarUsuario" tabindex="-1" 
         aria-labelledby="modalTitulo-EditarUsuario" aria-hidden="true">
 

@@ -73,3 +73,20 @@
     color: #6c757d;
 }
 
+
+/* 
+==================================================================
+   Clases para el buscador y el boton de agregar nuevo item
+==================================================================
+*/
+
+.w-btn-agregar-nuevo{
+    width: auto;
+}
+
+@media (min-width: 576px){
+    .w-btn-agregar-nuevo{
+        width: 320px;
+    }
+}
+
