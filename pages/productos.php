@@ -120,8 +120,8 @@
                     <input 
                         type="text" 
                         class="form-control border-start-0 ps-0 text-secondary fw-semibold fs-6" 
-                        placeholder="Buscar por nombre, alias o correo..." 
-                        aria-label="Buscar usuarios"
+                        placeholder="Buscar por nombre, proveedor o tipo..." 
+                        aria-label="Buscar productos"
                     >
                 </div>
 
@@ -138,11 +138,11 @@
                         <iconify-icon 
                             icon="mingcute:add-fill" 
                             class="m-auto fs-3" 
-                            title=" Agregar nuevo usuario "
+                            title=" Agregar nuevo Producto "
                             >
                         </iconify-icon>  
                     </span>
-                    <span class="d-none d-sm-inline"> Agregar Nuevo Usuario </span>
+                    <span class="d-none d-sm-inline"> Agregar Nuevo Producto </span>
 
                 </button>
 
