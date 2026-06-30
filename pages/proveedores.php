@@ -711,7 +711,7 @@
         <div class="modal-dialog modal-dialog-centered">
 
             <!-- Contenido del modal que va mostrar un formulario -->
-            <form class="modal-content" id="formularioEditarUsuario">
+            <form class="modal-content" id="formularioEditarProveedores">
 
                 <!-- Titulo del modal y boton cerrar modal -->
                 <div class="modal-header position-relative">
