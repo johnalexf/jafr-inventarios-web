@@ -128,7 +128,7 @@
                 <!-- boton para activar el modal de crear nuevo item -->
                 <button 
                     type="button" 
-                    class="btn btn-primary px-6 fw-bold w-btn-agregar-nuevo 
+                    class="btn btn-primary px-6 px-sm-2 fw-bold w-btn-agregar-nuevo 
                            d-flex justify-content-around align-items-center"  
                     data-bs-toggle="modal" 
                     data-bs-target="#modalAgregarNuevoItem"
