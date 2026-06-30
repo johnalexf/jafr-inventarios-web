@@ -72,7 +72,7 @@
             <section class="w-sm-75">
 
                 <!-- Inicio Conteneder de boton a la espera de mostrar formulario iniciar sesion -->
-                <div id="divPanelLogin" class="altura-lg-fija-panel-login rounded d-flex flex-column justify-content-center align-items-center bg-surface-50 mb-4 mb-lg-0 shadow-sm d-none animacion-fade-in">
+                <div id="divPanelLogin" class="altura-lg-fija-panel-login rounded d-flex flex-column justify-content-center align-items-center bg-surface-50 mb-4 mb-lg-0 shadow-sm animacion-fade-in">
                     
                     <h3 class="fs-5 text-muted mb-3">¿Ya tienes una cuenta?</h3> 
                     
@@ -84,7 +84,7 @@
                 <!-- Fin Conteneder de boton a la espera de mostrar formulario iniciar sesion -->
 
                 <!-- Inicio contenedor principal del titulo y el formulario iniciar sesion  -->
-                <div id="divFormularioLogin" class="my-auto py-4 bg-surface rounded shadow-sm animacion-fade-in">
+                <div id="divFormularioLogin" class="my-auto py-4 bg-surface rounded shadow-sm d-none animacion-fade-in">
 
                     <h2 class="text-center text-primary fs-4 fw-bold mt-4">
                         Iniciar sesión
@@ -127,7 +127,7 @@
             <section class="w-100 overflow-lg-scroll altura-lg-section-registro">
 
                 <!-- Inicio Conteneder de boton a la espera de mostrar formulario registrarse -->
-                <div id="divPanelRegistro" class="altura-lg-fija-panel-registro rounded d-flex flex-column justify-content-center align-items-center bg-surface-50 mt-4 mt-lg-0 shadow-sm animacion-fade-in">
+                <div id="divPanelRegistro" class="altura-lg-fija-panel-registro rounded d-flex flex-column justify-content-center align-items-center bg-surface-50 mt-4 mt-lg-0 shadow-sm d-none animacion-fade-in">
                     
                     <h3 class="fs-5 text-muted mb-3">¿No tienes una cuenta?</h3> 
                     
@@ -139,7 +139,7 @@
                 <!-- Fin Conteneder de boton a la espera de mostrar formulario registrarse -->
 
                 <!-- Inicio Contenedor principal del formulario Registrarse con su titulo -->
-                <div id="divFormularioRegistro" class="py-4 bg-surface rounded shadow-sm d-none animacion-fade-in">
+                <div id="divFormularioRegistro" class="py-4 bg-surface rounded shadow-sm animacion-fade-in">
 
                     <h2 class="mt-3 mb-4 text-center text-primary fs-4 fw-bold">
                         Registrarse
