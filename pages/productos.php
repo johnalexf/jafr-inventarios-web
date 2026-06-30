@@ -7,7 +7,7 @@
     <!-- Icono para pestañas en navegadores web-->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 
-    <title>Plantilla - JAFR</title>
+    <title>Productos - JAFR</title>
 
     <!-- Bootstrap CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
