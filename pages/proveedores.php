@@ -154,10 +154,10 @@
 
 
         <!--
-        Inicio Contenedor principal de la tabla de proveedores esta visual sera despues de pantallas de medida md
+        Inicio Contenedor principal de la tabla de proveedores esta visual sera despues de pantallas de medida lg
         para pantallas menores se manejan card que estan despues de esta seccion
         -->
-        <div class="table-responsive d-none d-md-block" aria-labelledby="titulo-tabla">
+        <div class="table-responsive d-none d-lg-block" aria-labelledby="titulo-tabla">
 
             <!--
                 El titulo por medio del atributo aria en section se asocia para accesibilidad
@@ -176,11 +176,12 @@
                 <thead>
                     <tr>
                         <th scope="col">Id</th>
-                        <th scope="col">Alias</th>
-                        <th scope="col">Nombre</th>
+                        <th scope="col">Nombre comercial</th>
+                        <th scope="col">Nombre de contacto</th>
+                        <th scope="col">Direccion</th>
                         <th scope="col">Correo</th>
                         <th scope="col">Telefono</th>
-                        <th scope="col">Rol</th>
+                        <th scope="col">Horario de atencion</th>
                         <th scope="col">Editar</th>
                     </tr>
                 </thead>
@@ -191,15 +192,16 @@
                     <!-- Fila item 1 -->
                     <tr>
                         <th scope="row">001</th>
-                        <td>johnalexfr</td>
-                        <td>John Alexander Forero Rubio</td>
-                        <td>Usuario1@gmail.com</td>
+                        <td>Albania</td>
+                        <td>Jaime Enrique</td>
+                        <td>Kra 21 # 124 - 35</td>
+                        <td>Albania@gmail.com</td>
                         <td>3105953212</td>
-                        <td>Vendedor</td>
+                        <td>L-V 8am-3pm</td>
                         <td>
                             <button
                                 class="btn btn-link link-primary m-auto p-0 d-flex"
-                                title="editar usuario"
+                                title="editar proveedor"
                                 data-bs-toggle="modal" 
                                 data-bs-target="#modalEditarItem"
                             >
@@ -208,18 +210,86 @@
                         </td>
                     </tr>
 
+
                     <!-- Fila item 2 -->
-                    <tr class="item-desactivado">
+                    <tr>
                         <th scope="row">001</th>
-                        <td>johnalexfr</td>
-                        <td>John Alexander Forero Rubio</td>
-                        <td>Usuario1@gmail.com</td>
+                        <td>Albania</td>
+                        <td>Jaime Enrique</td>
+                        <td>Kra 21 # 124 - 35</td>
+                        <td>Albania@gmail.com</td>
                         <td>3105953212</td>
-                        <td>Vendedor</td>
+                        <td>L-V 8am-3pm</td>
                         <td>
                             <button
                                 class="btn btn-link link-primary m-auto p-0 d-flex"
-                                title="editar usuario"
+                                title="editar proveedor"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalEditarItem"
+                            >
+                                <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                            </button>
+                        </td>
+                    </tr>
+
+
+                    <!-- Fila item 3 -->
+                    <tr class="item-desactivado">
+                        <th scope="row">001</th>
+                        <td>Albania</td>
+                        <td>Jaime Enrique</td>
+                        <td>Kra 21 # 124 - 35</td>
+                        <td>Albania@gmail.com</td>
+                        <td>3105953212</td>
+                        <td>L-V 8am-3pm</td>
+                        <td>
+                            <button
+                                class="btn btn-link link-primary m-auto p-0 d-flex"
+                                title="editar proveedor"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalEditarItem"
+                            >
+                                <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                            </button>
+                        </td>
+                    </tr>
+
+
+                    <!-- Fila item 4 -->
+                    <tr>
+                        <th scope="row">001</th>
+                        <td>Albania</td>
+                        <td>Jaime Enrique</td>
+                        <td>Kra 21 # 124 - 35</td>
+                        <td>Albania@gmail.com</td>
+                        <td>3105953212</td>
+                        <td>L-V 8am-3pm</td>
+                        <td>
+                            <button
+                                class="btn btn-link link-primary m-auto p-0 d-flex"
+                                title="editar proveedor"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalEditarItem"
+                            >
+                                <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                            </button>
+                        </td>
+                    </tr>
+
+
+                    <!-- Fila item 5 -->
+                    <tr>
+                        <th scope="row">001</th>
+                        <td>Albania</td>
+                        <td>Jaime Enrique</td>
+                        <td>Kra 21 # 124 - 35</td>
+                        <td>Albania@gmail.com</td>
+                        <td>3105953212</td>
+                        <td>L-V 8am-3pm</td>
+                        <td>
+                            <button
+                                class="btn btn-link link-primary m-auto p-0 d-flex"
+                                title="editar proveedor"
                                 data-bs-toggle="modal" 
                                 data-bs-target="#modalEditarItem"
                             >
@@ -236,14 +306,14 @@
 
         </div>
         <!--
-        Fin Contenedor principal de la tabla de proveedores esta visual sera despues de pantallas de medida md
+        Fin Contenedor principal de la tabla de proveedores esta visual sera despues de pantallas de medida lg
         para pantallas menores se manejan card que estan despues de esta seccion
         -->
 
 
-        <!-- Inicio contenedor de la lista de proveedores esta visual sera antes de pantallas de medida md-->
+        <!-- Inicio contenedor de la lista de proveedores esta visual sera antes de pantallas de medida lg-->
         <!-- Los estilos personalizados de la lista estan en tablasyListas.css para evitar extender el codigo HTML -->
-        <section class="d-md-none jafr-grid-cards" aria-labelledby="titulo-tarjetas">
+        <section class="d-lg-none jafr-grid-cards" aria-labelledby="titulo-tarjetas">
 
             <!--
                 El titulo por medio del atributo aria en section se asocia para accesibilidad
