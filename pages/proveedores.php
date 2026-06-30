@@ -325,17 +325,23 @@
             <!-- Card personalizada para el item 1 -->
             <div class="jafr-card">
                 <h3 class="fs-5 fw-bold text-primary">
-                    001 - johnalexfr
+                    001 - Albania
                 </h3>
                 <hr>
-                <p>John Alexander Forero Rubio</p>
-                <p>Usuario1@gmail.com</p>
+                
+                <p>Jaime Enrique</p>
+                <p>Kra 21 # 124 - 35</p>
+                <p>Albania@gmail.com</p>
                 <p>3105953212</p>
-                <p>Vendedor</p>
+                <div class="jafr-card-item mb-0">
+                    <p>Horario:</p>
+                    <p>L-V 8am-3pm</p>
+                </div>
+
                 <div class="jafr-card-btn-edit">
                     <button
                         class="btn btn-link link-primary m-auto p-0 d-flex"
-                        title="editar usuario"
+                        title="editar proveedor"
                         data-bs-toggle="modal" 
                         data-bs-target="#modalEditarItem"
                     >
@@ -344,20 +350,113 @@
                 </div>
             </div>
 
+
             <!-- Card personalizada para el item 2 -->
-            <div class="jafr-card item-desactivado">
+            <div class="jafr-card">
                 <h3 class="fs-5 fw-bold text-primary">
-                    001 - johnalexfr2
+                    001 - Albania
                 </h3>
                 <hr>
-                <p>John Alexander Forero Rubio</p>
-                <p>Usuario1@gmail.com</p>
+                
+                <p>Jaime Enrique</p>
+                <p>Kra 21 # 124 - 35</p>
+                <p>Albania@gmail.com</p>
                 <p>3105953212</p>
-                <p>Vendedor</p>
+                <div class="jafr-card-item mb-0">
+                    <p>Horario:</p>
+                    <p>L-V 8am-3pm</p>
+                </div>
+
                 <div class="jafr-card-btn-edit">
                     <button
                         class="btn btn-link link-primary m-auto p-0 d-flex"
-                        title="editar usuario"
+                        title="editar proveedor"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalEditarItem"
+                    >
+                        <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Card personalizada para el item 3 -->
+            <div class="jafr-card item-desactivado">
+                <h3 class="fs-5 fw-bold text-primary">
+                    001 - Albania
+                </h3>
+                <hr>
+                <p>Jaime Enrique</p>
+                <p>Kra 21 # 124 - 35</p>
+                <p>Albania@gmail.com</p>
+                <p>3105953212</p>
+                <div class="jafr-card-item mb-0">
+                        <p>Horario:</p>
+                        <p>L-V 8am-3pm</p>
+                </div>
+
+                <div class="jafr-card-btn-edit">
+                    <button
+                        class="btn btn-link link-primary m-auto p-0 d-flex"
+                        title="editar proveedor"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalEditarItem"
+                    >
+                        <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Card personalizada para el item 4 -->
+            <div class="jafr-card">
+                <h3 class="fs-5 fw-bold text-primary">
+                    001 - Albania
+                </h3>
+                <hr>
+                
+                <p>Jaime Enrique</p>
+                <p>Kra 21 # 124 - 35</p>
+                <p>Albania@gmail.com</p>
+                <p>3105953212</p>
+                <div class="jafr-card-item mb-0">
+                    <p>Horario:</p>
+                    <p>L-V 8am-3pm</p>
+                </div>
+
+                <div class="jafr-card-btn-edit">
+                    <button
+                        class="btn btn-link link-primary m-auto p-0 d-flex"
+                        title="editar proveedor"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalEditarItem"
+                    >
+                        <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Card personalizada para el item 5 -->
+            <div class="jafr-card">
+                <h3 class="fs-5 fw-bold text-primary">
+                    001 - Albania
+                </h3>
+                <hr>
+                
+                <p>Jaime Enrique</p>
+                <p>Kra 21 # 124 - 35</p>
+                <p>Albania@gmail.com</p>
+                <p>3105953212</p>
+                <div class="jafr-card-item mb-0">
+                    <p>Horario:</p>
+                    <p>L-V 8am-3pm</p>
+                </div>
+
+                <div class="jafr-card-btn-edit">
+                    <button
+                        class="btn btn-link link-primary m-auto p-0 d-flex"
+                        title="editar proveedor"
                         data-bs-toggle="modal" 
                         data-bs-target="#modalEditarItem"
                     >
