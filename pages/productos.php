@@ -625,13 +625,13 @@
         <div class="modal-dialog modal-dialog-centered">
 
             <!-- Contenido del modal que va mostrar un formulario -->
-            <form class="modal-content" id="formularioAgregarUsuario">
+            <form class="modal-content" id="formularioAgregarProducto">
 
                 <!-- Titulo del modal y boton cerrar modal -->
                 <div class="modal-header position-relative">
 
                     <h3 class="modal-title fs-5 fw-bold mx-auto" id="modalTitulo-AgregarItem">
-                        Agregar Nuevo Usuario
+                        Agregar Nuevo Producto
                     </h3>
 
                     <button 
@@ -650,97 +650,99 @@
                 <!-- Cuerpo del modal contenido de los input del formulario-->
                 <div class="modal-body px-4">
                 
-                    <!-- Seccion del formulario para Registro de alias y tipo de usuario -->
+                    <!-- Seccion del formulario para Registro datos generales (nombre, proveedor y tipo de producto) -->
                     <fieldset class="mb-3 px-2">
 
                         <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
-                            Cuenta
+                            Datos generales
                         </legend>
 
                         <div class="jafr-form-group">
-                            <label for="aliasRegistro" class="jafr-form-label">Alias:</label>
+                            <label for="nombreProductoRegistro" class="jafr-form-label">Nombre:</label>
                             <div class="jafr-form-input-container">
-                                <input type="text" id="aliasRegistro" name="aliasRegistro" class="form-control form-control-sm border border-black">                                        
+                                <input type="text" id="nombreProductoRegistro" name="nombreProductoRegistro" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
 
-                        <!-- Selector de tipo de usuario -->
+                        <!-- Selector de proveedor -->
                         <div class="jafr-form-group">
 
-                            <label for="rolRegistro" class="jafr-form-label">Tipo de usuario</label>
+                            <label for="proveedorRegistro" class="jafr-form-label">Proveedor:</label>
                             <div class="jafr-form-input-container">
-                                    <select class="form-select border-black" id="rolRegistro" name="rolRegistro" aria-label="Rol del usuario dentro del sistema">
-                                    <option selected>Tipo de usuario...</option>
-                                    <option value="admin">Administrador</option>
-                                    <option value="vendedor">Vendedor</option>
+                                    <select class="form-select border-black" id="proveedorRegistro" name="proveedorRegistro" aria-label="proveedor del producto">
+                                    <option selected>Seleccionar proveedor</option>
+                                    <option value="admin">Albania</option>
+                                    <option value="vendedor">Comapan</option>
+                                </select>                                      
+                            </div>
+             
+                        </div>
+
+                        <!-- Selector de tipo de producto -->
+                        <div class="jafr-form-group">
+
+                            <label for="tipoProductoRegistro" class="jafr-form-label">Tipo de producto:</label>
+                            <div class="jafr-form-input-container">
+                                    <select class="form-select border-black" id="tipoProductoRegistro" name="tipoProductoRegistro" aria-label="proveedor del producto">
+                                    <option selected>Seleccionar tipo de producto</option>
+                                    <option value="admin">Pan</option>
+                                    <option value="vendedor">Dulceria</option>
                                 </select>                                      
                             </div>
              
                         </div>
 
                     </fieldset>
+                    <!-- FIN Seccion del formulario para Registro datos generales (nombre, proveedor y tipo de producto) -->
 
-                    <!-- Seccion del formulario para Registro de alias y tipo de usuario -->
+
+                    <!-- Seccion del formulario para Registro de precios de compra y venta -->
                     <fieldset class="mb-3 px-2">
 
                         <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
-                            Nombre Completo
+                            Precios
                         </legend>
 
                         <div class="jafr-form-group">
-                            <label for="primerNombreRegistro" class="jafr-form-label">Primer Nombre:</label>
+                            <label for="precioCompraRegistro" class="jafr-form-label">Precio de compra:</label>
                             <div class="jafr-form-input-container">
-                                <input type="text" id="primerNombreRegistro" name="primerNombreRegistro" class="form-control form-control-sm border border-black">                                        
+                                <input type="number" id="precioCompraRegistro" name="precioCompraRegistro" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
                         
                         <div class="jafr-form-group">
-                            <label for="segundoNombreRegistro" class="jafr-form-label">Segundo Nombre:</label>
+                            <label for="precioVentaRegistro" class="jafr-form-label">Precio de venta:</label>
                             <div class="jafr-form-input-container">
-                                <input type="text" id="segundoNombreRegistro" name="segundoNombreRegistro" class="form-control form-control-sm border border-black">                                        
-                            </div>
-                        </div>
-
-                        <div class="jafr-form-group">
-                            <label for="primerApellidoRegistro" class="jafr-form-label">Primer apellido:</label>
-                            <div class="jafr-form-input-container">
-                                <input type="text" id="primerApellidoRegistro" name="primerApellidoRegistro" class="form-control form-control-sm border border-black">                                        
-                            </div>
-                        </div>
-
-                        <div class="jafr-form-group">
-                            <label for="segundoApellidoRegistro" class="jafr-form-label">Segundo apellido:</label>
-                            <div class="jafr-form-input-container">
-                                <input type="text" id="segundoApellidoRegistro" name="segundoApellidoRegistro" class="form-control form-control-sm border border-black">                                        
+                                <input type="number" id="precioVentaRegistro" name="precioVentaRegistro" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
 
                     </fieldset>
-                    <!-- Fin Seccion del formulario para Registro de nombre completo -->
+                    <!-- Fin Seccion del formulario para Registro de precios de compra y venta -->
 
 
-                    <!-- Seccion del formulario para Registro de datos de contacto -->
+                    <!-- Seccion del formulario para Registro de inventario -->
                     <fieldset class="px-2">
 
                         <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
-                            Datos de contacto
+                            Inventario
                         </legend>
 
                         <div class="jafr-form-group">
-                            <label for="telefonoRegistro" class="jafr-form-label">Teléfono:</label>
+                            <label for="stockRegistro" class="jafr-form-label">Cantidad en stock:</label>
                             <div class="jafr-form-input-container">
-                                <input type="tel" id="telefonoRegistro" name="telefonoRegistro" class="form-control form-control-sm border border-black">                                        
+                                <input type="number" id="stockRegistro" name="stockRegistro" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
 
                         <div class="jafr-form-group">
-                            <label for="correoRegistro" class="jafr-form-label">Correo:</label>
+                            <label for="stockMinRegistro" class="jafr-form-label">Cantidad min stock:</label>
                             <div class="jafr-form-input-container">
-                                <input type="email" id="correoRegistro" name="correoRegistro" class="form-control form-control-sm border border-black">                                        
+                                <input type="email" id="stockMinRegistro" name="stockMinRegistro" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
                     </fieldset>
-                    <!-- Fin Seccion del formulario para Registro de datos de contacto -->
+                    <!-- Fin Seccion del formulario para Registro de inventario -->
 
                 </div>
 
@@ -763,7 +765,7 @@
         <!-- Fin contenedor del contenido del modal -->
 
     </div>
-    <!-- Fin contenedor Modal de Ejemplo con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->    
+    <!-- Fin contenedor Modal de agregar con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->    
 
 
     <!-- Inicio contenedor Modal de editar con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->
@@ -774,13 +776,13 @@
         <div class="modal-dialog modal-dialog-centered">
 
             <!-- Contenido del modal que va mostrar un formulario -->
-            <form class="modal-content" id="formularioEditarUsuario">
+            <form class="modal-content" id="formularioEditarProducto">
 
                 <!-- Titulo del modal y boton cerrar modal -->
                 <div class="modal-header position-relative">
 
                     <h3 class="modal-title fs-5 fw-bold mx-auto" id="modalTitulo-EditarItem">
-                        Editar Usuario
+                        Editar Producto
                     </h3>
 
                     <button 
@@ -805,93 +807,99 @@
                         </p>
                     </div>
                 
-                    <!-- Seccion del formulario para editar nombre completo -->
+                    <!-- Seccion del formulario para editar datos generales (nombre, proveedor y tipo de producto) -->
                     <fieldset class="mb-3 px-2">
+
                         <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
-                            Cuenta
+                            Datos generales
                         </legend>
 
                         <div class="jafr-form-group">
-                            <label for="alias" class="jafr-form-label">Alias:</label>
+                            <label for="nombreProductoEditar" class="jafr-form-label">Nombre:</label>
                             <div class="jafr-form-input-container">
-                                <input type="text" id="alias" name="alias" class="form-control form-control-sm border border-black">                                        
+                                <input type="text" id="nombreProductoEditar" name="nombreProductoEditar" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
 
-                        <!-- Selector de tipo de usuario -->
+                        <!-- Selector de proveedor -->
                         <div class="jafr-form-group">
 
-                            <label for="rol" class="jafr-form-label">Tipo de usuario</label>
+                            <label for="proveedorEditar" class="jafr-form-label">Proveedor:</label>
                             <div class="jafr-form-input-container">
-                                    <select class="form-select border-black" id="rol" name="rol" aria-label="Rol del usuario dentro del sistema">
-                                    <option selected>Tipo de usuario...</option>
-                                    <option value="admin">Administrador</option>
-                                    <option value="vendedor">Vendedor</option>
+                                    <select class="form-select border-black" id="proveedorEditar" name="proveedorEditar" aria-label="proveedor del producto">
+                                    <option selected>Seleccionar proveedor</option>
+                                    <option value="1">Albania</option>
+                                    <option value="2">Comapan</option>
+                                </select>                                      
+                            </div>
+             
+                        </div>
+
+                        <!-- Selector de tipo de producto -->
+                        <div class="jafr-form-group">
+
+                            <label for="tipoProductoEditar" class="jafr-form-label">Tipo de producto:</label>
+                            <div class="jafr-form-input-container">
+                                    <select class="form-select border-black" id="tipoProductoEditar" name="tipoProductoEditar" aria-label="proveedor del producto">
+                                    <option selected>Seleccionar tipo de producto</option>
+                                    <option value="1">Pan</option>
+                                    <option value="2">Dulceria</option>
                                 </select>                                      
                             </div>
              
                         </div>
 
                     </fieldset>
+                    <!-- FIN Seccion del formulario para editar datos generales (nombre, proveedor y tipo de producto) -->
 
-                    <!-- Seccion del formulario para editar nombre completo -->
+
+                    <!-- Seccion del formulario para editar de precios de compra y venta -->
                     <fieldset class="mb-3 px-2">
+
                         <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
-                            Nombre Completo
+                            Precios
                         </legend>
 
                         <div class="jafr-form-group">
-                            <label for="primerNombre" class="jafr-form-label">Primer Nombre:</label>
+                            <label for="precioCompraEditar" class="jafr-form-label">Precio de compra:</label>
                             <div class="jafr-form-input-container">
-                                <input type="text" id="primerNombre" name="primerNombre" class="form-control form-control-sm border border-black">                                        
+                                <input type="number" id="precioCompraEditar" name="precioCompraEditar" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
                         
                         <div class="jafr-form-group">
-                            <label for="segundoNombre" class="jafr-form-label">Segundo Nombre:</label>
+                            <label for="precioVentaEditar" class="jafr-form-label">Precio de venta:</label>
                             <div class="jafr-form-input-container">
-                                <input type="text" id="segundoNombre" name="segundoNombre" class="form-control form-control-sm border border-black">                                        
+                                <input type="number" id="precioVentaEditar" name="precioVentaEditar" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
 
-                        <div class="jafr-form-group">
-                            <label for="primerApellido" class="jafr-form-label">Primer apellido:</label>
-                            <div class="jafr-form-input-container">
-                                <input type="text" id="primerApellido" name="primerApellido" class="form-control form-control-sm border border-black">                                        
-                            </div>
-                        </div>
-
-                        <div class="jafr-form-group">
-                            <label for="segundoApellido" class="jafr-form-label">Segundo apellido:</label>
-                            <div class="jafr-form-input-container">
-                                <input type="text" id="segundoApellido" name="segundoApellido" class="form-control form-control-sm border border-black">                                        
-                            </div>
-                        </div>
                     </fieldset>
-                    <!-- Fin Seccion del formulario para editar nombre completo -->
+                    <!-- Fin Seccion del formulario para editar de precios de compra y venta -->
 
 
-                    <!-- Seccion del formulario para editar datos de contacto -->
+                    <!-- Seccion del formulario para editar de inventario -->
                     <fieldset class="px-2">
+
                         <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
-                            Datos de contacto
+                            Inventario
                         </legend>
 
                         <div class="jafr-form-group">
-                            <label for="telefono" class="jafr-form-label">Teléfono:</label>
+                            <label for="stockEditar" class="jafr-form-label">Cantidad en stock:</label>
                             <div class="jafr-form-input-container">
-                                <input type="tel" id="telefono" name="telefono" class="form-control form-control-sm border border-black">                                        
+                                <input type="number" id="stockEditar" name="stockEditar" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
 
                         <div class="jafr-form-group">
-                            <label for="correo" class="jafr-form-label">Correo:</label>
+                            <label for="stockMinEditar" class="jafr-form-label">Cantidad min stock:</label>
                             <div class="jafr-form-input-container">
-                                <input type="email" id="correo" name="correo" class="form-control form-control-sm border border-black">                                        
+                                <input type="email" id="stockMinEditar" name="stockMinEditar" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
                     </fieldset>
-                    <!-- Fin Seccion del formulario para editar datos de contacto -->
+                    <!-- Fin Seccion del formulario para editar de inventario -->
 
                 </div>
 
@@ -911,7 +919,7 @@
                             type="button"
                             class="btn btn-link link-danger py-0 fw-bold"
                         >
-                            deshabilitar usuario
+                            deshabilitar producto
                         </button>
                     </div>
 
@@ -923,7 +931,7 @@
         <!-- Fin contenedor del contenido del modal -->
 
     </div>
-    <!-- Fin contenedor Modal de Ejemplo con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->    
+    <!-- Fin contenedor Modal de Editar con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->    
 
 
 
