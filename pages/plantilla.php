@@ -444,8 +444,8 @@
                             <div class="jafr-form-input-container">
                                     <select class="form-select border-black" id="rolRegistro" name="rolRegistro" aria-label="Rol del usuario dentro del sistema">
                                     <option selected>Tipo de usuario...</option>
-                                    <option value="admin">Administrador</option>
-                                    <option value="vendedor">Vendedor</option>
+                                    <option value="1">Administrador</option>
+                                    <option value="2">Vendedor</option>
                                 </select>                                      
                             </div>
              
@@ -598,8 +598,8 @@
                             <div class="jafr-form-input-container">
                                     <select class="form-select border-black" id="rol" name="rol" aria-label="Rol del usuario dentro del sistema">
                                     <option selected>Tipo de usuario...</option>
-                                    <option value="admin">Administrador</option>
-                                    <option value="vendedor">Vendedor</option>
+                                    <option value="1">Administrador</option>
+                                    <option value="2">Vendedor</option>
                                 </select>                                      
                             </div>
              
