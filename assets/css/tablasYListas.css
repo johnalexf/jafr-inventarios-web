@@ -68,12 +68,22 @@
     margin-bottom: 1rem;
 }
 
-.jafr-card-item p{
+.jafr-card-item-especial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.jafr-card-item p,
+.jafr-card-item-especial p{
     margin-bottom: 0rem;
     font-weight: 500;
 }
 
-.jafr-card-item p:nth-child(odd){
+.jafr-card-item p:nth-child(odd),
+.jafr-card-item-especial p:nth-child(odd)
+{
     color: var(--bs-secondary);
 }
 

@@ -325,17 +325,24 @@
             <!-- Card personalizada para el item 1 -->
             <div class="jafr-card">
                 <h3 class="fs-5 fw-bold text-primary">
-                    001 - johnalexfr
+                    <span>001</span>
+                    <span class="d-block mt-1">Tienda don jaime</span> 
                 </h3>
                 <hr>
-                <p>John Alexander Forero Rubio</p>
-                <p>Usuario1@gmail.com</p>
+
+                <p>Jaime Enrique</p>
+                <p>Kra 21 # 124 - 35</p>
+                <p>jaimeEnrique@gmail.com</p>
                 <p>3105953212</p>
-                <p>Vendedor</p>
+                <div class="jafr-card-item-especial mb-0">
+                    <p>Ruta:</p>
+                    <p>Viernes</p>
+                </div>
+
                 <div class="jafr-card-btn-edit">
                     <button
                         class="btn btn-link link-primary m-auto p-0 d-flex"
-                        title="editar usuario"
+                        title="editar cliente"
                         data-bs-toggle="modal" 
                         data-bs-target="#modalEditarItem"
                     >
@@ -347,17 +354,24 @@
             <!-- Card personalizada para el item 2 -->
             <div class="jafr-card item-desactivado">
                 <h3 class="fs-5 fw-bold text-primary">
-                    001 - johnalexfr2
+                    <span>001</span>
+                    <span class="d-block mt-1">Tienda don jaime</span> 
                 </h3>
                 <hr>
-                <p>John Alexander Forero Rubio</p>
-                <p>Usuario1@gmail.com</p>
+
+                <p>Jaime Enrique</p>
+                <p>Kra 21 # 124 - 35</p>
+                <p>jaimeEnrique@gmail.com</p>
                 <p>3105953212</p>
-                <p>Vendedor</p>
+                <div class="jafr-card-item-especial mb-0">
+                    <p>Ruta:</p>
+                    <p>Viernes</p>
+                </div>
+
                 <div class="jafr-card-btn-edit">
                     <button
                         class="btn btn-link link-primary m-auto p-0 d-flex"
-                        title="editar usuario"
+                        title="editar cliente"
                         data-bs-toggle="modal" 
                         data-bs-target="#modalEditarItem"
                     >
@@ -365,6 +379,97 @@
                     </button>
                 </div>
             </div>
+
+
+            <!-- Card personalizada para el item 3 -->
+            <div class="jafr-card">
+                <h3 class="fs-5 fw-bold text-primary">
+                    <span>001</span>
+                    <span class="d-block mt-1">Tienda don jaime</span> 
+                </h3>
+                <hr>
+
+                <p>Jaime Enrique</p>
+                <p>Kra 21 # 124 - 35</p>
+                <p>jaimeEnrique@gmail.com</p>
+                <p>3105953212</p>
+                <div class="jafr-card-item-especial mb-0">
+                    <p>Ruta:</p>
+                    <p>Viernes</p>
+                </div>
+
+                <div class="jafr-card-btn-edit">
+                    <button
+                        class="btn btn-link link-primary m-auto p-0 d-flex"
+                        title="editar cliente"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalEditarItem"
+                    >
+                        <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Card personalizada para el item 4 -->
+            <div class="jafr-card">
+                <h3 class="fs-5 fw-bold text-primary">
+                    <span>001</span>
+                    <span class="d-block mt-1">Tienda don jaime</span> 
+                </h3>
+                <hr>
+
+                <p>Jaime Enrique</p>
+                <p>Kra 21 # 124 - 35</p>
+                <p>jaimeEnrique@gmail.com</p>
+                <p>3105953212</p>
+                <div class="jafr-card-item-especial mb-0">
+                    <p>Ruta:</p>
+                    <p>Viernes</p>
+                </div>
+
+                <div class="jafr-card-btn-edit">
+                    <button
+                        class="btn btn-link link-primary m-auto p-0 d-flex"
+                        title="editar cliente"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalEditarItem"
+                    >
+                        <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Card personalizada para el item 5 -->
+            <div class="jafr-card">
+                <h3 class="fs-5 fw-bold text-primary">
+                    <span>001</span>
+                    <span class="d-block mt-1">Tienda don jaime</span> 
+                </h3>
+                <hr>
+
+                <p>Jaime Enrique</p>
+                <p>Kra 21 # 124 - 35</p>
+                <p>jaimeEnrique@gmail.com</p>
+                <p>3105953212</p>
+                <div class="jafr-card-item-especial mb-0">
+                    <p>Ruta:</p>
+                    <p>Viernes</p>
+                </div>
+
+                <div class="jafr-card-btn-edit">
+                    <button
+                        class="btn btn-link link-primary m-auto p-0 d-flex"
+                        title="editar cliente"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalEditarItem"
+                    >
+                        <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+
 
         </section>
         <!-- Fin contenedor de la lista de clientes esta visual sera antes de pantallas de medida lg-->
