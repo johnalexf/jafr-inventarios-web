@@ -154,33 +154,35 @@
 
 
         <!--
-        Inicio Contenedor principal de la tabla de usuarios esta visual sera despues de pantallas de medida md
+        Inicio Contenedor principal de la tabla de productos esta visual sera despues de pantallas de medida md
         para pantallas menores se manejan card que estan despues de esta seccion
         -->
-        <div class="table-responsive d-none d-md-block" aria-labelledby="titulo-tabla">
+        <div class="table-responsive d-none d-lg-block" aria-labelledby="titulo-tabla">
 
             <!--
                 El titulo por medio del atributo aria en section se asocia para accesibilidad
                 Ademas se utiliza la clase de bootstrap visually-hidden para que visualmente no se vea
                 Pero para el tema de accesibilidad si sera tenido en cuenta
             -->
-            <h2 id="titulo-tabla" class="visually-hidden">Listado de usuarios en formato tabla</h2>
+            <h2 id="titulo-tabla" class="visually-hidden">Listado de productos en formato tabla</h2>
 
             <!-- Inicio de la tabla de usuarios -->
             <!-- Los estilos personalizados de la tabla estan en tablasyListas.css para evitar extender el codigo HTML -->
             <table class="table">
 
-                <caption class="visually-hidden">Lista de usuarios</caption>
+                <caption class="visually-hidden">Lista de productos</caption>
 
                 <!-- Titulos de las columnas de la tabla -->
                 <thead>
                     <tr>
-                        <th scope="col">Id</th>
-                        <th scope="col">Alias</th>
+                        <th scope="col ">Id</th>
                         <th scope="col">Nombre</th>
-                        <th scope="col">Correo</th>
-                        <th scope="col">Telefono</th>
-                        <th scope="col">Rol</th>
+                        <th scope="col">Proveedor</th>
+                        <th scope="col">Tipo de producto</th>
+                        <th scope="col">Precio de compra</th>
+                        <th scope="col">Precio de venta</th>
+                        <th scope="col">Cantidad en stock</th>
+                        <th scope="col">Cantidad min en stock</th>
                         <th scope="col">Editar</th>
                     </tr>
                 </thead>
@@ -191,15 +193,17 @@
                     <!-- Fila item 1 -->
                     <tr>
                         <th scope="row">001</th>
-                        <td>johnalexfr</td>
-                        <td>John Alexander Forero Rubio</td>
-                        <td>Usuario1@gmail.com</td>
-                        <td>3105953212</td>
-                        <td>Vendedor</td>
+                        <td>Mogolle*12</td>
+                        <td>Albania</td>
+                        <td>Pan</td>
+                        <td>$10.000,00</td>
+                        <td>$12.000,00</td>
+                        <td>30</td>
+                        <td>60</td>
                         <td>
                             <button
                                 class="btn btn-link link-primary m-auto p-0 d-flex"
-                                title="editar usuario"
+                                title="editar producto"
                                 data-bs-toggle="modal" 
                                 data-bs-target="#modalEditarItem"
                             >
@@ -211,15 +215,17 @@
                     <!-- Fila item 2 -->
                     <tr class="item-desactivado">
                         <th scope="row">001</th>
-                        <td>johnalexfr</td>
-                        <td>John Alexander Forero Rubio</td>
-                        <td>Usuario1@gmail.com</td>
-                        <td>3105953212</td>
-                        <td>Vendedor</td>
+                        <td>Mogolle*12</td>
+                        <td>Albania</td>
+                        <td>Pan</td>
+                        <td>$10.000,00</td>
+                        <td>$12.000,00</td>
+                        <td>30</td>
+                        <td>60</td>
                         <td>
                             <button
                                 class="btn btn-link link-primary m-auto p-0 d-flex"
-                                title="editar usuario"
+                                title="editar producto"
                                 data-bs-toggle="modal" 
                                 data-bs-target="#modalEditarItem"
                             >
@@ -228,6 +234,71 @@
                         </td>
                     </tr>
 
+                    <!-- Fila item 3 -->
+                    <tr>
+                        <th scope="row">001</th>
+                        <td>Mogolle*12</td>
+                        <td>Albania</td>
+                        <td>Pan</td>
+                        <td>$10.000,00</td>
+                        <td>$12.000,00</td>
+                        <td>30</td>
+                        <td>60</td>
+                        <td>
+                            <button
+                                class="btn btn-link link-primary m-auto p-0 d-flex"
+                                title="editar producto"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalEditarItem"
+                            >
+                                <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <!-- Fila item 4 -->
+                    <tr>
+                        <th scope="row">001</th>
+                        <td>Mogolle*12</td>
+                        <td>Albania</td>
+                        <td>Pan</td>
+                        <td>$10.000,00</td>
+                        <td>$12.000,00</td>
+                        <td>30</td>
+                        <td>60</td>
+                        <td>
+                            <button
+                                class="btn btn-link link-primary m-auto p-0 d-flex"
+                                title="editar producto"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalEditarItem"
+                            >
+                                <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <!-- Fila item 5 -->
+                    <tr>
+                        <th scope="row">001</th>
+                        <td>Mogolle*12</td>
+                        <td>Albania</td>
+                        <td>Pan</td>
+                        <td>$10.000,00</td>
+                        <td>$12.000,00</td>
+                        <td>30</td>
+                        <td>60</td>
+                        <td>
+                            <button
+                                class="btn btn-link link-primary m-auto p-0 d-flex"
+                                title="editar producto"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalEditarItem"
+                            >
+                                <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                            </button>
+                        </td>
+                    </tr>
 
                 </tbody>
 
@@ -243,7 +314,7 @@
 
         <!-- Inicio contenedor de la lista de usuarios esta visual sera antes de pantallas de medida md-->
         <!-- Los estilos personalizados de la lista estan en tablasyListas.css para evitar extender el codigo HTML -->
-        <section class="d-md-none jafr-grid-cards" aria-labelledby="titulo-tarjetas">
+        <section class="d-lg-none jafr-grid-cards" aria-labelledby="titulo-tarjetas">
 
             <!--
                 El titulo por medio del atributo aria en section se asocia para accesibilidad
