@@ -133,7 +133,7 @@
                     class="btn btn-primary px-6 fw-bold w-btn-agregar-nuevo 
                            d-flex justify-content-around align-items-center"  
                     data-bs-toggle="modal" 
-                    data-bs-target="#modalAgregarNuevo"
+                    data-bs-target="#modalAgregarNuevoItem"
                     >
 
                     <span class="d-flex d-sm-none">
@@ -202,6 +202,8 @@
                             <button
                                 class="btn btn-link link-primary m-auto p-0 d-flex"
                                 title="editar usuario"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalEditarItem"
                             >
                                 <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
                             </button>
@@ -220,6 +222,8 @@
                             <button
                                 class="btn btn-link link-primary m-auto p-0 d-flex"
                                 title="editar usuario"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalEditarItem"
                             >
                                 <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
                             </button>
@@ -238,6 +242,8 @@
                             <button
                                 class="btn btn-link link-primary m-auto p-0 d-flex"
                                 title="editar usuario"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalEditarItem"
                             >
                                 <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
                             </button>
@@ -256,6 +262,8 @@
                             <button
                                 class="btn btn-link link-primary m-auto p-0 d-flex"
                                 title="editar usuario"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalEditarItem"
                             >
                                 <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
                             </button>
@@ -299,6 +307,8 @@
                     <button
                         class="btn btn-link link-primary m-auto p-0 d-flex"
                         title="editar usuario"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalEditarItem"
                     >
                         <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
                     </button>
@@ -319,6 +329,8 @@
                     <button
                         class="btn btn-link link-primary m-auto p-0 d-flex"
                         title="editar usuario"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalEditarItem"
                     >
                         <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
                     </button>
@@ -420,20 +432,20 @@
 
 
     <!-- Inicio contenedor Modal de Agregar nuevo con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->
-    <div class="modal fade" id="modalEditarUsuario" tabindex="-1" 
-        aria-labelledby="modalTitulo-EditarUsuario" aria-hidden="true">
+    <div class="modal fade" id="modalAgregarNuevoItem" tabindex="-1" 
+        aria-labelledby="modalTitulo-AgregarItem" aria-hidden="true">
 
         <!-- Inicio contenedor del contenido del modal -->
         <div class="modal-dialog modal-dialog-centered">
 
             <!-- Contenido del modal que va mostrar un formulario -->
-            <form class="modal-content" id="formularioEditarUsuario">
+            <form class="modal-content" id="formularioAgregarUsuario">
 
                 <!-- Titulo del modal y boton cerrar modal -->
                 <div class="modal-header position-relative">
 
-                    <h3 class="modal-title fs-5 fw-bold mx-auto" id="modalTitulo-EditarUsuario">
-                        Editar Usuario
+                    <h3 class="modal-title fs-5 fw-bold mx-auto" id="modalTitulo-AgregarItem">
+                        Agregar Nuevo Usuario
                     </h3>
 
                     <button 
@@ -452,6 +464,161 @@
                 <!-- Cuerpo del modal contenido de los input del formulario-->
                 <div class="modal-body px-4">
                 
+                    <!-- Seccion del formulario para Registro de alias y tipo de usuario -->
+                    <fieldset class="mb-3 px-2">
+
+                        <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
+                            Cuenta
+                        </legend>
+
+                        <div class="jafr-form-group">
+                            <label for="aliasRegistro" class="jafr-form-label">Alias:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="aliasRegistro" name="aliasRegistro" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+                        <!-- Selector de tipo de usuario -->
+                        <div class="jafr-form-group">
+
+                            <label for="rolRegistro" class="jafr-form-label">Tipo de usuario</label>
+                            <div class="jafr-form-input-container">
+                                    <select class="form-select border-black" id="rolRegistro" name="rolRegistro" aria-label="Rol del usuario dentro del sistema">
+                                    <option selected>Tipo de usuario...</option>
+                                    <option value="admin">Administrador</option>
+                                    <option value="vendedor">Vendedor</option>
+                                </select>                                      
+                            </div>
+             
+                        </div>
+
+                    </fieldset>
+
+                    <!-- Seccion del formulario para Registro de alias y tipo de usuario -->
+                    <fieldset class="mb-3 px-2">
+
+                        <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
+                            Nombre Completo
+                        </legend>
+
+                        <div class="jafr-form-group">
+                            <label for="primerNombreRegistro" class="jafr-form-label">Primer Nombre:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="primerNombreRegistro" name="primerNombreRegistro" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+                        
+                        <div class="jafr-form-group">
+                            <label for="segundoNombreRegistro" class="jafr-form-label">Segundo Nombre:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="segundoNombreRegistro" name="segundoNombreRegistro" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+                        <div class="jafr-form-group">
+                            <label for="primerApellidoRegistro" class="jafr-form-label">Primer apellido:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="primerApellidoRegistro" name="primerApellidoRegistro" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+                        <div class="jafr-form-group">
+                            <label for="segundoApellidoRegistro" class="jafr-form-label">Segundo apellido:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="segundoApellidoRegistro" name="segundoApellidoRegistro" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+                    </fieldset>
+                    <!-- Fin Seccion del formulario para Registro de nombre completo -->
+
+
+                    <!-- Seccion del formulario para Registro de datos de contacto -->
+                    <fieldset class="px-2">
+
+                        <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
+                            Datos de contacto
+                        </legend>
+
+                        <div class="jafr-form-group">
+                            <label for="telefonoRegistro" class="jafr-form-label">Teléfono:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="tel" id="telefonoRegistro" name="telefonoRegistro" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+                        <div class="jafr-form-group">
+                            <label for="correoRegistro" class="jafr-form-label">Correo:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="email" id="correoRegistro" name="correoRegistro" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Fin Seccion del formulario para Registro de datos de contacto -->
+
+                </div>
+
+                <!-- Footer del modal contiene los botones de acción -->
+                <div class="modal-footer flex-column justify-content-center">
+
+                    <button 
+                        type="submit" 
+                        class="btn btn-primary fw-bold px-5 shadow" 
+                        data-bs-dismiss="modal">
+                            Agregar
+                    </button>
+
+
+                </div>
+
+            </form>
+
+        </div>
+        <!-- Fin contenedor del contenido del modal -->
+
+    </div>
+    <!-- Fin contenedor Modal de Ejemplo con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->    
+
+
+    <!-- Inicio contenedor Modal de editar con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->
+    <div class="modal fade" id="modalEditarItem" tabindex="-1" 
+        aria-labelledby="modalTitulo-EditarItem" aria-hidden="true">
+
+        <!-- Inicio contenedor del contenido del modal -->
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Contenido del modal que va mostrar un formulario -->
+            <form class="modal-content" id="formularioEditarUsuario">
+
+                <!-- Titulo del modal y boton cerrar modal -->
+                <div class="modal-header position-relative">
+
+                    <h3 class="modal-title fs-5 fw-bold mx-auto" id="modalTitulo-EditarItem">
+                        Editar Usuario
+                    </h3>
+
+                    <button 
+                        type="button" 
+                        class="btn btn-link link-dark d-flex position-absolute end-0 top-0 p-2 opacity-75" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close">
+                            <iconify-icon
+                                icon="carbon:close-filled"
+                                class="my-auto fs-3">
+                            </iconify-icon>
+                    </button>
+
+                </div>
+
+                <!-- Cuerpo del modal contenido de los input del formulario-->
+                <div class="modal-body px-4">
+
+                    <div class="mb-3 px-2">
+                        <p class="fw-bold">
+                           ID: &nbsp;&nbsp;001
+                        </p>
+                    </div>
+                
                     <!-- Seccion del formulario para editar nombre completo -->
                     <fieldset class="mb-3 px-2">
                         <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
@@ -464,6 +631,21 @@
                                 <input type="text" id="alias" name="alias" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
+
+                        <!-- Selector de tipo de usuario -->
+                        <div class="jafr-form-group">
+
+                            <label for="rol" class="jafr-form-label">Tipo de usuario</label>
+                            <div class="jafr-form-input-container">
+                                    <select class="form-select border-black" id="rol" name="rol" aria-label="Rol del usuario dentro del sistema">
+                                    <option selected>Tipo de usuario...</option>
+                                    <option value="admin">Administrador</option>
+                                    <option value="vendedor">Vendedor</option>
+                                </select>                                      
+                            </div>
+             
+                        </div>
+
                     </fieldset>
 
                     <!-- Seccion del formulario para editar nombre completo -->
@@ -538,12 +720,12 @@
                     </button>
 
                     <!-- Contenedor acciones de editar otra informacion o (deshabilitar o eliminar)modificar el estado de un objeto -->
-                    <div class="w-100 d-flex justify-content-start"> 
+                    <div class="w-100 d-flex justify-content-end"> 
                         <button
                             type="button"
-                            class="btn btn-link link-secondary py-0 fw-bold"
+                            class="btn btn-link link-danger py-0 fw-bold"
                         >
-                            Editar contraseña
+                            deshabilitar usuario
                         </button>
                     </div>
 
@@ -556,6 +738,7 @@
 
     </div>
     <!-- Fin contenedor Modal de Ejemplo con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->    
+
 
 
     <!-- Bootstrap JS -->
