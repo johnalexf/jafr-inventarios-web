@@ -26,7 +26,7 @@
     <!-- Estilos propios -->
     <link href="../assets/css/global.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/formularios.css">
-    <link rel="stylesheet" href="../assets/css/tablasYListas.css">
+    <link rel="stylesheet" href="../assets/css/tablasYListasCompuestas.css">
 
 </head>
 <body class="container-xxl px-0 vh-100 d-flex flex-column">
@@ -168,7 +168,7 @@
 
             <!-- Inicio de la tabla de ventas -->
             <!-- Los estilos personalizados de la tabla estan en tablasyListas.css para evitar extender el codigo HTML -->
-            <table class="table table-hover">
+            <table class="table table-hover tabla-principal">
 
                 <caption class="visually-hidden">Lista de ventas</caption>
 
@@ -176,26 +176,25 @@
                 <thead>
                     <tr>
                         <th scope="col">Id</th>
-                        <th scope="col">Alias</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Correo</th>
-                        <th scope="col">Telefono</th>
-                        <th scope="col">Rol</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Usuario</th>
                         <th scope="col">Editar</th>
+                        <th scope="col"><span class="visually-hidden">Ver mas detalles</span></th>
                     </tr>
                 </thead>
 
                 <!-- Contenido de la tabla (Filas) -->
                 <tbody>
 
-                    <!-- Fila item 1 -->
+                <!-- Fila item 1 -->
                     <tr>
                         <th scope="row">001</th>
-                        <td>johnalexfr</td>
-                        <td>John Alexander Forero Rubio</td>
-                        <td>Usuario1@gmail.com</td>
-                        <td>3105953212</td>
-                        <td>Vendedor</td>
+                        <td>Tienda don Jaime</td>
+                        <td><time datetime="2025-12-18">18/12/2025</time></td>
+                        <td>$340000</td>
+                        <td>John Forero</td>
                         <td>
                             <button
                                 class="btn btn-link link-primary m-auto p-0 d-flex"
@@ -206,16 +205,98 @@
                                 <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
                             </button>
                         </td>
+                        <td class="td-contiene-btn-collapse-item-principal">
+                            <div class="pe-2">
+                                <button 
+                                    class="btn btn-link link-primary m-0 p-0 d-flex btn-acordion collapsed" 
+                                    type = "button"
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#divDetalles1" 
+                                    aria-expanded="false" 
+                                    aria-controls="divDetalles1">
+                                    <iconify-icon icon="pixel:chevron-down-solid" class="fs-3"></iconify-icon>
+                                </button>
+                            </div>
+                        </td>
                     </tr>
 
-                    <!-- Fila item 2 -->
-                    <tr class="item-desactivado">
+                    <!-- Fila item 1 detalles -->
+                    <tr>
+
+                        <td colspan="7" >
+
+                            <div id="divDetalles1" class="accordion-collapse collapse px-5 pb-4 pt-1">
+
+                                <!-- subtabla de detalles del item  -->
+                                <table class="table table-hover table-sm mb-0 tabla-secundaria">
+
+                                    <caption class="caption-top fw-semibold border-bottom">Detalles de la venta 001</caption>
+
+                                    <!-- Titulos de las columnas de la subtabla -->
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Item</th>
+                                            <th scope="col">Producto</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Precio Unitario</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+
+                                    <!-- Fila item 1 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                    <!-- Fila item 1 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                    <!-- Fila item 1 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                    <!-- Fila item 1 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                            
+
+                        </td>
+
+                    </tr>
+
+ 
+
+                <!-- Fila item 2 -->
+                    <tr>
                         <th scope="row">001</th>
-                        <td>johnalexfr</td>
-                        <td>John Alexander Forero Rubio</td>
-                        <td>Usuario1@gmail.com</td>
-                        <td>3105953212</td>
-                        <td>Vendedor</td>
+                        <td>Tienda don Jaime</td>
+                        <td><time datetime="2025-12-18">18/12/2025</time></td>
+                        <td>$340000</td>
+                        <td>John Forero</td>
                         <td>
                             <button
                                 class="btn btn-link link-primary m-auto p-0 d-flex"
@@ -226,8 +307,291 @@
                                 <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
                             </button>
                         </td>
+                        <td class="td-contiene-btn-collapse-item-principal">
+                            <div class="pe-2">
+                                <button 
+                                    class="btn btn-link link-primary m-0 p-0 d-flex btn-acordion collapsed" 
+                                    type = "button"
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#divDetalles2" 
+                                    aria-expanded="false" 
+                                    aria-controls="divDetalles2">
+                                    <iconify-icon icon="pixel:chevron-down-solid" class="fs-3"></iconify-icon>
+                                </button>
+                            </div>
+                        </td>
                     </tr>
 
+                    <!-- Fila item 2 detalles -->
+                    <tr>
+
+                        <td colspan="7" >
+
+                            <div id="divDetalles2" class="accordion-collapse collapse px-5 pb-4 pt-1">
+
+                                <!-- subtabla de detalles del item  -->
+                                <table class="table table-hover table-sm mb-0 tabla-secundaria">
+
+                                    <caption class="caption-top fw-semibold border-bottom">Detalles de la venta 002</caption>
+
+                                    <!-- Titulos de las columnas de la subtabla -->
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Item</th>
+                                            <th scope="col">Producto</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Precio Unitario</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+
+                                    <!-- Fila item 2 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                    <!-- Fila item 2 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                    <!-- Fila item 2 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                    <!-- Fila item 2 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                            
+
+                        </td>
+
+                    </tr>
+
+
+                <!-- Fila item 3 -->
+                    <tr>
+                        <th scope="row">001</th>
+                        <td>Tienda don Jaime</td>
+                        <td><time datetime="2025-12-18">18/12/2025</time></td>
+                        <td>$340000</td>
+                        <td>John Forero</td>
+                        <td>
+                            <button
+                                class="btn btn-link link-primary m-auto p-0 d-flex"
+                                title="editar venta"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalEditarItem"
+                            >
+                                <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                            </button>
+                        </td>
+                        <td class="td-contiene-btn-collapse-item-principal">
+                            <div class="pe-2">
+                                <button 
+                                    class="btn btn-link link-primary m-0 p-0 d-flex btn-acordion collapsed" 
+                                    type = "button"
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#divDetalles3" 
+                                    aria-expanded="false" 
+                                    aria-controls="divDetalles3">
+                                    <iconify-icon icon="pixel:chevron-down-solid" class="fs-3"></iconify-icon>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Fila item 3 detalles -->
+                    <tr>
+
+                        <td colspan="7" >
+
+                            <div id="divDetalles3" class="accordion-collapse collapse px-5 pb-4 pt-1">
+
+                                <!-- subtabla de detalles del item  -->
+                                <table class="table table-hover table-sm mb-0 tabla-secundaria">
+
+                                    <caption class="caption-top fw-semibold border-bottom">Detalles de la venta 003</caption>
+
+                                    <!-- Titulos de las columnas de la subtabla -->
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Item</th>
+                                            <th scope="col">Producto</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Precio Unitario</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+
+                                    <!-- Fila item 3 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                    <!-- Fila item 3 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                    <!-- Fila item 3 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                    <!-- Fila item 3 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                            
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- Fila item 4 -->
+                    <tr>
+                        <th scope="row">001</th>
+                        <td>Tienda don Jaime</td>
+                        <td><time datetime="2025-12-18">18/12/2025</time></td>
+                        <td>$340000</td>
+                        <td>John Forero</td>
+                        <td>
+                            <button
+                                class="btn btn-link link-primary m-auto p-0 d-flex"
+                                title="editar venta"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalEditarItem"
+                            >
+                                <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                            </button>
+                        </td>
+                        <td class="td-contiene-btn-collapse-item-principal">
+                            <div class="pe-2">
+                                <button 
+                                    class="btn btn-link link-primary m-0 p-0 d-flex btn-acordion collapsed" 
+                                    type = "button"
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#divDetalles4" 
+                                    aria-expanded="false" 
+                                    aria-controls="divDetalles4">
+                                    <iconify-icon icon="pixel:chevron-down-solid" class="fs-3"></iconify-icon>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Fila item 4 detalles -->
+                    <tr>
+
+                        <td colspan="7" >
+
+                            <div id="divDetalles4" class="accordion-collapse collapse px-5 pb-4 pt-1">
+
+                                <!-- subtabla de detalles del item  -->
+                                <table class="table table-hover table-sm mb-0 tabla-secundaria">
+
+                                    <caption class="caption-top fw-semibold border-bottom">Detalles de la venta con id 004</caption>
+
+                                    <!-- Titulos de las columnas de la subtabla -->
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Item</th>
+                                            <th scope="col">Producto</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Precio Unitario</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+
+                                    <!-- Fila item 4 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                    <!-- Fila item 4 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                    <!-- Fila item 4 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                    <!-- Fila item 4 de la subtabla-->
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Mogolla*12</td>
+                                        <td>20</td>
+                                        <td>$10.000</td>
+                                        <td>$200.000</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                            
+
+                        </td>
+
+                    </tr>
 
                 </tbody>
 

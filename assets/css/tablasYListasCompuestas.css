@@ -1,0 +1,59 @@
+/* ==========================================================
+   Componentes de Visualización: Tablas y Listas Compuestas
+   ========================================================== */
+
+/* 1Configuración básica de celdas para asegurar alineación uniforme */
+.table.tabla-principal > thead > tr > th,
+.table.tabla-principal > tbody > tr > th,
+.table.tabla-principal > tbody > tr > td{
+    text-align: center;
+    padding: 1rem 0.4rem;
+}
+
+/* Espaciado entre filas para simular el efecto de tarjetas separadas */
+.table.tabla-principal > thead > tr,
+.table.tabla-principal > tbody > tr{
+    border-color: var(--color-surface);
+    border-right-width: 1.6rem;
+    border-left-width: 1.6rem;
+}
+
+/* Clases para eliminar el borde entre la fila del item principal y la fila con la tabla secundaria */
+/* Filas con Item principal */
+.table.tabla-principal > tbody > tr:nth-child(odd){
+    border-top-width: 1rem;
+    border-bottom-width: 0;
+}
+/*Filas con tabla secundaria */
+.table.tabla-principal > tbody > tr:nth-child(even){
+    border-top-width: 0;
+    border-bottom-width: 0;
+    >td{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+}
+
+/* Personalizar el color del hover de una fila de una tabla-hover */
+.table-hover > tbody > tr:hover > * {
+    --bs-table-bg-state: rgba(var(--bs-secondary-rgb), 0.12);
+}
+
+
+/* Tamaño fijo para el td que contiene el btn de collapse*/
+.td-contiene-btn-collapse-item-principal{
+    width: 30px;
+}
+
+/* Se crea una clase propia btn-acordion aparte de la de boostrap 
+    para traer solo el efecto de girar el boton.
+*/
+.btn-acordion {
+    width: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-acordion:not(.collapsed) {
+    transform: rotate(-180deg)
+}
+
