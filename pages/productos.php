@@ -331,19 +331,19 @@
                 </h3>
                 <hr>
                 <div class="jafr-card-lista">
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Proveedor:</p>
                         <p>Albania</p> 
                         <p>Tipo:</p>
                         <p>Pan</p>
                     </div>
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Compra:</p>
                         <p>$10.000</p>
                         <p>Venta:</p>
                         <p>$12.000</p>
                     </div>
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Stock:</p>
                         <p>30 <small>und</small></p>
                         <p>Stock min:</p>
@@ -371,19 +371,19 @@
                 </h3>
                 <hr>
                 <div class="jafr-card-lista">
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Proveedor:</p>
                         <p>Albania</p> 
                         <p>Tipo:</p>
                         <p>Pan</p>
                     </div>
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Compra:</p>
                         <p>$10.000</p>
                         <p>Venta:</p>
                         <p>$12.000</p>
                     </div>
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Stock:</p>
                         <p>30 <small>und</small></p>
                         <p>Stock min:</p>
@@ -411,19 +411,19 @@
                 </h3>
                 <hr>
                 <div class="jafr-card-lista">
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Proveedor:</p>
                         <p>Albania</p> 
                         <p>Tipo:</p>
                         <p>Pan</p>
                     </div>
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Compra:</p>
                         <p>$10.000</p>
                         <p>Venta:</p>
                         <p>$12.000</p>
                     </div>
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Stock:</p>
                         <p>30 <small>und</small></p>
                         <p>Stock min:</p>
@@ -451,19 +451,19 @@
                 </h3>
                 <hr>
                 <div class="jafr-card-lista">
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Proveedor:</p>
                         <p>Albania</p> 
                         <p>Tipo:</p>
                         <p>Pan</p>
                     </div>
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Compra:</p>
                         <p>$10.000</p>
                         <p>Venta:</p>
                         <p>$12.000</p>
                     </div>
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Stock:</p>
                         <p>30 <small>und</small></p>
                         <p>Stock min:</p>
@@ -490,19 +490,19 @@
                 </h3>
                 <hr>
                 <div class="jafr-card-lista">
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Proveedor:</p>
                         <p>Albania</p> 
                         <p>Tipo:</p>
                         <p>Pan</p>
                     </div>
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Compra:</p>
                         <p>$10.000</p>
                         <p>Venta:</p>
                         <p>$12.000</p>
                     </div>
-                    <div class="jafr-card-item">
+                    <div class="jafr-card-items-grid">
                         <p>Stock:</p>
                         <p>30 <small>und</small></p>
                         <p>Stock min:</p>

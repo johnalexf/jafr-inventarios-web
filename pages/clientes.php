@@ -334,7 +334,7 @@
                 <p>Kra 21 # 124 - 35</p>
                 <p>jaimeEnrique@gmail.com</p>
                 <p>3105953212</p>
-                <div class="jafr-card-item-especial mb-0">
+                <div class="jafr-card-item-inline mb-0">
                     <p>Ruta:</p>
                     <p>Viernes</p>
                 </div>
@@ -363,7 +363,7 @@
                 <p>Kra 21 # 124 - 35</p>
                 <p>jaimeEnrique@gmail.com</p>
                 <p>3105953212</p>
-                <div class="jafr-card-item-especial mb-0">
+                <div class="jafr-card-item-inline mb-0">
                     <p>Ruta:</p>
                     <p>Viernes</p>
                 </div>
@@ -393,7 +393,7 @@
                 <p>Kra 21 # 124 - 35</p>
                 <p>jaimeEnrique@gmail.com</p>
                 <p>3105953212</p>
-                <div class="jafr-card-item-especial mb-0">
+                <div class="jafr-card-item-inline mb-0">
                     <p>Ruta:</p>
                     <p>Viernes</p>
                 </div>
@@ -423,7 +423,7 @@
                 <p>Kra 21 # 124 - 35</p>
                 <p>jaimeEnrique@gmail.com</p>
                 <p>3105953212</p>
-                <div class="jafr-card-item-especial mb-0">
+                <div class="jafr-card-item-inline mb-0">
                     <p>Ruta:</p>
                     <p>Viernes</p>
                 </div>
@@ -453,7 +453,7 @@
                 <p>Kra 21 # 124 - 35</p>
                 <p>jaimeEnrique@gmail.com</p>
                 <p>3105953212</p>
-                <div class="jafr-card-item-especial mb-0">
+                <div class="jafr-card-item-inline mb-0">
                     <p>Ruta:</p>
                     <p>Viernes</p>
                 </div>

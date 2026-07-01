@@ -333,7 +333,7 @@
                 <p>Kra 21 # 124 - 35</p>
                 <p>Albania@gmail.com</p>
                 <p>3105953212</p>
-                <div class="jafr-card-item-especial mb-0">
+                <div class="jafr-card-item-inline mb-0">
                     <p>Horario:</p>
                     <p>L-V 8am-3pm</p>
                 </div>
@@ -362,7 +362,7 @@
                 <p>Kra 21 # 124 - 35</p>
                 <p>Albania@gmail.com</p>
                 <p>3105953212</p>
-                <div class="jafr-card-item-especial mb-0">
+                <div class="jafr-card-item-inline mb-0">
                     <p>Horario:</p>
                     <p>L-V 8am-3pm</p>
                 </div>
@@ -390,7 +390,7 @@
                 <p>Kra 21 # 124 - 35</p>
                 <p>Albania@gmail.com</p>
                 <p>3105953212</p>
-                <div class="jafr-card-item-especial mb-0">
+                <div class="jafr-card-item-inline mb-0">
                         <p>Horario:</p>
                         <p>L-V 8am-3pm</p>
                 </div>
@@ -419,7 +419,7 @@
                 <p>Kra 21 # 124 - 35</p>
                 <p>Albania@gmail.com</p>
                 <p>3105953212</p>
-                <div class="jafr-card-item-especial mb-0">
+                <div class="jafr-card-item-inline mb-0">
                     <p>Horario:</p>
                     <p>L-V 8am-3pm</p>
                 </div>
@@ -448,7 +448,7 @@
                 <p>Kra 21 # 124 - 35</p>
                 <p>Albania@gmail.com</p>
                 <p>3105953212</p>
-                <div class="jafr-card-item-especial mb-0">
+                <div class="jafr-card-item-inline mb-0">
                     <p>Horario:</p>
                     <p>L-V 8am-3pm</p>
                 </div>

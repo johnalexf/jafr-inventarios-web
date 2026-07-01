@@ -61,28 +61,28 @@
 
 
 /* Clases para personalizar la card si se necesita ingresar una lista descriptiva de datos */
-.jafr-card-item{
+.jafr-card-items-grid{
     display: grid;
     grid-template-columns: auto 100px;
     gap: .1rem 1rem;
     margin-bottom: 1rem;
 }
 
-.jafr-card-item-especial{
+.jafr-card-item-inline{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
 
-.jafr-card-item p,
-.jafr-card-item-especial p{
+.jafr-card-items-grid p,
+.jafr-card-item-inline p{
     margin-bottom: 0rem;
     font-weight: 500;
 }
 
-.jafr-card-item p:nth-child(odd),
-.jafr-card-item-especial p:nth-child(odd)
+.jafr-card-items-grid p:nth-child(odd),
+.jafr-card-item-inline p:nth-child(odd)
 {
     color: var(--bs-secondary);
 }
