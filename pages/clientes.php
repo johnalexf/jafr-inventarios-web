@@ -573,13 +573,13 @@
         <div class="modal-dialog modal-dialog-centered">
 
             <!-- Contenido del modal que va mostrar un formulario -->
-            <form class="modal-content" id="formularioAgregarUsuario">
+            <form class="modal-content" id="formularioAgregarCliente">
 
                 <!-- Titulo del modal y boton cerrar modal -->
                 <div class="modal-header position-relative">
 
                     <h3 class="modal-title fs-5 fw-bold mx-auto" id="modalTitulo-AgregarItem">
-                        Agregar Nuevo Usuario
+                        Agregar Nuevo Cliente
                     </h3>
 
                     <button 
@@ -598,41 +598,60 @@
                 <!-- Cuerpo del modal contenido de los input del formulario-->
                 <div class="modal-body px-4">
                 
-                    <!-- Seccion del formulario para Registro de alias y tipo de usuario -->
+                    <!-- Seccion del formulario para Registro datos generales (nombre comercial, correo, direccion, ruta) -->
                     <fieldset class="mb-3 px-2">
 
                         <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
-                            Cuenta
+                            Datos generales
                         </legend>
 
                         <div class="jafr-form-group">
-                            <label for="aliasRegistro" class="jafr-form-label">Alias:</label>
+                            <label for="nombreNegocioRegistro" class="jafr-form-label">Nombre del Negocio:</label>
                             <div class="jafr-form-input-container">
-                                <input type="text" id="aliasRegistro" name="aliasRegistro" class="form-control form-control-sm border border-black">                                        
+                                <input type="text" id="nombreNegocioRegistro" name="nombreNegocioRegistro" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
 
-                        <!-- Selector de tipo de usuario -->
+
+                        <div class="jafr-form-group">
+                            <label for="correoRegistro" class="jafr-form-label">Correo:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="email" id="correoRegistro" name="correoRegistro" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+                        
+                        <div class="jafr-form-group">
+                            <label for="direccionRegistro" class="jafr-form-label">Direccion:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="direccionRegistro" name="direccionRegistro" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+
+                        <!-- Selector de ruta -->
                         <div class="jafr-form-group">
 
-                            <label for="rolRegistro" class="jafr-form-label">Tipo de usuario</label>
+                            <label for="rutaRegistro" class="jafr-form-label">Ruta</label>
                             <div class="jafr-form-input-container">
-                                    <select class="form-select border-black" id="rolRegistro" name="rolRegistro" aria-label="Rol del usuario dentro del sistema">
-                                    <option selected>Tipo de usuario...</option>
-                                    <option value="1">Administrador</option>
-                                    <option value="2">Vendedor</option>
+                                    <select class="form-select border-black" id="rutaRegistro" name="rutaRegistro" aria-label="ruta a la cual pertenece el cliente">
+                                    <option selected>Seleccionar ruta</option>
+                                    <option value="1">Viernes</option>
+                                    <option value="2">Jueves</option>
                                 </select>                                      
                             </div>
              
                         </div>
 
+
                     </fieldset>
 
-                    <!-- Seccion del formulario para Registro de alias y tipo de usuario -->
-                    <fieldset class="mb-3 px-2">
+
+                    <!-- Seccion del formulario para Registro de datos de contacto -->
+                    <fieldset class="px-2">
 
                         <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
-                            Nombre Completo
+                            Datos de contacto
                         </legend>
 
                         <div class="jafr-form-group">
@@ -663,17 +682,6 @@
                             </div>
                         </div>
 
-                    </fieldset>
-                    <!-- Fin Seccion del formulario para Registro de nombre completo -->
-
-
-                    <!-- Seccion del formulario para Registro de datos de contacto -->
-                    <fieldset class="px-2">
-
-                        <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
-                            Datos de contacto
-                        </legend>
-
                         <div class="jafr-form-group">
                             <label for="telefonoRegistro" class="jafr-form-label">Teléfono:</label>
                             <div class="jafr-form-input-container">
@@ -681,12 +689,6 @@
                             </div>
                         </div>
 
-                        <div class="jafr-form-group">
-                            <label for="correoRegistro" class="jafr-form-label">Correo:</label>
-                            <div class="jafr-form-input-container">
-                                <input type="email" id="correoRegistro" name="correoRegistro" class="form-control form-control-sm border border-black">                                        
-                            </div>
-                        </div>
                     </fieldset>
                     <!-- Fin Seccion del formulario para Registro de datos de contacto -->
 
@@ -711,7 +713,7 @@
         <!-- Fin contenedor del contenido del modal -->
 
     </div>
-    <!-- Fin contenedor Modal de Ejemplo con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->    
+    <!-- Fin contenedor Modal de agregar nuevo con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->    
 
 
     <!-- Inicio contenedor Modal de editar con formulario: este abarca toda la pantalla para poder generar una pequeña oscuridad en el fondo -->
@@ -722,13 +724,13 @@
         <div class="modal-dialog modal-dialog-centered">
 
             <!-- Contenido del modal que va mostrar un formulario -->
-            <form class="modal-content" id="formularioEditarUsuario">
+            <form class="modal-content" id="formularioEditarCliente">
 
                 <!-- Titulo del modal y boton cerrar modal -->
                 <div class="modal-header position-relative">
 
                     <h3 class="modal-title fs-5 fw-bold mx-auto" id="modalTitulo-EditarItem">
-                        Editar Usuario
+                        Editar Cliente
                     </h3>
 
                     <button 
@@ -753,39 +755,60 @@
                         </p>
                     </div>
                 
-                    <!-- Seccion del formulario para editar nombre completo -->
+                    <!-- Seccion del formulario para Editar datos generales (nombre comercial, correo, direccion, ruta) -->
                     <fieldset class="mb-3 px-2">
+
                         <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
-                            Cuenta
+                            Datos generales
                         </legend>
 
                         <div class="jafr-form-group">
-                            <label for="alias" class="jafr-form-label">Alias:</label>
+                            <label for="nombreNegocio" class="jafr-form-label">Nombre del Negocio:</label>
                             <div class="jafr-form-input-container">
-                                <input type="text" id="alias" name="alias" class="form-control form-control-sm border border-black">                                        
+                                <input type="text" id="nombreNegocio" name="nombreNegocio" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
 
-                        <!-- Selector de tipo de usuario -->
+
+                        <div class="jafr-form-group">
+                            <label for="correo" class="jafr-form-label">Correo:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="email" id="correo" name="correo" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+                        
+                        <div class="jafr-form-group">
+                            <label for="direccion" class="jafr-form-label">Direccion:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="text" id="direccion" name="direccion" class="form-control form-control-sm border border-black">                                        
+                            </div>
+                        </div>
+
+
+                        <!-- Selector de ruta -->
                         <div class="jafr-form-group">
 
-                            <label for="rol" class="jafr-form-label">Tipo de usuario</label>
+                            <label for="ruta" class="jafr-form-label">Ruta</label>
                             <div class="jafr-form-input-container">
-                                    <select class="form-select border-black" id="rol" name="rol" aria-label="Rol del usuario dentro del sistema">
-                                    <option selected>Tipo de usuario...</option>
-                                    <option value="1">Administrador</option>
-                                    <option value="2">Vendedor</option>
+                                    <select class="form-select border-black" id="ruta" name="ruta" aria-label="ruta a la cual pertenece el cliente">
+                                    <option selected>Seleccionar ruta</option>
+                                    <option value="1">Viernes</option>
+                                    <option value="2">Jueves</option>
                                 </select>                                      
                             </div>
              
                         </div>
 
+
                     </fieldset>
 
-                    <!-- Seccion del formulario para editar nombre completo -->
-                    <fieldset class="mb-3 px-2">
+
+                    <!-- Seccion del formulario para editar datos de contacto -->
+                    <fieldset class="px-2">
+
                         <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
-                            Nombre Completo
+                            Datos de contacto
                         </legend>
 
                         <div class="jafr-form-group">
@@ -815,15 +838,6 @@
                                 <input type="text" id="segundoApellido" name="segundoApellido" class="form-control form-control-sm border border-black">                                        
                             </div>
                         </div>
-                    </fieldset>
-                    <!-- Fin Seccion del formulario para editar nombre completo -->
-
-
-                    <!-- Seccion del formulario para editar datos de contacto -->
-                    <fieldset class="px-2">
-                        <legend class="fs-6 fw-bold border-bottom border-dark mb-3 ps-0 ps-sm-4">
-                            Datos de contacto
-                        </legend>
 
                         <div class="jafr-form-group">
                             <label for="telefono" class="jafr-form-label">Teléfono:</label>
@@ -832,12 +846,6 @@
                             </div>
                         </div>
 
-                        <div class="jafr-form-group">
-                            <label for="correo" class="jafr-form-label">Correo:</label>
-                            <div class="jafr-form-input-container">
-                                <input type="email" id="correo" name="correo" class="form-control form-control-sm border border-black">                                        
-                            </div>
-                        </div>
                     </fieldset>
                     <!-- Fin Seccion del formulario para editar datos de contacto -->
 
@@ -859,7 +867,7 @@
                             type="button"
                             class="btn btn-link link-danger py-0 fw-bold"
                         >
-                            deshabilitar usuario
+                            deshabilitar cliente
                         </button>
                     </div>
 
