@@ -210,6 +210,7 @@
                                 <button 
                                     class="btn btn-link link-primary m-0 p-0 d-flex btn-acordion collapsed" 
                                     type = "button"
+                                    title = "ver detalles de venta"
                                     data-bs-toggle="collapse" 
                                     data-bs-target="#divDetalles1" 
                                     aria-expanded="false" 
@@ -312,6 +313,7 @@
                                 <button 
                                     class="btn btn-link link-primary m-0 p-0 d-flex btn-acordion collapsed" 
                                     type = "button"
+                                    title = "ver detalles de venta"
                                     data-bs-toggle="collapse" 
                                     data-bs-target="#divDetalles2" 
                                     aria-expanded="false" 
@@ -413,6 +415,7 @@
                                 <button 
                                     class="btn btn-link link-primary m-0 p-0 d-flex btn-acordion collapsed" 
                                     type = "button"
+                                    title = "ver detalles de venta"
                                     data-bs-toggle="collapse" 
                                     data-bs-target="#divDetalles3" 
                                     aria-expanded="false" 
@@ -515,6 +518,7 @@
                                 <button 
                                     class="btn btn-link link-primary m-0 p-0 d-flex btn-acordion collapsed" 
                                     type = "button"
+                                    title = "ver detalles de venta"
                                     data-bs-toggle="collapse" 
                                     data-bs-target="#divDetalles4" 
                                     aria-expanded="false" 
