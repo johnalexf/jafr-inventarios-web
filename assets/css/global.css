@@ -177,3 +177,19 @@ button.btn-link:hover{
         right: calc((100vw - 1320px) / 2);
     }
 }
+
+/* 
+==================================================================
+   Clases para el buscador y el boton de agregar nuevo item
+==================================================================
+*/
+
+.w-btn-agregar-nuevo{
+    width: auto;
+}
+
+@media (min-width: 576px){
+    .w-btn-agregar-nuevo{
+        width: 340px;
+    }
+}
