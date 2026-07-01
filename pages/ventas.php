@@ -623,13 +623,21 @@
             <!-- Card personalizada para el item 1 -->
             <div class="jafr-card">
                 <h3 class="fs-5 fw-bold text-primary">
-                    001 - johnalexfr
+                    Venta #001
                 </h3>
                 <hr>
-                <p>John Alexander Forero Rubio</p>
-                <p>Usuario1@gmail.com</p>
-                <p>3105953212</p>
-                <p>Vendedor</p>
+                <div class="jafr-card-items-grid">
+                    <p>Fecha:</p>
+                    <p><time datetime="2025-12-18">18/12/2025</time></p>
+                    <p>Cliente:</p>
+                    <p>Tienda don Jaime</p>
+                    <p>Usuario:</p>
+                    <p>John Forero</p>
+                </div>
+                <div class="jafr-card-item-inline mb-0">
+                    <p>Total:</p>
+                    <p>$340.000</p>
+                </div>
                 <div class="jafr-card-btn-edit">
                     <button
                         class="btn btn-link link-primary m-auto p-0 d-flex"
@@ -642,16 +650,24 @@
                 </div>
             </div>
 
-            <!-- Card personalizada para el item 2 -->
+            <!-- Card personalizada para el item 1 -->
             <div class="jafr-card item-desactivado">
                 <h3 class="fs-5 fw-bold text-primary">
-                    001 - johnalexfr2
+                    Venta #001
                 </h3>
                 <hr>
-                <p>John Alexander Forero Rubio</p>
-                <p>Usuario1@gmail.com</p>
-                <p>3105953212</p>
-                <p>Vendedor</p>
+                <div class="jafr-card-items-grid">
+                    <p>Fecha:</p>
+                    <p><time datetime="2025-12-18">18/12/2025</time></p>
+                    <p>Cliente:</p>
+                    <p>Tienda don Jaime</p>
+                    <p>Usuario:</p>
+                    <p>John Forero</p>
+                </div>
+                <div class="jafr-card-item-inline mb-0">
+                    <p>Total:</p>
+                    <p>$340.000</p>
+                </div>
                 <div class="jafr-card-btn-edit">
                     <button
                         class="btn btn-link link-primary m-auto p-0 d-flex"

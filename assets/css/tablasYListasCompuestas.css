@@ -57,3 +57,69 @@
     transform: rotate(-180deg)
 }
 
+/* 
+==================================================================
+   Componente: Grid de Tarjetas (Reemplazo responsive de tabla)
+==================================================================
+*/
+
+.jafr-grid-cards {
+    display: grid;
+    /* auto-fit: ajusta las columnas automáticamente
+       minmax(280px, 1fr): cada tarjeta mide mínimo 280px, 
+       y si sobra espacio, se estira para llenar la fila */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem; /* Espaciado entre tarjetas */
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.jafr-card{
+    min-width: 270px;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    border: solid 2px white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.jafr-card > p{
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.jafr-card-btn-edit{
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+}
+
+
+/* Clases para personalizar la card si se necesita ingresar una lista descriptiva de datos */
+.jafr-card-items-grid{
+    display: grid;
+    grid-template-columns:  60px auto;
+    gap: .1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.jafr-card-item-inline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.jafr-card-items-grid p,
+.jafr-card-item-inline p{
+    margin-bottom: 0rem;
+    font-weight: 500;
+}
+
+.jafr-card-items-grid p:nth-child(odd),
+.jafr-card-item-inline p:nth-child(odd)
+{
+    color: var(--bs-secondary);
+}
