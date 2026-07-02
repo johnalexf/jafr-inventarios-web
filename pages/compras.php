@@ -7,7 +7,7 @@
     <!-- Icono para pestañas en navegadores web-->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 
-    <title>Ventas - JAFR</title>
+    <title>Compras - JAFR</title>
 
     <!-- Bootstrap CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -51,10 +51,10 @@
                         Nombre de la empresa /
                     </span>
                     <iconify-icon 
-                        icon="bi:cash-coin" 
+                        icon="fa7-solid:bag-shopping" 
                         class="px-2 fs-3" >
                     </iconify-icon>
-                    <span>Ventas</span>    
+                    <span>Compras</span>    
                 </h1>
 
                 <!--Inicio Contenedor del rol y del boton de menu de navegacion -->
@@ -107,7 +107,7 @@
         <!-- Inicio del Contenedor del buscador y del boton agregar nuevo item -->
         <section class="container-fluid mb-4" aria-labelledby="titulo-buscador">
 
-            <h2 id="titulo-buscador" class="visually-hidden">Búsqueda y acciones de ventas</h2>
+            <h2 id="titulo-buscador" class="visually-hidden">Búsqueda y acciones de compras</h2>
 
             <!-- Contenedor secundario del buscador y del boton -->
             <div class="d-flex gap-3">
@@ -120,8 +120,8 @@
                     <input 
                         type="text" 
                         class="form-control border-start-0 ps-0 text-secondary fw-semibold fs-6" 
-                        placeholder="Buscar por cliente, usuario o fecha..." 
-                        aria-label="Buscar ventas"
+                        placeholder="Buscar por proveedor, usuario o fecha..." 
+                        aria-label="Buscar Compras"
                     >
                 </div>
 
@@ -138,11 +138,11 @@
                         <iconify-icon 
                             icon="mingcute:add-fill" 
                             class="m-auto fs-3" 
-                            title=" Agregar nueva venta "
+                            title=" Agregar nueva compra "
                             >
                         </iconify-icon>  
                     </span>
-                    <span class="d-none d-sm-inline"> Agregar Nueva Venta </span>
+                    <span class="d-none d-sm-inline"> Agregar Nueva Compra </span>
 
                 </button>
 
@@ -1066,11 +1066,11 @@
                     <iconify-icon icon="bxs:store" class="fs-3 me-3"></iconify-icon> Clientes
                 </a>
                 
-                <a href="compras.php" class="d-flex align-items-center link-primary fw-bold fs-5">
+                <a href="compras.php" class="d-flex align-items-center link-secondary fw-bold fs-5">
                     <iconify-icon icon="fa7-solid:bag-shopping" class="fs-3 me-3"></iconify-icon> Compras
                 </a>
                 
-                <a href="ventas.php" class="d-flex align-items-center link-secondary fw-bold fs-5">
+                <a href="ventas.php" class="d-flex align-items-center link-primary fw-bold fs-5">
                     <iconify-icon icon="bi:cash-coin" class="fs-3 me-3"></iconify-icon> Ventas
                 </a>
                 
