@@ -1341,7 +1341,7 @@
         aria-labelledby="modalTitulo-EditarItem" aria-hidden="true">
 
         <!-- Inicio contenedor del contenido del modal -->
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
 
             <!-- Contenido del modal que va mostrar un formulario -->
             <form class="modal-content" id="formularioEditarVenta">
@@ -1367,11 +1367,207 @@
                 </div>
 
                 <!-- Cuerpo del modal contenido de los input del formulario-->
-                <div class="modal-body px-4">
+                <div class="modal-body px-2">
 
-                    <div class="mb-3 px-2">
-                        <p class="fw-bold">
-                           ID: &nbsp;&nbsp;001
+
+                    <div class="ms-0 ms-lg-5 mb-0 px-2 px-sm-5 row fw-bold">
+
+                        <div class="col-sm-6 jafr-card-items-grid">
+                            <p class = "text-end">Id:</p>
+                            <p>001</p>
+                        </div>
+
+                        <div class="col-sm-6 jafr-card-items-grid">
+                                <p>Usuario:</p>
+                                <p>John Forero</p>
+                        </div>
+
+                    </div>
+                    
+
+                    <!-- Seccion del formulario para Registro de cliente y fecha -->
+                    <fieldset class=" mb-3 px-2 px-sm-5 row">
+
+                        <legend class="visually-hidden">
+                            Cliente y fecha
+                        </legend>
+
+                        <!-- Selector de tipo de cliente -->
+                        <div class="col-lg-6 jafr-form-group">
+
+                            <label for="clienteRegistro" class="jafr-form-label">Cliente:</label>
+                            <div class="jafr-form-input-container">
+                                <select class="form-select form-select-sm border-black" id="clienteRegistro" name="clienteRegistro" aria-label="Cliente que va recibir la venta">
+                                    <option selected>Seleccionar cliente</option>
+                                    <option value="1">Tienda don jaima</option>
+                                    <option value="2">Tienda pepito perez</option>
+                                </select>                                      
+                            </div>
+            
+                        </div>
+
+                        <!-- Seleccion de fecha del dia de la venta-->
+                        <div class="col-lg-6 jafr-form-group">
+
+                            <label for="fechaRegistro" class="jafr-form-label">Fecha:</label>
+                            <div class="jafr-form-input-container">
+                                <input type="date" id="fechaRegistro" name="fechaRegistro" class="form-control form-control-sm border border-black">                                        
+                            </div>
+            
+                        </div>
+                        
+                    </fieldset>
+
+                    <!-- Seccion del formulario para registro de los detalles de productos -->
+                    <fieldset class="mb-3 px-1 px-sm-5">
+
+                        <legend class="fs-6 fw-bold mb-0 ps-0">
+                            Detalles
+                        </legend>
+
+                        <div class="px-1 px-md-2 px-lg-3 py-2 border border-black">
+                            <!-- tabla de detalles -->
+                            <table class="table table-hover table-sm mb-2 text-center small " id="tablaDetalleVenta">
+
+                                <caption class="visually-hidden">Detalles de la venta</caption>
+
+                                <!-- Titulos de las columnas de la subtabla -->
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="d-none d-lg-block">Item</th>
+                                        <th scope="col" style="max-width:250px;">Producto</th>
+                                        <th scope="col" style="width:50px;">Cantidad</th>
+                                        <th scope="col" class="d-none d-lg-block">Precio Unitario</th>
+                                        <th scope="col">Total</th>
+                                        <th scope="col" style="width:30px;"> <span class="visually-hidden"> Eliminar </span> </th>
+                                    </tr>
+                                </thead>
+
+                                <!-- Fila item 1 de la tabla-->
+                                <tr>
+                                    <th scope="row" class="d-none d-lg-table-cell">001</th>
+                                    <td>
+                                        <select 
+                                        class="producto form-select form-select-sm border-black "  
+                                        aria-label="producto ah agregar a la venta">
+                                            <option selected>Seleccionar producto</option>
+                                            <option value="1">Mogolla*12</option>
+                                            <option value="2">Pan integral</option>
+                                        </select>   
+                                    </td>
+                                    <td class="cantidad">
+                                        <input type="number" class="form-control form-control-sm border border-black">
+                                    </td>
+                                    <td class="precioUnitario d-none d-lg-table-cell">$10.000</td>
+                                    <td class= "totalPorProducto">$200.000</td>
+                                    <td>
+                                        <button 
+                                            class="btn btn-link link-danger m-0 p-0 d-flex btn-acordion collapsed" 
+                                            type = "button"
+                                            title = "eliminar producto de la venta">
+                                            <iconify-icon icon="material-symbols:delete" class="fs-4"></iconify-icon>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <!-- Fila item 1 de la tabla-->
+                                <tr>
+                                    <th scope="row" class="d-none d-lg-table-cell">001</th>
+                                    <td>
+                                        <select 
+                                        class="producto form-select form-select-sm border-black "  
+                                        aria-label="producto ah agregar a la venta">
+                                            <option selected>Seleccionar producto</option>
+                                            <option value="1">Mogolla*12</option>
+                                            <option value="2">Pan integral</option>
+                                        </select>   
+                                    </td>
+                                    <td class="cantidad">
+                                        <input type="number" class="form-control form-control-sm border border-black">
+                                    </td>
+                                    <td class="precioUnitario d-none d-lg-table-cell">$10.000</td>
+                                    <td class= "totalPorProducto">$200.000</td>
+                                    <td>
+                                        <button 
+                                            class="btn btn-link link-danger m-0 p-0 d-flex btn-acordion collapsed" 
+                                            type = "button"
+                                            title = "eliminar producto de la venta">
+                                            <iconify-icon icon="material-symbols:delete" class="fs-4"></iconify-icon>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <!-- Fila item 1 de la tabla-->
+                                <tr>
+                                    <th scope="row" class="d-none d-lg-table-cell">001</th>
+                                    <td>
+                                        <select 
+                                        class="producto form-select form-select-sm border-black "  
+                                        aria-label="producto ah agregar a la venta">
+                                            <option selected>Seleccionar producto</option>
+                                            <option value="1">Mogolla*12</option>
+                                            <option value="2">Pan integral</option>
+                                        </select>   
+                                    </td>
+                                    <td class="cantidad">
+                                        <input type="number" class="form-control form-control-sm border border-black">
+                                    </td>
+                                    <td class="precioUnitario d-none d-lg-table-cell">$10.000</td>
+                                    <td class= "totalPorProducto">$200.000</td>
+                                    <td>
+                                        <button 
+                                            class="btn btn-link link-danger m-0 p-0 d-flex btn-acordion collapsed" 
+                                            type = "button"
+                                            title = "eliminar producto de la venta">
+                                            <iconify-icon icon="material-symbols:delete" class="fs-4"></iconify-icon>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <!-- Fila item 1 de la tabla-->
+                                <tr>
+                                    <th scope="row" class="d-none d-lg-table-cell">001</th>
+                                    <td>
+                                        <select 
+                                        class="producto form-select form-select-sm border-black "  
+                                        aria-label="producto ah agregar a la venta">
+                                            <option selected>Seleccionar producto</option>
+                                            <option value="1">Mogolla*12</option>
+                                            <option value="2">Pan integral</option>
+                                        </select>   
+                                    </td>
+                                    <td class="cantidad">
+                                        <input type="number" class="form-control form-control-sm border border-black">
+                                    </td>
+                                    <td class="precioUnitario d-none d-lg-table-cell">$10.000</td>
+                                    <td class= "totalPorProducto">$200.000</td>
+                                    <td>
+                                        <button 
+                                            class="btn btn-link link-danger m-0 p-0 d-flex btn-acordion collapsed" 
+                                            type = "button"
+                                            title = "eliminar producto de la venta">
+                                            <iconify-icon icon="material-symbols:delete" class="fs-4"></iconify-icon>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                            <button 
+                                type="button" 
+                                class="btn btn-secondary btn-sm fw-bold m-2 px-3 shadow">
+                                    Agregar Producto
+                            </button>
+                        </div>
+
+                        
+
+                    </fieldset>
+
+                    <div class="my-1 px-1 px-sm-5">
+                        <p class="mb-0">
+                            <span class="fw-bold">Total:</span>
+                            <span>$300.000</span>
                         </p>
                     </div>
 
