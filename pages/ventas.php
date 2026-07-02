@@ -638,6 +638,69 @@
                     <p>Total:</p>
                     <p>$340.000</p>
                 </div>
+
+                <div class="jafr-card-item-inline mb-0">
+                    <p>Detalles</p>
+                    <button 
+                        class="btn btn-link link-primary m-0 p-0 d-flex btn-acordion collapsed" 
+                        type = "button"
+                        title = "ver detalles de venta"
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#divDetalles1" 
+                        aria-expanded="false" 
+                        aria-controls="divDetalles1">
+                        <iconify-icon icon="pixel:chevron-down-solid" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+                
+                <div id="divDetalles1" class="accordion-collapse collapse pt-1">
+
+                    <!-- subtabla de detalles del item  -->
+                    <table class="table table-hover table-sm mb-0 small text-center">
+
+                        <caption class="visually-hidden ">Detalles de la venta 001</caption>
+
+                        <!-- Titulos de las columnas de la subtabla -->
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+
                 <div class="jafr-card-btn-edit">
                     <button
                         class="btn btn-link link-primary m-auto p-0 d-flex"
@@ -650,8 +713,10 @@
                 </div>
             </div>
 
-            <!-- Card personalizada para el item 1 -->
-            <div class="jafr-card item-desactivado">
+
+
+            <!-- Card personalizada para el item 2 -->
+            <div class="jafr-card">
                 <h3 class="fs-5 fw-bold text-primary">
                     Venta #001
                 </h3>
@@ -668,6 +733,259 @@
                     <p>Total:</p>
                     <p>$340.000</p>
                 </div>
+
+                <div class="jafr-card-item-inline mb-0">
+                    <p>Detalles</p>
+                    <button 
+                        class="btn btn-link link-primary m-0 p-0 d-flex btn-acordion collapsed" 
+                        type = "button"
+                        title = "ver detalles de venta"
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#divDetalles2" 
+                        aria-expanded="false" 
+                        aria-controls="divDetalles2">
+                        <iconify-icon icon="pixel:chevron-down-solid" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+                
+                <div id="divDetalles2" class="accordion-collapse collapse pt-1">
+
+                    <!-- subtabla de detalles del item  -->
+                    <table class="table table-hover table-sm mb-0 small text-center">
+
+                        <caption class="visually-hidden ">Detalles de la venta 001</caption>
+
+                        <!-- Titulos de las columnas de la subtabla -->
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+
+                <div class="jafr-card-btn-edit">
+                    <button
+                        class="btn btn-link link-primary m-auto p-0 d-flex"
+                        title="editar venta"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalEditarItem"
+                    >
+                        <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+            
+
+
+            <!-- Card personalizada para el item 3 -->
+            <div class="jafr-card">
+                <h3 class="fs-5 fw-bold text-primary">
+                    Venta #001
+                </h3>
+                <hr>
+                <div class="jafr-card-items-grid">
+                    <p>Fecha:</p>
+                    <p><time datetime="2025-12-18">18/12/2025</time></p>
+                    <p>Cliente:</p>
+                    <p>Tienda don Jaime</p>
+                    <p>Usuario:</p>
+                    <p>John Forero</p>
+                </div>
+                <div class="jafr-card-item-inline mb-0">
+                    <p>Total:</p>
+                    <p>$340.000</p>
+                </div>
+
+                <div class="jafr-card-item-inline mb-0">
+                    <p>Detalles</p>
+                    <button 
+                        class="btn btn-link link-primary m-0 p-0 d-flex btn-acordion collapsed" 
+                        type = "button"
+                        title = "ver detalles de venta"
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#divDetalles3" 
+                        aria-expanded="false" 
+                        aria-controls="divDetalles3">
+                        <iconify-icon icon="pixel:chevron-down-solid" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+                
+                <div id="divDetalles3" class="accordion-collapse collapse pt-1">
+
+                    <!-- subtabla de detalles del item  -->
+                    <table class="table table-hover table-sm mb-0 small text-center">
+
+                        <caption class="visually-hidden ">Detalles de la venta 001</caption>
+
+                        <!-- Titulos de las columnas de la subtabla -->
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+
+                <div class="jafr-card-btn-edit">
+                    <button
+                        class="btn btn-link link-primary m-auto p-0 d-flex"
+                        title="editar venta"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalEditarItem"
+                    >
+                        <iconify-icon icon="boxicons:edit-filled" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+            
+
+
+            <!-- Card personalizada para el item 4 -->
+            <div class="jafr-card">
+                <h3 class="fs-5 fw-bold text-primary">
+                    Venta #001
+                </h3>
+                <hr>
+                <div class="jafr-card-items-grid">
+                    <p>Fecha:</p>
+                    <p><time datetime="2025-12-18">18/12/2025</time></p>
+                    <p>Cliente:</p>
+                    <p>Tienda don Jaime</p>
+                    <p>Usuario:</p>
+                    <p>John Forero</p>
+                </div>
+                <div class="jafr-card-item-inline mb-0">
+                    <p>Total:</p>
+                    <p>$340.000</p>
+                </div>
+
+                <div class="jafr-card-item-inline mb-0">
+                    <p>Detalles</p>
+                    <button 
+                        class="btn btn-link link-primary m-0 p-0 d-flex btn-acordion collapsed" 
+                        type = "button"
+                        title = "ver detalles de venta"
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#divDetalles4" 
+                        aria-expanded="false" 
+                        aria-controls="divDetalles4">
+                        <iconify-icon icon="pixel:chevron-down-solid" class="fs-3"></iconify-icon>
+                    </button>
+                </div>
+                
+                <div id="divDetalles4" class="accordion-collapse collapse pt-1">
+
+                    <!-- subtabla de detalles del item  -->
+                    <table class="table table-hover table-sm mb-0 small text-center">
+
+                        <caption class="visually-hidden ">Detalles de la venta 001</caption>
+
+                        <!-- Titulos de las columnas de la subtabla -->
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                        <!-- Fila item 1 de la subtabla-->
+                        <tr>
+                            <td>Mogolla*12</td>
+                            <td>20</td>
+                            <td>$200.000</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+
                 <div class="jafr-card-btn-edit">
                     <button
                         class="btn btn-link link-primary m-auto p-0 d-flex"
